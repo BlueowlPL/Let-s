@@ -1,0 +1,46 @@
+.section-benefits {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-benefits .benefits-list {
+    --bg-color: {{ bg_color }};
+    --font-color: {{ font_color }};
+    display:flex;
+    flex-shrink:0;
+    align-items:center;
+    justify-content:space-around;
+    height:var(--height);
+    list-style-type:none;
+    overflow:hidden;
+    background-color:var(--bg-color);
+    white-space:nowrap;
+    margin-left:-1px;
+    min-width:100vw;
+}
+
+.section-benefits .benefits-list__block_text {
+    color: var(--font-color);
+    font-family: "quasimoda", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 20px
+}
+
+@media screen and (max-width: 767px) {
+    .section-benefits .benefits-list__block_text {
+        font-size: 14px;
+        line-height: 38px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-benefits~.shopify-section--blog {
+        padding-top: 60px
+    }
+}
