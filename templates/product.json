@@ -10,18 +10,38 @@
             "text_style": "uppercase"
           }
         },
-        "title": { "type": "title", "settings": {} },
-        "price": { "type": "price", "settings": {} },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
-          "settings": { "picker_type": "button" }
+          "settings": {
+            "picker_type": "button"
+          }
         },
-        "quantity_selector": { "type": "quantity_selector", "settings": {} },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
-          "settings": { "show_dynamic_checkout": true }
+          "settings": {
+            "show_dynamic_checkout": true
+          }
         },
-        "description": { "type": "description", "settings": {} },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -58,10 +78,19 @@
             "page": ""
           }
         },
-        "share": { "type": "share", "settings": { "share_label": "Share" } },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
         "8829fc02-ca45-4a88-81e3-8b2bb8ff4d53": {
-          "type": "shopify://apps/xo-story-feeds/blocks/xo-story/73c32a5d-481e-4b4e-99f6-012a00af21b7",
-          "settings": { "id": 1, "padding_top": 10, "padding_bottom": 10 }
+          "type": "shopify:\/\/apps\/xo-story-feeds\/blocks\/xo-story\/73c32a5d-481e-4b4e-99f6-012a00af21b7",
+          "settings": {
+            "id": 1,
+            "padding_top": 10,
+            "padding_bottom": 10
+          }
         }
       },
       "block_order": [
@@ -95,29 +124,41 @@
       "type": "apps",
       "blocks": {
         "b01e1449-d83d-40c8-a31e-5d3ddef9bb72": {
-          "type": "shopify://apps/yotpo-product-photo-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-          "settings": { "product": "{{product}}" }
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
         }
       },
-      "block_order": ["b01e1449-d83d-40c8-a31e-5d3ddef9bb72"],
-      "settings": { "include_margins": true }
+      "block_order": [
+        "b01e1449-d83d-40c8-a31e-5d3ddef9bb72"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     },
     "image-with-text": {
       "type": "image-with-text",
       "blocks": {
         "image-with-text-0": {
           "type": "heading",
-          "settings": { "heading": "Image with text", "heading_size": "h1" }
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
         },
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "text_style": "body"
           }
         }
       },
-      "block_order": ["image-with-text-0", "image-with-text-1"],
+      "block_order": [
+        "image-with-text-0",
+        "image-with-text-1"
+      ],
       "settings": {
         "height": "small",
         "desktop_image_width": "medium",
@@ -138,7 +179,7 @@
           "type": "column",
           "settings": {
             "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -147,13 +188,16 @@
           "type": "column",
           "settings": {
             "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": ["column-0", "column-1"],
+      "block_order": [
+        "column-0",
+        "column-1"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -191,20 +235,34 @@
     },
     "custom-recommendations": {
       "type": "custom-recommendations",
-      "settings": { "heading": "Prdukty powiązane" }
+      "settings": {
+        "heading": "Prdukty powiązane"
+      }
     },
     "16789659680385f660": {
       "type": "apps",
       "blocks": {
         "3802da17-eae3-4fdc-99a5-47ce03f32573": {
-          "type": "shopify://apps/xo-story-feeds/blocks/xo-story/73c32a5d-481e-4b4e-99f6-012a00af21b7",
-          "settings": { "id": 1, "padding_top": 10, "padding_bottom": 10 }
+          "type": "shopify:\/\/apps\/xo-story-feeds\/blocks\/xo-story\/73c32a5d-481e-4b4e-99f6-012a00af21b7",
+          "settings": {
+            "id": 1,
+            "padding_top": 10,
+            "padding_bottom": 10
+          }
         }
       },
-      "block_order": ["3802da17-eae3-4fdc-99a5-47ce03f32573"],
-      "settings": { "include_margins": true }
+      "block_order": [
+        "3802da17-eae3-4fdc-99a5-47ce03f32573"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     },
-    "section-for-test": { "type": "test-section" }
+    "section-for-test": {
+      "type": "test-section",
+      "settings": {
+      }
+    }
   },
   "order": [
     "main",
