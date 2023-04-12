@@ -150,7 +150,9 @@
       "settings": {
         "tab_1_title": "O Produkcie",
         "tab_2_title": "Sposób użycia",
-        "tab_3_title": "Zastosowanie"
+        "tab_3_title": "Zastosowanie",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "1676385121648d3da2": {
