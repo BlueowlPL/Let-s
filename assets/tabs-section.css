@@ -35,7 +35,7 @@
 }
  
 .tabs-section input[type="radio"]:checked + label {
-  background: #fff;
+  border-bottom: 1px solid #C8CCD0;
 }
  
 .tabs-section input[type="radio"]:checked + label + .tab {
