@@ -21,7 +21,7 @@
     <label for="tabone">O produkcie</label>
     <div class="tab">
       <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
-      <div class="tab--image__container" style="display:flex;place-content: center;gap:24px">
+      <div class="tab--image__container" style="display:flex;flex-direction:row">
       {% for block in section.blocks %}
         <div class="tab-image">
           {%- if block.settings.image != blank -%}
