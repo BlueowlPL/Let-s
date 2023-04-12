@@ -14,23 +14,7 @@ test    .section-{{ section.id }}-padding {
   }
 {%- endstyle -%}
 
-<script>
-  
-  const tabs = document.querySelectorAll('.tab');
-  const radios = document.querySelectorAll('input[type="radio"]');
-  console.log(tabs)
-  
-  radios.forEach(radio => {
-  radio.addEventListener('change', (event) => {
-    // znajdź zakładkę, która odpowiada wybranej opcji
-    const targetTab = document.querySelector(`#${event.target.id} + .tab`);
-    // usuń aktywną klasę ze wszystkich zakładek
-    tabs.forEach(tab => tab.classList.remove('active'));
-    // dodaj aktywną klasę do wybranej zakładki
-    targetTab.classList.add('active');
-  });
-});
-</script>
+
 
 <div class="page-width section-{{ section.id }}-padding">
  <div class="tabs-section">
@@ -135,6 +119,23 @@ test    .section-{{ section.id }}-padding {
   ]
   }
 {% endschema %}
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const radios = document.querySelectorAll('input[type="radio"]');
+  console.log(tabs)
+  
+  radios.forEach(radio => {
+  radio.addEventListener('change', (event) => {
+    // znajdź zakładkę, która odpowiada wybranej opcji
+    const targetTab = document.querySelector(`#${event.target.id} + .tab`);
+    // usuń aktywną klasę ze wszystkich zakładek
+    tabs.forEach(tab => tab.classList.remove('active'));
+    // dodaj aktywną klasę do wybranej zakładki
+    targetTab.classList.add('active');
+  });
+});
+</script>
 
 
 
