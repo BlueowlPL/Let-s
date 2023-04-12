@@ -22,19 +22,19 @@
     <div class="tab">
       <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
       <div class="tab-image" style="display:flex; gap:24px">
-        {% for block in section.blocks %}
-          {%- if section.settings.image != blank -%}
-            {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
-            {{ section.settings.image | image_url: width: 320 | image_tag:
-              loading: 'lazy',
-              sizes: sizes,
-              widths: '165, 320'
-            }}
-          {%- else -%}
-            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-          {%- endif -%}
-        {% endfor %}
-      </div>
+      {% for block in section.blocks %}
+        {%- if section.settings.image != blank -%}
+          {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2){%- endcapture -%}
+          {{ section.settings.image | image_url: width: 320, height: 240 | image_tag:
+            loading: 'lazy',
+            sizes: sizes,
+            widths: '165, 320'
+          }}
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      {% endfor %}
+    </div>
     </div>
 
     <input type="radio" name="tabs" id="tabtwo">
