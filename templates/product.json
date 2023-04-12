@@ -120,6 +120,11 @@
         "padding_bottom": 12
       }
     },
+    "1e027201-d5c7-4e3f-ad23-ebe542eb1506": {
+      "type": "tabs-section",
+      "settings": {
+      }
+    },
     "1676385121648d3da2": {
       "type": "apps",
       "blocks": {
@@ -257,21 +262,16 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "1e027201-d5c7-4e3f-ad23-ebe542eb1506": {
-      "type": "tabs-section",
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
+    "1e027201-d5c7-4e3f-ad23-ebe542eb1506",
     "1676385121648d3da2",
     "image-with-text",
     "multicolumn",
     "product-recommendations",
     "custom-recommendations",
-    "16789659680385f660",
-    "1e027201-d5c7-4e3f-ad23-ebe542eb1506"
+    "16789659680385f660"
   ]
 }
