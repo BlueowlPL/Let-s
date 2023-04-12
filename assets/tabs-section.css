@@ -25,12 +25,11 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  visibility: hidden;
+  display: none;
   padding: 1rem;
   background: #fff;
   padding: 20px;
   border-top: 1px solid #ECEDEF;
-  display: none;
 }
 
 .tab--image__container {
