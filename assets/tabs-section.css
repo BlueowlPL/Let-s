@@ -14,6 +14,7 @@
   cursor: pointer;
   font-weight: bold;
   transition: background ease 0.3s;
+  color: #757F8A;
 }
  
 .tabs-section .tab {
@@ -25,6 +26,7 @@
   padding: 1rem;
   background: #fff;
   padding: 20px;
+  border-top: 2px solid #757F8A;
 }
  
 .tabs-section input[type="radio"] {
