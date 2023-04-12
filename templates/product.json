@@ -133,11 +133,17 @@
           "type": "image",
           "settings": {
           }
+        },
+        "4a9e83ce-6fdc-4dff-b6da-7460c37066a7": {
+          "type": "image",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "7da0a80a-985b-4b91-8206-2f32f8cb9274",
-        "e909caf6-67ce-434a-9035-94edaf2b7aa1"
+        "e909caf6-67ce-434a-9035-94edaf2b7aa1",
+        "4a9e83ce-6fdc-4dff-b6da-7460c37066a7"
       ],
       "settings": {
       }
