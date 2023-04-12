@@ -16,8 +16,7 @@
 
 <div class="page-width">
  <div class="tabs-section">
-
-    {% if section.settings.tab_1_title != blank %}
+  {% if section.settings.tab_1_title != blank %}
     <input type="radio" name="tabs" id="tabone" checked="checked">
     <label for="tabone">{{ section.settings.tab_1_title | escape }}</label>
     <div class="tab">
