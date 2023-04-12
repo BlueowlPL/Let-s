@@ -37,6 +37,15 @@
   gap: 24px;
 }
 
+.tab-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
 .tabs-section input[type="radio"] {
   display: none;
 }
