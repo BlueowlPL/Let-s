@@ -39,23 +39,18 @@
 }
 
 .tab-image {
-  .card__media .card-media {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-}
+  position: relative;
+  max-width: 320px;
+  max-height:240px;
 }
 
 .tab-image img {
-/*     position: absolute; */
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .tabs-section input[type="radio"] {
