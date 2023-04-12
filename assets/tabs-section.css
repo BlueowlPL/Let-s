@@ -72,7 +72,6 @@
   }
  
   .tabs-section label {
-    width: 100%;
-    margin-left: 50px;
+    width: 50%;
   }
 }
