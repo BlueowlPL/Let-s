@@ -1,0 +1,1 @@
+{{ 'tabs-section.css' | asset_url | stylesheet_tag }}
