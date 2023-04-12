@@ -18,7 +18,7 @@
  <div class="tabs-section">
 
     <input type="radio" name="tabs" id="tabone" checked="checked">
-    <label for="tabone">O produkcie</label>
+    <label for="tabone">{{ section.settings.tab1_title | escape }}</label>
     <div class="tab">
       <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
       <div class="tab--image__container">
@@ -57,9 +57,9 @@
     "name": "Tabs section product",
     "settings": [
       {
-        "type": "image_picker",
-        "id": "image",
-        "label": "t:sections.image-with-text.settings.image.label"
+        "type": "richtext",
+        "id": "tab1_title",
+        "label": "Tab 1 title"
       }
     ],
       "blocks": [
