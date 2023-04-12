@@ -7,7 +7,7 @@
   }
 
   @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
+test    .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
@@ -118,4 +118,35 @@
   }
 {% endschema %}
 {% javascript %}
+  const tabs = document.querySelectorAll('.tab');
+  const radios = document.querySelectorAll('input[type="radio"]');
+
+  radios.forEach(radio => {
+  radio.addEventListener('change', (event) => {
+    // znajdź zakładkę, która odpowiada wybranej opcji
+    const targetTab = document.querySelector(`#${event.target.id} + .tab`);
+    // usuń aktywną klasę ze wszystkich zakładek
+    tabs.forEach(tab => tab.classList.remove('active'));
+    // dodaj aktywną klasę do wybranej zakładki
+    targetTab.classList.add('active');
+  });
+});
 {% endjavascript %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
