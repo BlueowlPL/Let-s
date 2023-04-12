@@ -40,17 +40,21 @@
     </div>
     {% endif %}
 
-    <input type="radio" name="tabs" id="tabtwo">
-    <label for="tabtwo">{{ section.settings.tab_2_title | escape }}</label>
-    <div class="tab">
-      <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
-    </div>
-    
-    <input type="radio" name="tabs" id="tabthree">
-    <label for="tabthree">{{ section.settings.tab_3_title | escape }}</label>
-    <div class="tab">
-      <p>hfioezhogehzioghz</p>
-    </div>
+    {% if section.settings.tab_2_title != blank %}
+      <input type="radio" name="tabs" id="tabtwo">
+      <label for="tabtwo">{{ section.settings.tab_2_title | escape }}</label>
+      <div class="tab">
+        <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
+      </div>
+    {% endif %}
+   
+    {% if section.settings.tab_3_title != blank %}
+      <input type="radio" name="tabs" id="tabthree">
+      <label for="tabthree">{{ section.settings.tab_3_title | escape }}</label>
+      <div class="tab">
+        <p>hfioezhogehzioghz</p>
+      </div>
+   {% endif %}
   </div>
 </div>
 
