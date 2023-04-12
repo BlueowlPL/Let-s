@@ -18,7 +18,7 @@
  <div class="tabs-section">
 
     <input type="radio" name="tabs" id="tabone" checked="checked">
-    <label for="tabone">{{ section.settings.tab1_title | escape }}</label>
+    <label for="tabone">{{ section.settings.tab_1_title | escape }}</label>
     <div class="tab">
       <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
       <div class="tab--image__container">
@@ -39,13 +39,13 @@
     </div>
 
     <input type="radio" name="tabs" id="tabtwo">
-    <label for="tabtwo">Sposób użycia</label>
+    <label for="tabtwo">{{ section.settings.tab_2_title | escape }}</label>
     <div class="tab">
       <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
     </div>
     
     <input type="radio" name="tabs" id="tabthree">
-    <label for="tabthree">Składniki</label>
+    <label for="tabthree">{{ section.settings.tab_3_title | escape }}</label>
     <div class="tab">
       <p>hfioezhogehzioghz</p>
     </div>
@@ -58,8 +58,18 @@
     "settings": [
       {
         "type": "text",
-        "id": "tab1_title",
+        "id": "tab_1_title",
         "label": "Tab 1 title"
+      },
+      {
+        "type": "text",
+        "id": "tab_2_title",
+        "label": "Tab 2 title"
+      },
+      {
+        "type": "text",
+        "id": "tab_3_title",
+        "label": "Tab 3 title"
       }
     ],
       "blocks": [
