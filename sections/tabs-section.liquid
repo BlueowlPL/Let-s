@@ -15,10 +15,11 @@ test    .section-{{ section.id }}-padding {
 {%- endstyle -%}
 
 <script>
-  console.log('dupa')
+  
   const tabs = document.querySelectorAll('.tab');
   const radios = document.querySelectorAll('input[type="radio"]');
-
+  console.log(tabs)
+  
   radios.forEach(radio => {
   radio.addEventListener('change', (event) => {
     // znajdź zakładkę, która odpowiada wybranej opcji
