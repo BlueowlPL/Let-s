@@ -30,6 +30,8 @@
   background: #fff;
   padding: 20px;
   border-top: 1px solid #ECEDEF;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .tab--image__container {
@@ -65,6 +67,7 @@
  
 .tabs-section input[type="radio"]:checked + label + .tab {
   display: block;
+  opacity: 1;
 }
  
 @media (max-width: 465px) {
