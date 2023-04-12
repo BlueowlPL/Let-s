@@ -29,12 +29,24 @@
   padding: 20px;
   border-top: 1px solid #ECEDEF;
 }
+
 .tab--image__container{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 24px;
+}
+
+.tab-image {
+  .card__media .card-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
 }
 
 .tab-image img {
