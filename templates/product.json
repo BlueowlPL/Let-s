@@ -123,35 +123,20 @@
     "1e027201-d5c7-4e3f-ad23-ebe542eb1506": {
       "type": "tabs-section",
       "blocks": {
-        "298b9f03-6f9c-4e68-a7ee-9d9cee7e2215": {
-          "type": "column",
+        "c1507064-78c9-498e-a55b-fc2a402010c1": {
+          "type": "block",
           "settings": {
             "tab_title": "Tytuł",
             "vertical_alignment": "zdjęcie",
-            "number_of_images": 3
-          }
-        },
-        "6b9097ca-8771-49c0-ac84-97e5446343e6": {
-          "type": "column",
-          "settings": {
-            "tab_title": "Tytuł",
-            "vertical_alignment": "Tekst",
-            "number_of_images": 3
-          }
-        },
-        "ea5c707a-5549-4c3b-b8c3-297452bf1b11": {
-          "type": "column",
-          "settings": {
-            "tab_title": "Tytuł",
-            "vertical_alignment": "Tekst",
-            "number_of_images": 3
+            "number_of_images": 3,
+            "image_1": "shopify:\/\/shop_images\/Story_Influ_Kasia__1679077598326.jpg",
+            "image_2": "shopify:\/\/shop_images\/Story_Influ_Kasia__1679077598326.jpg",
+            "image_3": "shopify:\/\/shop_images\/Story_Nasz_krem_1679077889468.png"
           }
         }
       },
       "block_order": [
-        "298b9f03-6f9c-4e68-a7ee-9d9cee7e2215",
-        "6b9097ca-8771-49c0-ac84-97e5446343e6",
-        "ea5c707a-5549-4c3b-b8c3-297452bf1b11"
+        "c1507064-78c9-498e-a55b-fc2a402010c1"
       ],
       "settings": {
         "padding_top": 100,
