@@ -20,7 +20,7 @@
       <input type="radio" name="tabs-{{ section.id }}" id="tab{{ forloop.index }}" {% if forloop.first %}checked="checked"{% endif %}>
       <label for="tab{{ forloop.index }}">{{ block.settings.tab_title | escape }}</label>
       <div class="tab">
-        {{ block.settings.tab_text }}
+        <p>{{ block.settings.tab_text }}</p>
        {% if block.settings.vertical_alignment == 'zdjęcie' %}
           <div class="tab--image__container">
             {% for i in (1..block.settings.number_of_images) %}
