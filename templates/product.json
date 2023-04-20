@@ -128,7 +128,7 @@
           "settings": {
             "tab_title": "O Produkcie",
             "tab_text": "<p>Answer goes here...<\/p>",
-            "vertical_alignment": "zdjęcie",
+            "vertical_alignment": "image",
             "number_of_images": 3,
             "image_1": "shopify:\/\/shop_images\/Story_Influ_Kasia__1679077598326.jpg"
           }
