@@ -21,12 +21,13 @@
       <label for="tab{{ forloop.index }}">{{ block.settings.tab_title | escape }}</label>
       <div class="tab">
         <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
-        {% if block.settings.vertical_alignment == 'zdjęcie' %}
+       {% if block.settings.vertical_alignment == 'zdjęcie' %}
           <div class="tab--image__container">
-          {% for i in (1..block.settings.number_of_images) %}
+            {% for i in (1..block.settings.number_of_images) %}
               <div class="tab-image">
-                {% if block.settings.image != blank %}
-                  {{ block.settings.image | image_url: width: 320, height: 240 | class:'card-media' | image_tag:
+                {% assign image_id = 'image_' | append: i %}
+                {% if block.settings[image_id] != blank %}
+                  {{ block.settings[image_id] | image_url: width: 320, height: 240 | class:'card-media' | image_tag:
                     loading: 'lazy',
                     sizes: sizes,
                     widths: '165, 320'
@@ -36,8 +37,7 @@
                 {% endif %}
               </div>
             {% endfor %}
-            </div>
-          
+          </div>
         {% elsif block.settings.vertical_alignment == 'tekst' %}
           <p>Tekst</p>
         {% endif %}
