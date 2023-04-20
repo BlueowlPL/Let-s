@@ -146,7 +146,7 @@
           "type": "block",
           "settings": {
             "tab_title": "Stosowanie",
-            "tab_text": "<p>Answer goes here...<\/p>",
+            "tab_text": "<ul><li>Answer goes here...<\/li><li>Answer goes here...<\/li><li>Answer goes here...<\/li><li>Answer goes here...<\/li><\/ul>",
             "vertical_alignment": "zdjęcie",
             "number_of_images": 3
           }
