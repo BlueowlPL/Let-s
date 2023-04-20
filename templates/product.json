@@ -137,7 +137,7 @@
           "type": "block",
           "settings": {
             "tab_title": "Zastosowanie",
-            "tab_text": "<p>Answer goes here...<\/p>",
+            "tab_text": "<p>Answer goes here...<\/p><ol><li>lorem ipsum<\/li><li>lorem ipsum<\/li><\/ol>",
             "vertical_alignment": "Tekst",
             "number_of_images": 3
           }
