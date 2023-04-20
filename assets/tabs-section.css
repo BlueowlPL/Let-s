@@ -32,7 +32,8 @@
   border-top: 1px solid #ECEDEF;
 }
 
-.tab ul {
+.tab ul,
+.tab li {
   list-style-position: inside;
 }
 
