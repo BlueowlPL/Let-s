@@ -19,7 +19,7 @@
     {% for block in section.blocks %}
       <input type="radio" name="tabs-{{ section.id }}" id="tab{{ forloop.index }}" {% if forloop.first %}checked="checked"{% endif %}>
       <label for="tab{{ forloop.index }}">{{ block.settings.tab_title | escape }}</label>
-      <div class="tab">
+      <div class="tab color-{{ section.settings.color_scheme }}">
         {{ block.settings.tab_text }}
        {% if block.settings.vertical_alignment == 'image' %}
           <div class="tab--image__container">
