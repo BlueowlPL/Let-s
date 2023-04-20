@@ -21,7 +21,7 @@
       <label for="tab{{ forloop.index }}">{{ block.settings.tab_title | escape }}</label>
       <div class="tab">
         {{ block.settings.tab_text }}
-       {% if block.settings.vertical_alignment == 'zdjęcie' %}
+       {% if block.settings.vertical_alignment == 'image' %}
           <div class="tab--image__container">
             {% for i in (1..block.settings.number_of_images) %}
               <div class="tab-image">
@@ -38,7 +38,7 @@
               </div>
             {% endfor %}
           </div>
-        {% elsif block.settings.vertical_alignment == 'tekst' %}
+        {% elsif block.settings.vertical_alignment == 'text' %}
           <p>Tekst</p>
         {% endif %}
       </div>
@@ -82,31 +82,31 @@
         {
           "type": "text",
           "id": "tab_title",
-          "label": "Tab tytuł",
+          "label": "Tab title",
           "default": "Tytuł"
         },
         {
           "type": "richtext",
           "id": "tab_text",
           "default": "<p>Answer goes here...</p>",
-          "label": "Tab tekst"
+          "label": "Tab text"
           
         },
         {
           "type": "select",
           "id": "vertical_alignment",
-          "label": "Zawartość taba",
+          "label": "Tab content",
           "options": [
             {
-              "value": "zdjęcie",
-              "label": "Zdjęcia + tekst"
+              "value": "image",
+              "label": "Images + text"
             },
             {
-              "value": "Tekst",
-              "label": "Sam tekst"
+              "value": "Text",
+              "label": "Only text"
             }
           ],
-          "default": "Tekst"
+          "default": "Text"
         },
         {
           "type": "range",
