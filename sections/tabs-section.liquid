@@ -24,6 +24,7 @@
       <div class="tab">
         <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
         {% if block.settings.vertical_alignment == 'zdjęcie' %}
+          {% for i in (1..block.settings.number_of_images) %}
           <div class="tab--image__container">
             <div class="tab-image">
               {%- if block.settings.image != blank -%}
@@ -34,9 +35,11 @@
                 }}
               {%- else -%}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              
               {%- endif -%}
             </div>
           </div>
+          {% endfor %}
         {% elsif block.settings.vertical_alignment == 'tekst' %}
           <p>Tekst</p>
         {% endif %}
