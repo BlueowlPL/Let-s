@@ -35,6 +35,8 @@
           {%- else -%}
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
+        </div>
+      </div>
         {% elsif block.settings.vertical_alignment == 'tekst' %}
         <p>Tekst</p>
         {% endif %}
