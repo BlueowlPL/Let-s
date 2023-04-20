@@ -15,11 +15,11 @@
 {%- endstyle -%}
 
 <div class="page-width section-{{ section.id }}-padding">
-  <div class="tabs-section color-{{ section.settings.color_scheme }}">
+  <div class="tabs-section">
     {% for block in section.blocks %}
       <input type="radio" name="tabs-{{ section.id }}" id="tab{{ forloop.index }}" {% if forloop.first %}checked="checked"{% endif %}>
       <label for="tab{{ forloop.index }}">{{ block.settings.tab_title | escape }}</label>
-      <div class="tab color-{{ section.settings.color_scheme }}">
+      <div class="tab">
         {{ block.settings.tab_text }}
        {% if block.settings.vertical_alignment == 'image' %}
           <div class="tab--image__container">
