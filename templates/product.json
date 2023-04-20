@@ -136,7 +136,7 @@
         "0c57e791-51ac-4182-8861-bd6d594cac67": {
           "type": "block",
           "settings": {
-            "tab_title": "Tytuł",
+            "tab_title": "Zastosowanie",
             "tab_text": "<p>Answer goes here...<\/p>",
             "vertical_alignment": "Tekst",
             "number_of_images": 3
@@ -145,7 +145,7 @@
         "7cd9d4d4-411d-4ca9-9adb-776cd222c7a7": {
           "type": "block",
           "settings": {
-            "tab_title": "Tytuł",
+            "tab_title": "Stosowanie",
             "tab_text": "<p>Answer goes here...<\/p>",
             "vertical_alignment": "zdjęcie",
             "number_of_images": 3
