@@ -127,6 +127,7 @@
           "type": "block",
           "settings": {
             "tab_title": "Tytuł",
+            "tab_text": "Tekstasdasd",
             "vertical_alignment": "zdjęcie",
             "number_of_images": 3,
             "image_1": "shopify:\/\/shop_images\/Story_Influ_Kasia__1679077598326.jpg",
@@ -138,6 +139,7 @@
           "type": "block",
           "settings": {
             "tab_title": "Tytuł2",
+            "tab_text": "Tekst",
             "vertical_alignment": "Tekst",
             "number_of_images": 3
           }
