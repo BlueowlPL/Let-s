@@ -18,13 +18,12 @@
 
 <div class="page-width section-{{ section.id }}-padding">
  <div class="tabs-section">
-  {% if section.settings.tab_1_title != blank %}
+  {% for block in section.blocks %}
     <input type="radio" name="tabs" id="tabone" checked="checked">
     <label for="tabone">{{ section.settings.tab_1_title | escape }}</label>
     <div class="tab">
       <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
       <div class="tab--image__container">
-      {% for block in section.blocks %}
         <div class="tab-image">
           {%- if block.settings.image != blank -%}
             {{ block.settings.image | image_url: width: 320, height: 240 | class:'card-media' | image_tag:
@@ -36,11 +35,10 @@
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
         </div>
-      {% endfor %}
       </div>
     </div>
-    {% endif %}
-
+  {% endfor %}
+  {% comment %}
     {% if section.settings.tab_2_title != blank %}
       <input type="radio" name="tabs" id="tabtwo">
       <label for="tabtwo">{{ section.settings.tab_2_title | escape }}</label>
@@ -56,6 +54,7 @@
         <p>hfioezhogehzioghz</p>
       </div>
    {% endif %}
+   {% endcomment %}
   </div>
 </div>
 
