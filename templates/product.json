@@ -141,11 +141,20 @@
             "vertical_alignment": "Tekst",
             "number_of_images": 3
           }
+        },
+        "5e9be77f-e325-4568-82b5-61fcc2cbef68": {
+          "type": "block",
+          "settings": {
+            "tab_title": "Stosowanie",
+            "vertical_alignment": "Tekst",
+            "number_of_images": 3
+          }
         }
       },
       "block_order": [
         "0fbbdbb3-5605-4e5f-af53-ef1b2d588bf3",
-        "090a5427-5ab3-40d0-8137-9f47d8bf1877"
+        "090a5427-5ab3-40d0-8137-9f47d8bf1877",
+        "5e9be77f-e325-4568-82b5-61fcc2cbef68"
       ],
       "settings": {
         "padding_top": 100,
