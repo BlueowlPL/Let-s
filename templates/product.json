@@ -120,38 +120,46 @@
         "padding_bottom": 12
       }
     },
-    "1e027201-d5c7-4e3f-ad23-ebe542eb1506": {
+    "efb5dbbe-cf72-41e5-b6a5-596954577d81": {
       "type": "tabs-section",
       "blocks": {
-        "c1507064-78c9-498e-a55b-fc2a402010c1": {
+        "919420a6-a602-41e8-9e14-026eb6dec9b8": {
+          "type": "block",
+          "settings": {
+            "tab_title": "O Produkcie",
+            "tab_text": "<p>Answer goes here...<\/p>",
+            "vertical_alignment": "zdjęcie",
+            "number_of_images": 3,
+            "image_1": "shopify:\/\/shop_images\/Story_Influ_Kasia__1679077598326.jpg"
+          }
+        },
+        "0c57e791-51ac-4182-8861-bd6d594cac67": {
           "type": "block",
           "settings": {
             "tab_title": "Tytuł",
-            "tab_text": "Tekstasdasd",
-            "vertical_alignment": "zdjęcie",
-            "number_of_images": 3,
-            "image_1": "shopify:\/\/shop_images\/Story_Influ_Kasia__1679077598326.jpg",
-            "image_2": "shopify:\/\/shop_images\/Story_Influ_Kasia__1679077598326.jpg",
-            "image_3": "shopify:\/\/shop_images\/Story_Nasz_krem_1679077889468.png"
+            "tab_text": "<p>Answer goes here...<\/p>",
+            "vertical_alignment": "Tekst",
+            "number_of_images": 3
           }
         },
-        "a4b92858-7853-48df-a3bc-86c073a000b1": {
+        "7cd9d4d4-411d-4ca9-9adb-776cd222c7a7": {
           "type": "block",
           "settings": {
-            "tab_title": "Tytuł2",
-            "tab_text": "Tekst",
-            "vertical_alignment": "Tekst",
+            "tab_title": "Tytuł",
+            "tab_text": "<p>Answer goes here...<\/p>",
+            "vertical_alignment": "zdjęcie",
             "number_of_images": 3
           }
         }
       },
       "block_order": [
-        "c1507064-78c9-498e-a55b-fc2a402010c1",
-        "a4b92858-7853-48df-a3bc-86c073a000b1"
+        "919420a6-a602-41e8-9e14-026eb6dec9b8",
+        "0c57e791-51ac-4182-8861-bd6d594cac67",
+        "7cd9d4d4-411d-4ca9-9adb-776cd222c7a7"
       ],
       "settings": {
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "1676385121648d3da2": {
@@ -295,7 +303,7 @@
   },
   "order": [
     "main",
-    "1e027201-d5c7-4e3f-ad23-ebe542eb1506",
+    "efb5dbbe-cf72-41e5-b6a5-596954577d81",
     "1676385121648d3da2",
     "image-with-text",
     "multicolumn",
