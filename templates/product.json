@@ -126,13 +126,17 @@
         "0fbbdbb3-5605-4e5f-af53-ef1b2d588bf3": {
           "type": "block",
           "settings": {
-            "vertical_alignment": "Tekst"
+            "tab_title": "Tytuł",
+            "vertical_alignment": "zdjęcie",
+            "number_of_images": 3
           }
         },
         "090a5427-5ab3-40d0-8137-9f47d8bf1877": {
           "type": "block",
           "settings": {
-            "vertical_alignment": "Tekst"
+            "tab_title": "Tytuł",
+            "vertical_alignment": "Tekst",
+            "number_of_images": 3
           }
         }
       },
@@ -141,9 +145,6 @@
         "090a5427-5ab3-40d0-8137-9f47d8bf1877"
       ],
       "settings": {
-        "tab_1_title": "O Produkcie",
-        "tab_2_title": "Sposób użycia",
-        "tab_3_title": "Zastosowanie",
         "padding_top": 100,
         "padding_bottom": 100
       }
