@@ -14,8 +14,8 @@
   }
 {%- endstyle -%}
 
-<div class="page-width color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
-  <div class="tabs-section">
+<div class="page-width section-{{ section.id }}-padding">
+  <div class="tabs-section color-{{ section.settings.color_scheme }}">
     {% for block in section.blocks %}
       <input type="radio" name="tabs-{{ section.id }}" id="tab{{ forloop.index }}" {% if forloop.first %}checked="checked"{% endif %}>
       <label for="tab{{ forloop.index }}">{{ block.settings.tab_title | escape }}</label>
