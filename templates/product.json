@@ -133,10 +133,19 @@
             "image_2": "shopify:\/\/shop_images\/Story_Influ_Kasia__1679077598326.jpg",
             "image_3": "shopify:\/\/shop_images\/Story_Nasz_krem_1679077889468.png"
           }
+        },
+        "a4b92858-7853-48df-a3bc-86c073a000b1": {
+          "type": "block",
+          "settings": {
+            "tab_title": "Tytuł2",
+            "vertical_alignment": "Tekst",
+            "number_of_images": 3
+          }
         }
       },
       "block_order": [
-        "c1507064-78c9-498e-a55b-fc2a402010c1"
+        "c1507064-78c9-498e-a55b-fc2a402010c1",
+        "a4b92858-7853-48df-a3bc-86c073a000b1"
       ],
       "settings": {
         "padding_top": 100,
