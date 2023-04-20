@@ -24,11 +24,9 @@
         {% if block.settings.vertical_alignment == 'zdjęcie' %}
           <div class="tab--image__container">
           {% for i in (1..block.settings.number_of_images) %}
-            {%- assign _image_tmp = 'tab_image' | append: 1 -%}
-            {%- assign cell_image = block.settings[_image_tmp] -%}
               <div class="tab-image">
-                {% if block.settings.cell_image != blank %}
-                  {{ block.settings.cell_image |  image_url: width: 320, height: 240 | class:'card-media' | image_tag:
+                {% if block.settings.image != blank %}
+                  {{ block.settings.image | image_url: width: 320, height: 240 | class:'card-media' | image_tag:
                     loading: 'lazy',
                     sizes: sizes,
                     widths: '165, 320'
@@ -112,7 +110,7 @@
           "default": 3
         },
         {
-        "id": "tab_image",
+        "id": "image",
         "type": "image_picker",
         "label": "Zdjęcie w tabie"
         }
