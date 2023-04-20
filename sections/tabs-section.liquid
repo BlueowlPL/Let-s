@@ -20,7 +20,7 @@
       <input type="radio" name="tabs-{{ section.id }}" id="tab{{ forloop.index }}" {% if forloop.first %}checked="checked"{% endif %}>
       <label for="tab{{ forloop.index }}">{{ block.settings.tab_title | escape }}</label>
       <div class="tab">
-        <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
+        {{ block.settings.tab_text }}
        {% if block.settings.vertical_alignment == 'zdjęcie' %}
           <div class="tab--image__container">
             {% for i in (1..block.settings.number_of_images) %}
@@ -84,6 +84,12 @@
           "id": "tab_title",
           "label": "Tab tytuł",
           "default": "Tytuł"
+        },
+        {
+          "type": "text",
+          "id": "tab_text",
+          "label": "Tab tekst",
+          "default": "Tekst"
         },
         {
           "type": "select",
