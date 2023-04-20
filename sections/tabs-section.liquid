@@ -29,7 +29,8 @@
               {%- if block.settings.image != blank -%}
                 {{ block.settings.image | image_url: width: 320, height: 240 | class:'card-media' | image_tag:
                   loading: 'lazy',
-                  sizes: " (max-width: 576px) 165px, 320px"
+                  sizes: sizes,
+                  widths: '165, 320'
                 }}
               {%- else -%}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
