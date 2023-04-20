@@ -23,6 +23,7 @@
     <label for="tabone">{{ section.settings.tab_1_title | escape }}</label>
     <div class="tab">
       <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
+      {% if block.settings.vertical_alignment == 'zdjęcie' %}
       <div class="tab--image__container">
         <div class="tab-image">
           {%- if block.settings.image != blank -%}
@@ -34,6 +35,9 @@
           {%- else -%}
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
+        {% elsif block.settings.vertical_alignment == 'tekst' %}
+        <p>Tekst</p>
+        {% endif %}
         </div>
       </div>
     </div>
@@ -103,6 +107,22 @@
       "type": "block",
       "name": "tab",
       "settings": [
+        {
+          "type": "select",
+          "id": "vertical_alignment",
+          "label": "Vertical alignment",
+          "options": [
+            {
+              "value": "zdjęcie",
+              "label": "Zdjęcie"
+            },
+            {
+              "value": "Tekst",
+              "label": "Tekst"
+            }
+          ],
+          "default": "Tekst"
+        },
         {
         "id": "image",
         "type": "image_picker",
