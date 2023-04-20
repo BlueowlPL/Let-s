@@ -17,35 +17,32 @@
 
 
 <div class="page-width section-{{ section.id }}-padding">
- <div class="tabs-section">
-  {% for block in section.blocks %}
-    <input type="radio" name="tabs" id="tabone" checked="checked">
-    <label for="tabone">{{ section.settings.tab_1_title | escape }}</label>
-    <div class="tab">
-      <p>Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.</p>
-      {% if block.settings.vertical_alignment == 'zdjęcie' %}
-      <div class="tab--image__container">
-        <div class="tab-image">
-          {%- if block.settings.image != blank -%}
-            {{ block.settings.image | image_url: width: 320, height: 240 | class:'card-media' | image_tag:
-              loading: 'lazy',
-              sizes: sizes,
-              widths: '165, 320'
-            }}
-          {%- else -%}
-            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-          {%- endif -%}
-        </div>
-      </div>
+  <div class="tabs-section">
+    {% for block in section.blocks %}
+      <input type="radio" name="tabs-{{ section.id }}" id="tab{{ forloop.index }}" {% if forloop.first %}checked="checked"{% endif %}>
+      <label for="tab{{ forloop.index }}">{{ block.settings.tab_title | escape }}</label>
+      <div class="tab">
+        {% if block.settings.vertical_alignment == 'zdjęcie' %}
+          <div class="tab--image__container">
+            <div class="tab-image">
+              {%- if block.settings.image != blank -%}
+                {{ block.settings.image | image_url: width: 320, height: 240 | class:'card-media' | image_tag:
+                  loading: 'lazy',
+                  sizes: " (max-width: 576px) 165px, 320px"
+                }}
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+          </div>
         {% elsif block.settings.vertical_alignment == 'tekst' %}
-        <p>Tekst</p>
+          <p>Tekst</p>
         {% endif %}
-        </div>
       </div>
-    </div>
     {% endfor %}
   </div>
 </div>
+
   
   {% comment %}
     {% if section.settings.tab_2_title != blank %}
