@@ -1,0 +1,125 @@
+{% style %}
+
+  .categories-preview--container {
+    --fontSize: 3rem;
+
+    padding: 2rem !important;
+
+
+  }
+  .categories-preview--switch {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+
+    border: 5px solid #1212120a;
+    user-select: none;
+    border-radius: var(--fontSize);
+  }
+  .categories-preview--switch > span {
+    cursor: pointer;
+    padding: 1rem 3rem;
+    font-size: var(--fontSize);
+
+  }
+  #categories-preview--switch-slide-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-radius: var(--fontSize);
+    z-index: -2;
+
+    background: #1212120a;
+
+  }
+  #categories-preview--switch-slide {
+    box-shadow: 0 4.63253px 12.3534px rgba(0, 0, 0, 0.12), 0 4.63253px 1.54418px rgba(0, 0, 0, 0.04);
+    /* border: 0.2rem solid #1212120a; */
+    border-radius: var(--fontSize) !important;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    transition: transform 0.2s;
+    height: 100%;
+    background-color: #fff !important;
+
+  }
+
+
+  .categories-preview--content {
+
+    transition: opacity 0.3s linear;
+  }
+  .categories-preview--h1 {
+    text-align: center;
+  }
+{% endstyle %}
+
+
+
+{% assign dummyArr = "Category 1,Category 2,Category 3,Category 4,Category 5" | split: ',' %}
+{% assign dummyArrContent = "Category 1 - content,Category 2 - content,Category 3 - content,Category 4 - content,Category 5 - content" %}
+
+<div class="categories-preview--container">
+  <div class="categories-preview--switch">
+    {% for item in dummyArr %}
+      <span id={{item | replace:' ', '-'}}>{{ item }}</span>
+    {%- endfor %}
+    <span id="categories-preview--switch-slide-background"></span>
+    <span id="categories-preview--switch-slide"></span>
+  </div>
+  <div class="categories-preview--content-container"></div>
+
+
+
+</div>
+
+<script>
+  const liquidContent = '{{dummyArrContent}}'
+  const content = liquidContent.split(',')
+
+  const container = document.querySelector('.categories-preview--switch')
+  const contentContainer = document.querySelector('.categories-preview--content-container')
+  const slider = document.querySelector('#categories-preview--switch-slide')
+  let categoryIndicator = container.children[0].id;
+  slider.style.width = `${
+    100 / (container.children.length - 2)
+  }%`;
+  const div = document.createElement('div')
+  div.className = 'categories-preview--content'
+  const h1 = document.createElement('h1')
+  h1.className = 'categories-preview--h1'
+  div.append(h1)
+  h1.textContent = content[0]
+  contentContainer.append(div)
+
+
+  for (const child of container.children) {
+    child.addEventListener('click', function() {
+      const elementIndex = [... container.children].indexOf(this);
+      categoryIndicator = this.id
+      slider.style.transform = `translateX(${
+        elementIndex * 100
+      }%)`;
+      div.style.opacity = "0"
+      setTimeout(() => {
+        h1.textContent = content[elementIndex]
+        div.style.opacity = "1"
+      }, 300);
+
+
+    })
+  }
+</script>
+
+
+
+{% schema %}
+  {
+    "name": "categories-preview",
+    "settings": []
+  }
+{% endschema %}
