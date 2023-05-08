@@ -2244,12 +2244,6 @@ input[type='checkbox'] {
   z-index: 1;
 }
 
-.header-wrapper::before {
-  content: url(https://cdn.shopify.com/s/files/1/0706/3761/7469/files/Vector.svg?v=1683531919);
-  position: absolute;
-  height: 100%;
-}
-
 .header-wrapper--border-bottom {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
