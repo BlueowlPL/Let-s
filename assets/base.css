@@ -2246,7 +2246,12 @@ input[type='checkbox'] {
 
 .header-wrapper::before {
   content: '123';
-  
+  position: absolute;
+  width: 269.5px;
+  height: 96px;
+  left: 0px;
+  top: 96px;
+  background: #E4BBCB;
 }
 
 .header-wrapper--border-bottom {
