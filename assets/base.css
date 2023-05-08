@@ -2412,6 +2412,10 @@ input[type='checkbox'] {
   margin-right: -1.2rem;
 }
 
+.header .cart.total_price {
+  margin-left: 1em;
+}
+
 @media screen and (max-width: 989px) {
   menu-drawer ~ .header__icons .header__icon--account {
     display: none;
