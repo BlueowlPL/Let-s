@@ -2244,7 +2244,7 @@ input[type='checkbox'] {
   z-index: 1;
 }
 
-.header-wrapper::after {
+.header-wrapper::before {
   content: '123';
   
 }
