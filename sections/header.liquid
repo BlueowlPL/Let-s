@@ -622,8 +622,8 @@
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
         {%- endif -%}
-        {{ cart.total_price | money_with_currency }}
       </a>
+                    {{ cart.total_price | money_with_currency }}
     </div>
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
