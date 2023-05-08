@@ -2412,7 +2412,7 @@ input[type='checkbox'] {
   margin-right: -1.2rem;
 }
 
-.header .cart.total_price {
+.header .cart_total_price {
   margin-left: 1em;
 }
 
