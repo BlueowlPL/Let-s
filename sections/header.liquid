@@ -622,6 +622,7 @@
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
         {%- endif -%}
+        {{ cart.total_price | money_with_currency }}
       </a>
     </div>
   </header>
