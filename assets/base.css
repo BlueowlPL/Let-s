@@ -2247,11 +2247,6 @@ input[type='checkbox'] {
 .header-wrapper::before {
   content: url(https://cdn.shopify.com/s/files/1/0706/3761/7469/files/Vector.svg?v=1683531919);
   position: absolute;
-  width: 269.5px;
-  height: 96px;
-  left: 0px;
-  top: 96px;
-  background: #E4BBCB;
 }
 
 .header-wrapper--border-bottom {
