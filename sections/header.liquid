@@ -623,7 +623,7 @@
           </div>
         {%- endif -%}
       </a>
-                    {{ cart.total_price }}
+                    {{ cart.total_price | money_without_currency_currency }}
     </div>
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
