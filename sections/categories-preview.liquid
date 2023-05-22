@@ -35,7 +35,7 @@
   }
   #categories-preview--switch-slide {
     box-shadow: 0 4.63253px 12.3534px rgba(0, 0, 0, 0.12), 0 4.63253px 1.54418px rgba(0, 0, 0, 0.04);
-    /* border: 0.2rem solid #1212120a; */
+
     border-radius: var(--fontSize) !important;
     z-index: -1;
     position: absolute;
@@ -72,7 +72,9 @@
     <span id="categories-preview--switch-slide"></span>
   </div>
   <div class="categories-preview--content-container"></div>
-
+  {% for collection in collections %}
+    {{- collection.title | link_to: collection.url }}
+  {% endfor %}
 
 
 </div>

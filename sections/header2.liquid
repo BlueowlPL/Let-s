@@ -1,0 +1,105 @@
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ 'component-header2.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+
+
+
+<style></style>
+
+
+
+<header class="header-wrapper flex">
+  {{ 'nav-pink-sprite.svg' | asset_url | img_tag: 'pink-sprite', "pink-nav-sprite" }}
+  {{ 'logo-letters.svg' | asset_url | img_tag: 'Logo letters', "logo-letters" }}
+  <nav role="navigation">
+    <ul class="header__main-links">
+      {%- for link in linklists.test-menu.links -%}
+        <li class="{% if link.links != blank %}availableExpand{% endif %}">
+          <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+            {{ link.title }}
+          </a>
+
+          {%- if link.links != blank -%}
+            <ul class="second-list">
+              <div class="flex second-list-links-container">
+
+                {%- for child_link in link.links -%}
+                  <li class="flex-col">
+                    <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+                      {{ child_link.title }}
+                    </a>
+
+                    {%- if child_link.links != blank -%}
+                      <ul>
+                        {%- for grandchild_link in child_link.links -%}
+                          <li>
+                            <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+                              {{ grandchild_link.title }}
+                            </a>
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif -%}
+
+                  </li>
+                {%- endfor -%}
+              </div>
+              <div class="second-list-footer flex">
+                <ul class="flex">
+                  <li>MUST HAVE</li>
+                  <li>POMYSŁ NA PREZENT</li>
+                  <li>ZESTAWY</li>
+                  <li>WSZYSTKIE PRODUKTY</li>
+                </ul>
+                <ul class="flex">
+                  <button>WIOSNA-LATO</button>
+                  <button disabled aria-disabled="true">JESIEŃ-ZIMA</button>
+                </ul>
+              </div>
+
+            </ul>
+
+          {%- endif -%}
+
+        </li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+  <summary
+    class="header-summary flex"
+    aria-haspopup="dialog"
+    aria-label="{{ 'general.search.search' | t }}">
+    <a href="#" class="nav-icon">
+      {% render 'icon-search', class: "nav-icon" %}
+    </a>
+
+    <a href="#" class="nav-icon">
+      {% render 'icon-account', class: "nav-icon" %}
+    </a>
+    <a href="{{ routes.cart_url }}" class="nav-icon">
+      <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+      <span class="flex header-cart ">
+        {% render 'icon-cart2', class: "nav-icon" %}
+        <span class="header-cart-items-count">0</span>
+      </span>
+      <span class="cart-money-indicator">
+        {{ 10000 | money }}
+      </span>
+    </a>
+
+
+
+  </summary>
+</header>
+
+
+
+{% schema %}
+  {
+    "name": "header2",
+    "settings": []
+  }
+{% endschema %}
