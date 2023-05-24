@@ -1,0 +1,108 @@
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ 'component-footer2.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+
+
+
+<footer>
+  {{ 'nav-pink-sprite.svg' | asset_url | img_tag: 'pink-sprite', "footer__pink-nav-sprite" }}
+  {{ 'logo-letters.svg' | asset_url | img_tag: 'Logo letters', "footer__logo-letters" }}
+  <div class="footer__mobile-top-bar">
+    {% render 'pink-sprites-background' %}
+  </div>
+  <div class="footer__sections-container flex">
+    <div class="footer__first_section flex-col">
+      <p>My nadążamy za Twoim aktywnym trybem życia, a Ty możesz nadążać za naszymi nowościami. Zostaw nam swojego maila i otrzymuj porady oraz oferty specjalne!</p>
+      <p>
+        <span>ZAPIS DO NEWSLETTERA</span>
+        Pamiętaj, że możesz zrezygnować w każdej chwili.
+      </p>
+      <div>
+        <form class="" action="">
+          <div class="flex">
+            <input type="text" placeholder="myemail@email.com">
+          </div>
+          <button type="submit">wyślij</button>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="footer__second_section">
+      <div>
+        <div class="flex  footer__collapsible-header">
+          <h3>Pomoc</h3>
+          <span class="footer__chevron-down">{% render 'icon-chevron-down' %}</span>
+        </div>
+        <div class="footer__collapsible-content">
+          <a href="#">Regulamin Polityka Prywatności</a>
+          <a href="#">Dostawa, zamówienia i płatności</a>
+          <a href="#">Zwroty FAQ
+          </div>
+        </a>
+      </div>
+      <div>
+        <div class="flex  footer__collapsible-header">
+          <h3>Kontakt</h3>
+          <span class="footer__chevron-down">{% render 'icon-chevron-down' %}</span>
+        </div>
+        <div class="footer__collapsible-content flex-col">
+          <span>Obsługa klienta</span>
+          <span>lets@nazwa.com</span>
+          <span>Jesteśmy tutaj od 9:00 do 16:00</span>
+          <span>Współpraca +48 48 111 111 111</span>
+          <span>Adres ul. / kod pocztowy</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer__third_section">
+      <div>
+        <div class="flex footer__collapsible-header">
+          <h3>O nas</h3>
+          <span class="footer__chevron-down">{% render 'icon-chevron-down' %}</span>
+        </div>
+        <div class="footer__collapsible-content">
+          <a href="#">Sklep</a>
+          <a href="#">O nas</a>
+          <a href="#">Program lojalnościowy</a>
+          <a href="#">Blog</a>
+          <a href="#">Zapytaj ekspertki</a>
+        </div>
+      </div>
+      <div>
+        <h3>Let's do this together!</h3>
+        <span class="footer__watch-us-span">Obserwuj nas</span>
+        <div class="footer_social-links-container flex">
+          <a href="#" class="footer__social-link">{% render 'icon-facebook' %}</a>
+          <a href="#" class="footer__social-link">{% render 'icon-twitter' %}</a>
+          <a href="#" class="footer__social-link">{% render 'icon-instagram' %}</a>
+          <a href="#" class="footer__social-link">{% render 'icon-linkedin' %}</a>
+          <a href="#" class="footer__social-link">{% render 'icon-tiktok' %}</a>
+          <a href="#" class="footer__social-link">{% render 'icon-pinterest' %}</a>
+        </div>
+        <small>&copy; 2023 Blue Owl.All rights reserved</small>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+</footer>
+
+
+<script>
+  const chevronsFooter = Array.from(document.getElementsByClassName('footer__chevron-down'));
+  const collapsibleContents = Array.from(document.getElementsByClassName('footer__collapsible-content'));
+  console.log(collapsibleContents)
+  chevronsFooter.forEach((chevron, index) => chevron.addEventListener('click', (e) => {
+    collapsibleContents[index].classList.toggle('expand');
+    e.currentTarget.classList.toggle('active');
+  }))
+</script>

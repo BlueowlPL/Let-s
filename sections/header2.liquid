@@ -7,31 +7,25 @@
 
 
 
-<style></style>
-
-
 
 <header class="header-wrapper flex">
   {{ 'nav-pink-sprite.svg' | asset_url | img_tag: 'pink-sprite', "pink-nav-sprite" }}
   {{ 'logo-letters.svg' | asset_url | img_tag: 'Logo letters', "logo-letters" }}
   <nav role="navigation">
-    <ul class="header__main-links-desktop">
+    <ul class="header__desktop-main-links">
       {%- for link in linklists.test-menu.links -%}
         <li class="{% if link.links != blank %}availableExpand{% endif %}">
           <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
             {{ link.title }}
           </a>
-
           {%- if link.links != blank -%}
-            <ul class="second-list">
-              <div class="flex second-list-links-container">
-
+            <ul class="header__desktop-second-list">
+              <div class="flex header__desktop-second-list-links-container">
                 {%- for child_link in link.links -%}
                   <li class="flex-col">
                     <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
                       {{ child_link.title }}
                     </a>
-
                     {%- if child_link.links != blank -%}
                       <ul>
                         {%- for grandchild_link in child_link.links -%}
@@ -43,11 +37,10 @@
                         {%- endfor -%}
                       </ul>
                     {%- endif -%}
-
                   </li>
                 {%- endfor -%}
               </div>
-              <div class="second-list-footer flex">
+              <div class="flex header__desktop-second-list-footer">
                 <ul class="flex">
                   <li>MUST HAVE</li>
                   <li>POMYSŁ NA PREZENT</li>
@@ -59,15 +52,12 @@
                   <button disabled aria-disabled="true">JESIEŃ-ZIMA</button>
                 </ul>
               </div>
-
             </ul>
-
           {%- endif -%}
-
         </li>
       {%- endfor -%}
     </ul>
-    <div class="header__main-links-mobile" id="dropdown-menu">
+    <div class="header__main-links-mobile header__mobile-main-links" id="dropdown-menu">
       <form
         action="{{ routes.search_url }}"
         method="get"
@@ -75,14 +65,11 @@
         class="search search-modal__form">
 <div class="search-input-container flex" style="">
   <span class="nav-icon">
-
     {% render 'icon-search' %}
     </span>
   <input       placeholder="{{ 'general.search.search' | t }}"   type="search">
 </div>
-
         {% comment %}
-          
         <div class="field">
           <input
           class="search__input field__input"
@@ -113,7 +100,6 @@
           </button>
           </div>
         {% endcomment %}
-
           {%- if settings.predictive_search_enabled -%}
             <div
               class="predictive-search predictive-search--header"
@@ -137,7 +123,6 @@
               </svg>
             </div>
           </div>
-
           <span
             class="predictive-search-status visually-hidden"
             role="status"
@@ -152,7 +137,7 @@
                 <div class="">
                   {%- for child_link in link.links -%}
                     <li class="">
-                      <div class="dropdown-menu-child flex">
+                      <div class="header__mobile-second-list-container flex">
                         <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
                           {{ child_link.title }}
                         </a>
@@ -161,7 +146,7 @@
                         </button>
                       </div>
                       {%- if child_link.links != blank -%}
-                        <ul class="dropdown-menu-grand-child-list">
+                        <ul class="header__mobile-third-list-container">
                           {%- for grandchild_link in child_link.links -%}
                             <li>
                               <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
@@ -174,14 +159,10 @@
                     </li>
                   {%- endfor -%}
                 </div>
-      
-
-                <div class="second-list-mobile-footer">
-
-                  <div class="flex mini-slider" >
-                    <div class="mobile-footer-links-container flex">
+                <div class="header__mobile-second-list-footer">
+                  <div class="flex header__mobile-mini-slider" >
+                    <div class="mobile-footer-links-container  flex hedaer__mobile-footer-links-container">
                       <ul class="flex" id="mobile-footer-links">
-                   
                         </ul>
                         </div>
                         <button>
@@ -190,15 +171,13 @@
                       </span>
                     </button>
                   </div>
-                  <ul class="flex mobile-second-list-footer">
+                  <ul class="flex hedaer__mobile-footer-buttons-container">
                     <button>WIOSNA-LATO</button>
                     <button disabled aria-disabled="true">JESIEŃ-ZIMA</button>
                   </ul>
                 </div>
 
               </ul>
-
-
             </li>
           {%- endif -%}
         {%- endfor -%}
@@ -232,11 +211,8 @@
       </span>
       <span class="nav-icon " id="icon-close">
         {% render 'icon-close' %}
-
       </span>
     </button>
-
-
   </summary>
 </header>
 
@@ -272,12 +248,10 @@
     hamburgerIcon.classList.toggle("active");
     dropDown.classList.toggle("active");
   };
-  
   Array.from(chevrons).forEach(function (element) {
     element.addEventListener("click", (e) => {
       const chevron = e.currentTarget;
       chevron.closest("div").nextSibling.classList.toggle("expand");
-  
       chevron.classList.toggle("active");
     });
   });
@@ -331,7 +305,6 @@
     if (tripleArr.length) {
       const div = document.createElement("div");
       div.classList.add("mobile-footer-links-cluster");
-  
       div.style.width = `${
         document.getElementsByClassName("mobile-footer-links-container")[0]
           .clientWidth
@@ -344,11 +317,8 @@
       mobileFooterLinks.appendChild(div);
       tripleArr = [];
     }
-  };
-  
+  }
   window.addEventListener("DOMContentLoaded", () => formFooterLinksDom());
-
-
 </script>
 
 {% schema %}
