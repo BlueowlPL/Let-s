@@ -24,6 +24,11 @@ button {
   text-decoration: none;
 }
 
+nav {
+  height: 100%;
+}
+
+
 .cart-money-indicator {
   margin-left: 10px;
   display: none;
@@ -85,6 +90,10 @@ button {
   left: 2rem;
 }
 
+.header__desktop-main-links {
+  height: 100%;
+}
+
 .header__desktop-main-links *,
 .header__mobile-main-links * {
   list-style: none;
@@ -107,7 +116,7 @@ button {
 
 
 .header__desktop-main-links>li>a {
-  margin-inline: 3.2rem;
+  margin-inline: 2rem;
   font-weight: 700;
 }
 
@@ -341,13 +350,9 @@ button {
 }
 
 @media only screen and (min-width:768px) {
-  .header__desktop-main-links {
-    display: flex;
-  }
-
   .header-wrapper {
     height: 9.6rem;
-    justify-content: center;
+
   }
 
   .pink-nav-sprite {
@@ -362,6 +367,12 @@ button {
     margin-left: 1rem;
     display: block;
   }
+}
+
+@media only screen and (min-width:1180px) {
+  .header__desktop-main-links {
+    display: flex;
+  }
 
   .hamburger {
     display: none;
@@ -371,4 +382,14 @@ button {
     display: none;
   }
 
+}
+
+@media only screen and (min-width:1440px) {
+  .header__desktop-main-links>li>a {
+    margin-inline: 3.2rem;
+  }
+
+  .header-wrapper {
+    justify-content: center;
+  }
 }
