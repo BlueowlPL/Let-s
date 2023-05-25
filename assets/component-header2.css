@@ -203,6 +203,13 @@ nav {
   flex-shrink: 0;
 }
 
+.mobile-footer-links-cluster a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .header__mobile-second-list-footer li {
   flex-shrink: 0;
 }

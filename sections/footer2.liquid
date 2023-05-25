@@ -100,7 +100,6 @@
 <script>
   const chevronsFooter = Array.from(document.getElementsByClassName('footer__chevron-down'));
   const collapsibleContents = Array.from(document.getElementsByClassName('footer__collapsible-content'));
-  console.log(collapsibleContents)
   chevronsFooter.forEach((chevron, index) => chevron.addEventListener('click', (e) => {
     collapsibleContents[index].classList.toggle('expand');
     e.currentTarget.classList.toggle('active');
