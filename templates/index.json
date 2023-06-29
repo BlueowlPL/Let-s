@@ -48,13 +48,13 @@
           "settings": {
             "slide_image": "shopify:\/\/shop_images\/slide-2.jpg",
             "slide_title": "“Almost before we knew it!",
-            "heading_size": "h2",
-            "heading_color": "#000000",
-            "heading_bold": false,
+            "heading_size": "h1",
+            "heading_color": "#ffffff",
+            "heading_bold": true,
             "slide_description": "Content is UX. If the primary purpose of websites is to deliver .",
             "description_size": "h4",
-            "description_color": "#000000",
-            "description_bold": false
+            "description_color": "#ffffff",
+            "description_bold": true
           }
         }
       },
