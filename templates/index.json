@@ -36,10 +36,19 @@
             "slide_title": "",
             "slide_description": ""
           }
+        },
+        "a894f6ef-0d9a-4c7e-8aef-f2d0988979b2": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/slide-2.jpg",
+            "slide_title": "",
+            "slide_description": ""
+          }
         }
       },
       "block_order": [
-        "a45b5ff0-afc5-461c-9f2f-a073f287920f"
+        "a45b5ff0-afc5-461c-9f2f-a073f287920f",
+        "a894f6ef-0d9a-4c7e-8aef-f2d0988979b2"
       ],
       "settings": {
         "section_title": "",
