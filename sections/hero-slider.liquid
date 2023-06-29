@@ -16,8 +16,16 @@
         </div>
       {% endfor %}
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev custom-swiper-button-prev">
+      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <use xlink:href="{{ section.settings.arrow_icon }}"></use>
+      </svg>
+    </div>
+    <div class="swiper-button-next custom-swiper-button-next">
+      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <use xlink:href="{{ section.settings.arrow_icon }}"></use>
+      </svg>
+    </div>
   </div>
 
 {% schema %}
@@ -32,6 +40,11 @@
         "type": "text",
         "label": "Section Description",
         "id": "section_description"
+      },
+      {
+        "type": "icon_picker",
+        "label": "Arrow Icon",
+        "id": "arrow_icon"
       }
     ],
     "presets": [
@@ -71,6 +84,7 @@
   margin: 0 auto;
   max-height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .swiper-slide {
@@ -87,6 +101,10 @@
   object-fit: cover;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  display: flex !important;
+}
+
 {% endstylesheet %}
 
 {% javascript %}
@@ -95,6 +113,10 @@ window.addEventListener('DOMContentLoaded', function() {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+      disabledClass: 'swiper-button-disabled',
+      hiddenClass: 'swiper-button-hidden',
+      prevEl: '.custom-swiper-button-prev',
+      nextEl: '.custom-swiper-button-next',
     },
     loop: true,
   });
