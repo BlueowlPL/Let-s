@@ -22,8 +22,8 @@
       </svg>
     </div>
     <div class="swiper-button-next custom-swiper-button-next">
-        {%- assign height = section.settings.arrow_icon.width | divided_by: section.settings.arrow_icon.aspect_ratio | round -%}
-        {{ section.settings.arrow_icon | image_url: width: 42 | image_tag:
+        {%- assign height = section.settings.arrow_icon_next.width | divided_by: section.settings.arrow_icon_next.aspect_ratio | round -%}
+        {{ section.settings.arrow_icon_next | image_url: width: 42 | image_tag:
             loading: 'lazy',
             height: height
         }}
@@ -47,7 +47,7 @@
     {
       "type": "image_picker",
       "label": "Arrow Icon",
-      "id": "arrow_icon",
+      "id": "arrow_icon_next",
       "info": "Select an SVG icon for the arrow buttons"
     }
   ],
