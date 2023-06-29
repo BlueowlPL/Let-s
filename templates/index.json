@@ -53,7 +53,8 @@
       "settings": {
         "section_title": "",
         "section_description": "",
-        "arrow_icon_next": "shopify:\/\/shop_images\/chevron-right.svg"
+        "arrow_icon_next": "shopify:\/\/shop_images\/chevron-right.svg",
+        "arrow_icon_prev": "shopify:\/\/shop_images\/chevron-left.svg"
       }
     },
     "5cb4573a-362f-48da-ba45-0ad73cf35ee2": {
