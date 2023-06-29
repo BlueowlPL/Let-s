@@ -277,6 +277,15 @@ window.addEventListener('DOMContentLoaded', function() {
       nextEl: '.custom-swiper-button-next',
     },
     loop: true,
+    breakpoints: {
+    920: {
+      navigation: true,
+    },
+    // when window width is >= 480px
+    300: {
+      navigation: false,
+    }
+  }
   });
 });
 {% endjavascript %}
