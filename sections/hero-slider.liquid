@@ -43,6 +43,7 @@
             height: height
         }}
     </div>
+    <div class="swiper-pagination"></div>
   </div>
 
 {% schema %}
@@ -279,11 +280,14 @@ window.addEventListener('DOMContentLoaded', function() {
     loop: true,
     breakpoints: {
     920: {
-        navigation: false,
+        pagination: false,
       },
-      0: {
-        navigation: true,
-      } 
+    300: {
+       pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    } 
   }
   });
 });
