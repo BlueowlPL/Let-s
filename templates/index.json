@@ -33,8 +33,8 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify:\/\/shop_images\/slide-1.jpg",
-            "slide_title": "",
-            "slide_description": ""
+            "slide_title": "“Almost before we knew it!",
+            "slide_description": "Content is UX. If the primary purpose of websites is to deliver ."
           }
         },
         "a894f6ef-0d9a-4c7e-8aef-f2d0988979b2": {
@@ -51,8 +51,6 @@
         "a894f6ef-0d9a-4c7e-8aef-f2d0988979b2"
       ],
       "settings": {
-        "section_title": "",
-        "section_description": "",
         "arrow_icon_next": "shopify:\/\/shop_images\/chevron-right.svg",
         "arrow_icon_prev": "shopify:\/\/shop_images\/chevron-left.svg"
       }
