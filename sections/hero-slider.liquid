@@ -22,7 +22,7 @@
             {%- endif -%}
             {%- if slide.settings.button_label != blank -%}
               <div class="slider-button">
-                <a{% if block.settings.button_link %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="button" style="color:{{ slide.settings.button_label_color }}">{{ block.settings.button_label | escape }}</a>
+                <a{% if slide.settings.button_link %} href="{{ slide.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="button" style="color:{{ slide.settings.button_label_color }}">{{ slide.settings.button_label | escape }}</a>
               </div>
             {%- endif -%}
           </div>
