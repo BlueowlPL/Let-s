@@ -1,8 +1,9 @@
 <div class="slider-container">
   <h2>{{ section.settings.section_title }}</h2>
+  <p>{{ section.settings.section_description }}</p>
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      {% for slide in section.settings.slides %}
+      {% for slide in blocks.settings.slide_image %}
         <div class="swiper-slide">
           <div class="slider-slide">
             <img class="slider-image" src="{{ slide.slide_image | img_url }}" alt="Slide Image">
