@@ -13,12 +13,14 @@
           {%- else -%}
             {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
-          {%- if slide.settings.slide_title -%}
-            <h2>{{ slide.settings.slide_title }}</h2>
-          {%- endif -%}
-          {%- if slide.settings.slide_description -%}
-            <p>{{ slide.settings.slide_description }}</p>
-          {%- endif -%}
+          <div class="slider-text">
+            {%- if slide.settings.slide_title -%}
+              <h2>{{ slide.settings.slide_title }}</h2>
+            {%- endif -%}
+            {%- if slide.settings.slide_description -%}
+              <p>{{ slide.settings.slide_description }}</p>
+            {%- endif -%}
+          </div>
         </div>
       {% endfor %}
     </div>
