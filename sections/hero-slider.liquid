@@ -3,7 +3,7 @@
   <p>{{ section.settings.section_description }}</p>
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      {% for slide in blocks.settings.slide_image %}
+      {% for slide in section.blocks %}
         <div class="swiper-slide">
           <div class="slider-slide">
             <img class="slider-image" src="{{ slide.slide_image | img_url }}" alt="Slide Image">
