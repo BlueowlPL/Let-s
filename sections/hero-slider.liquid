@@ -18,7 +18,7 @@
               <h2 class="{{ slide.settings.heading_size }}" style="color:{{ slide.settings.heading_color }}; {% if slide.settings.heading_bold == true %} font-weight: bold;{% endif %}">{{ slide.settings.slide_title | escape }}</h2>
             {%- endif -%}
             {%- if slide.settings.slide_description -%}
-              <h4>{{ slide.settings.slide_description }}</h4>
+              <h4 class="{{ slide.settings.description_size }}" style="color:{{ slide.settings.description_color }}; {% if slide.settings.description_bold == true %} font-weight: bold;{% endif %}">{{ slide.settings.slide_description | escape }}</h4>
             {%- endif -%}
           </div>
         </div>
@@ -109,7 +109,37 @@
         }, {
         "type": "checkbox",
         "id": "heading_bold",
-        "label": "Pogrubiony?",
+        "label": "Pogrubienie nagłówka",
+        "default": false
+      }, {
+          "type": "select",
+          "label": "Wielkość opisu",
+          "id": "description_size",
+          "options": [
+            {
+              "value": "h6",
+              "label": "Mały"
+            },
+            {
+              "value": "h5",
+              "label": "Średni"
+            },
+            {
+              "value": "h4",
+              "label": "Duży"
+            }
+          ],
+          "default": "h4",
+          "label": "Duży"
+        }, {
+        "type": "color",
+        "label": "Kolor opisu",
+        "id": "description_color",
+        "default": "#000000"
+        }, {
+        "type": "checkbox",
+        "id": "description_bold",
+        "label": "Pogrubienie opisu",
         "default": false
       }
       ]
