@@ -34,10 +34,13 @@
           "settings": {
             "slide_image": "shopify:\/\/shop_images\/slide-1.jpg",
             "slide_title": "“Almost before we knew it!",
-            "slide_description": "Content is UX. If the primary purpose of websites is to deliver .",
             "heading_size": "h1",
             "heading_color": "#ffffff",
-            "heading_bold": true
+            "heading_bold": true,
+            "slide_description": "Content is UX. If the primary purpose of websites is to deliver .",
+            "description_size": "h4",
+            "description_color": "#ffffff",
+            "description_bold": true
           }
         },
         "a894f6ef-0d9a-4c7e-8aef-f2d0988979b2": {
@@ -45,10 +48,13 @@
           "settings": {
             "slide_image": "shopify:\/\/shop_images\/slide-2.jpg",
             "slide_title": "“Almost before we knew it!",
-            "slide_description": "Content is UX. If the primary purpose of websites is to deliver .",
             "heading_size": "h2",
             "heading_color": "#000000",
-            "heading_bold": false
+            "heading_bold": false,
+            "slide_description": "Content is UX. If the primary purpose of websites is to deliver .",
+            "description_size": "h4",
+            "description_color": "#000000",
+            "description_bold": false
           }
         }
       },
