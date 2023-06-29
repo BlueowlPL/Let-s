@@ -22,13 +22,11 @@
       </svg>
     </div>
     <div class="swiper-button-next custom-swiper-button-next">
-      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         {%- assign height = section.settings.arrow_icon.width | divided_by: section.settings.arrow_icon.aspect_ratio | round -%}
-        <use xlink:href="{{ section.settings.arrow_icon | image_url: width: 42 | image_tag:
-              loading: 'lazy',
-              height: height
-            }}"></use>
-      </svg>
+        {{ section.settings.arrow_icon | image_url: width: 42 | image_tag:
+            loading: 'lazy',
+            height: height
+        }}
     </div>
   </div>
 
