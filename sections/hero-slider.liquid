@@ -73,12 +73,13 @@
   overflow: hidden;
 }
 
-.swiper-slide {  
+.swiper-slide {
+  width: 100% !important; 
   text-align: center;
   display: flex !important;
   align-items: center;
   justify-content: center;
-} 
+}
 
 .swiper-slide img {
   width: 100%;
@@ -96,7 +97,7 @@ window.addEventListener('DOMContentLoaded', function() {
       prevEl: '.swiper-button-prev',
     },
     loop: true,
-    slidesPerView: auto
+    slidesPerView: auto,
   });
 });
 {% endjavascript %}
