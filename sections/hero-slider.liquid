@@ -15,7 +15,7 @@
           {%- endif -%}
           <div class="slider-text">
             {%- if slide.settings.slide_title -%}
-              <h2 class="{{ slide.settings.heading_size }}">{{ slide.settings.slide_title | escape }}</h2>
+              <h2 class="{{ slide.settings.heading_size }}" style="{{ slide.settings.heading_color }}">{{ slide.settings.slide_title | escape }}</h2>
             {%- endif -%}
             {%- if slide.settings.slide_description -%}
               <p>{{ slide.settings.slide_description }}</p>
@@ -101,6 +101,11 @@
           ],
           "default": "h2",
           "label": "Średni"
+        }, {
+        "type": "color",
+        "label": "Kolor nagłówka",
+        "id": "heading_color",
+        "default": "#000000"
         }
       ]
     }
