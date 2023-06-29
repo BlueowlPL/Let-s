@@ -1,7 +1,7 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
       {% for slide in section.blocks %}
-        <div class="swiper-slide">
+        <div class="swiper-slide full">
             {%- if slide.settings.slide_image -%}
             {%- assign height = slide.settings.slide_image.width | divided_by: slide.settings.slide_image.aspect_ratio | round -%}
             {{ slide.settings.slide_image | image_url: width: 3840 | image_tag:
@@ -73,12 +73,15 @@
   overflow: hidden;
 }
 
-.swiper-slide {
-  width: 100% !important; 
+.swiper-slide { 
   text-align: center;
   display: flex !important;
   align-items: center;
   justify-content: center;
+}
+
+.swiper-slide full {
+  width: 100% !important; 
 }
 
 .swiper-slide img {
