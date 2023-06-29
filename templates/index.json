@@ -58,9 +58,9 @@
             "description_size": "h4",
             "description_color": "#ffffff",
             "description_bold": true,
-            "button_label": "Button label",
-            "button_label_color": "#000000",
-            "button_link": ""
+            "button_label": "ODKRYJ",
+            "button_label_color": "#262329",
+            "button_link": "shopify:\/\/pages\/home"
           }
         }
       },
