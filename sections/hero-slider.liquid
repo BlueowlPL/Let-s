@@ -1,12 +1,99 @@
+<div class="slider-container">
+  <h2>{{ section.settings.section_title }}</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      {% for slide in section.settings.slides %}
+        <div class="swiper-slide">
+          <div class="slider-slide">
+            <img class="slider-image" src="{{ slide.slide_image | img_url }}" alt="Slide Image">
+            <h3 class="slider-title">{{ slide.slide_title }}</h3>
+            <p class="slider-description">{{ slide.slide_description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Hero Slider",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Section Title",
+        "id": "section_title"
+      }, {
+        "type": "text",
+        "label": "Section Description",
+        "id": "section_description"
+      }
+    ],
+    "presets": [
+    {
+    "name": "Hero Slider",
+    "category": "ADVANCED LAYOUT"
+    }
+    ],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "label": "Slide Image",
+            "id": "slide_image"
+          }, {
+            "type": "text",
+            "label": "Slide Title",
+            "id": "slide_title"
+          }, {
+            "type": "textarea",
+            "label": "Slide Description",
+            "id": "slide_description"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
 {% stylesheet %}
+.slider-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider-slide {
+  text-align: center;
+  padding: 20px;
+}
+
+.slider-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.slider-title {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.slider-description {
+  margin-top: 5px;
+}
 {% endstylesheet %}
 
 {% javascript %}
+window.addEventListener('DOMContentLoaded', function() {
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  });
+});
 {% endjavascript %}
