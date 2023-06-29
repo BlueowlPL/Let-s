@@ -583,26 +583,26 @@
     "0e849aa9-1ca7-4271-9f1a-b55aa4b97694": {
       "type": "hero-slider",
       "blocks": {
-        "ed122aa8-508f-4520-8040-ce76be8f5a28": {
+        "d851719d-16f9-47f9-830d-9f756d596f82": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify:\/\/shop_images\/Story_Influ_Kasia__1679077598326.jpg",
+            "slide_image": "shopify:\/\/shop_images\/slide-1.jpg",
             "slide_title": "",
             "slide_description": ""
           }
         },
-        "cae02714-41d6-41a8-85d2-1ff548b342c5": {
+        "a0121b32-9a19-470e-b401-64894ee40220": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify:\/\/shop_images\/free-metallic-cosmetic-tube-mockup.jpg",
+            "slide_image": "shopify:\/\/shop_images\/slide-2.jpg",
             "slide_title": "",
             "slide_description": ""
           }
         }
       },
       "block_order": [
-        "ed122aa8-508f-4520-8040-ce76be8f5a28",
-        "cae02714-41d6-41a8-85d2-1ff548b342c5"
+        "d851719d-16f9-47f9-830d-9f756d596f82",
+        "a0121b32-9a19-470e-b401-64894ee40220"
       ],
       "settings": {
         "section_title": "Test Hero",
