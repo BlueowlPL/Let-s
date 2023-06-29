@@ -15,7 +15,7 @@
           {%- endif -%}
           <div class="slider-text">
             {%- if slide.settings.slide_title -%}
-              <h2>{{ slide.settings.slide_title }}</h2>
+              <h2 class="{{ slide.settings.heading_size }}">{{ slide.settings.slide_title | escape }}</h2>
             {%- endif -%}
             {%- if slide.settings.slide_description -%}
               <p>{{ slide.settings.slide_description }}</p>
@@ -81,6 +81,25 @@
           "type": "textarea",
           "label": "Slide Description",
           "id": "slide_description"
+        }, {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h3",
+              "label": "Mały"
+            },
+            {
+              "value": "h2",
+              "label": "Średni"
+            },
+            {
+              "value": "h1",
+              "label": "Duży"
+            }
+          ],
+          "default": "h2",
+          "label": "Średni"
         }
       ]
     }
