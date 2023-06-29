@@ -29,52 +29,56 @@
   </div>
 
 {% schema %}
-  {
-    "name": "Hero Slider",
-    "settings": [
-      {
-        "type": "text",
-        "label": "Section Title",
-        "id": "section_title"
-      }, {
-        "type": "text",
-        "label": "Section Description",
-        "id": "section_description"
-      },
-      {
-        "type": "icon_picker",
-        "label": "Arrow Icon",
-        "id": "arrow_icon"
-      }
-    ],
-    "presets": [
+{
+  "name": "Hero Slider",
+  "settings": [
     {
-    "name": "Hero Slider",
-    "category": "ADVANCED LAYOUT"
+      "type": "text",
+      "label": "Section Title",
+      "id": "section_title"
+    },
+    {
+      "type": "text",
+      "label": "Section Description",
+      "id": "section_description"
+    },
+    {
+      "type": "image_picker",
+      "label": "Arrow Icon",
+      "id": "arrow_icon",
+      "info": "Select an SVG icon for the arrow buttons"
     }
-    ],
-    "blocks": [
-      {
-        "type": "slide",
-        "name": "Slide",
-        "settings": [
-          {
-            "type": "image_picker",
-            "label": "Slide Image",
-            "id": "slide_image"
-          }, {
-            "type": "text",
-            "label": "Slide Title",
-            "id": "slide_title"
-          }, {
-            "type": "textarea",
-            "label": "Slide Description",
-            "id": "slide_description"
-          }
-        ]
-      }
-    ]
-  }
+  ],
+  "presets": [
+    {
+      "name": "Hero Slider",
+      "category": "ADVANCED LAYOUT"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Slide Image",
+          "id": "slide_image"
+        },
+        {
+          "type": "text",
+          "label": "Slide Title",
+          "id": "slide_title"
+        },
+        {
+          "type": "textarea",
+          "label": "Slide Description",
+          "id": "slide_description"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
