@@ -40,7 +40,10 @@
             "slide_description": "Content is UX. If the primary purpose of websites is to deliver .",
             "description_size": "h4",
             "description_color": "#ffffff",
-            "description_bold": true
+            "description_bold": true,
+            "button_label": "ODKRYJ",
+            "button_label_color": "#262329",
+            "button_link": "shopify:\/\/pages\/contact"
           }
         },
         "a894f6ef-0d9a-4c7e-8aef-f2d0988979b2": {
@@ -54,7 +57,10 @@
             "slide_description": "Content is UX. If the primary purpose of websites is to deliver .",
             "description_size": "h4",
             "description_color": "#ffffff",
-            "description_bold": true
+            "description_bold": true,
+            "button_label": "Button label",
+            "button_label_color": "#000000",
+            "button_link": ""
           }
         }
       },
