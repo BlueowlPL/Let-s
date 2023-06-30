@@ -244,8 +244,22 @@
   max-height: 653px;
 }
 
-.swiper-button-next, .swiper-button-prev, .swiper-pagination {
+.swiper-button-next, .swiper-button-prev {
   display: flex !important;
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: block;
+  }
 }
 
 .swiper-button-next {
