@@ -361,7 +361,17 @@
 
 {% javascript %}
 window.addEventListener('DOMContentLoaded', function() {
-  var swiperMain = new Swiper('.mainSwiper', {
+  var swiperThumbs = new Swiper(".thumbnailsSwiper", {
+      loop: true,
+      spaceBetween: 8,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+      direction: 'vertical', 
+    });
+});
+
+var swiperMain = new Swiper('.mainSwiper', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -372,7 +382,7 @@ window.addEventListener('DOMContentLoaded', function() {
     },
     loop: true,
      thumbs: {
-        swiper: swiper,
+        swiper: swiperThumbs,
       },
     breakpoints: {
     920: {
@@ -386,13 +396,4 @@ window.addEventListener('DOMContentLoaded', function() {
       } 
     }
   });
-  var swiper = new Swiper(".thumbnailsSwiper", {
-      loop: true,
-      spaceBetween: 8,
-      slidesPerView: 4,
-      freeMode: true,
-      watchSlidesProgress: true,
-      direction: 'vertical', 
-    });
-});
 {% endjavascript %}
