@@ -20,18 +20,11 @@ window.addEventListener('DOMContentLoaded', function() {
       prevEl: '.custom-swiper-button-prev',
       nextEl: '.custom-swiper-button-next',
     },
-    grabCursor: true,
-    breakpoints: {
-    920: {
-        pagination: false,
-        },
-    300: {
-       pagination: {
+    pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
-        },
-      } 
-    }
+    },
+    grabCursor: true,
   }); 
   swiperMain.controller.control = swiperThumbs; 
   swiperThumbs.controller.control = swiperMain; 
