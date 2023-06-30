@@ -33,7 +33,9 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify:\/\/shop_images\/slide-1.jpg",
-            "slide_title": "“Almost before we knew it!",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0.2,
+            "slide_title": "“Almost before we knew it!“",
             "heading_size": "h1",
             "heading_color": "#ffffff",
             "heading_bold": true,
@@ -50,7 +52,9 @@
           "type": "slide",
           "settings": {
             "slide_image": "shopify:\/\/shop_images\/slide-2.jpg",
-            "slide_title": "“Almost before we knew it!",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0.2,
+            "slide_title": "“Almost before we knew it!“",
             "heading_size": "h1",
             "heading_color": "#ffffff",
             "heading_bold": true,
