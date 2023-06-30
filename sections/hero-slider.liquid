@@ -429,7 +429,7 @@ window.addEventListener('DOMContentLoaded', function() {
       } 
     }
   }); 
-  swiperMain[0].controller.control = swiperThumbs[0];
-  swiperThumbs[0].controller.control = swiperMain[0]; 
+  swiperMain.controller.control = swiperThumbs;
+  swiperThumbs.controller.control = swiperMain; 
 });
 {% endjavascript %}
