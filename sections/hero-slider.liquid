@@ -368,7 +368,6 @@
 {% javascript %}
 window.addEventListener('DOMContentLoaded', function() {
   var swiperThumbs = new Swiper(".thumbnailsSwiper", {
-      loop: true,
       spaceBetween: 8,
       slidesPerView: 4,
       freeMode: true,
@@ -386,7 +385,6 @@ var swiperMain = new Swiper('.mainSwiper', {
       prevEl: '.custom-swiper-button-prev',
       nextEl: '.custom-swiper-button-next',
     },
-    loop: true,
      thumbs: {
         swiper: swiperThumbs,
       },
