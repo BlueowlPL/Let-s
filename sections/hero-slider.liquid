@@ -393,9 +393,9 @@
 {% endstylesheet %}
 
 {% javascript %} 
-var swiperThumbs;
+
 window.addEventListener('DOMContentLoaded', function() {
-  swiperThumbs = new Swiper(".thumbnailsSwiper", {
+  var swiperThumbs = new Swiper(".thumbnailsSwiper", { 
       spaceBetween: 8,
       slidesPerView: 4, 
       freeMode: true,
