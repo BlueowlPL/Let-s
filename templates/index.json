@@ -66,11 +66,71 @@
             "button_label_color": "#262329",
             "button_link": "shopify:\/\/pages\/home"
           }
+        },
+        "e009e6de-22b6-4fd2-a4c2-e82bd714f74a": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/slide-1.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0.2,
+            "slide_title": "",
+            "heading_size": "h2",
+            "heading_color": "#000000",
+            "heading_bold": false,
+            "slide_description": "",
+            "description_size": "h4",
+            "description_color": "#000000",
+            "description_bold": false,
+            "button_label": "Button label",
+            "button_label_color": "#000000",
+            "button_link": ""
+          }
+        },
+        "3e71053c-1afe-4e0b-b0b9-3f3fa78a971a": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/slide-2.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0.2,
+            "slide_title": "",
+            "heading_size": "h2",
+            "heading_color": "#000000",
+            "heading_bold": false,
+            "slide_description": "",
+            "description_size": "h4",
+            "description_color": "#000000",
+            "description_bold": false,
+            "button_label": "Button label",
+            "button_label_color": "#000000",
+            "button_link": ""
+          }
+        },
+        "374c1642-f5a9-4a4a-a128-d827b68bdc94": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify:\/\/shop_images\/slide-1.jpg",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0.2,
+            "slide_title": "",
+            "heading_size": "h2",
+            "heading_color": "#000000",
+            "heading_bold": false,
+            "slide_description": "",
+            "description_size": "h4",
+            "description_color": "#000000",
+            "description_bold": false,
+            "button_label": "Button label",
+            "button_label_color": "#000000",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "a45b5ff0-afc5-461c-9f2f-a073f287920f",
-        "a894f6ef-0d9a-4c7e-8aef-f2d0988979b2"
+        "a894f6ef-0d9a-4c7e-8aef-f2d0988979b2",
+        "e009e6de-22b6-4fd2-a4c2-e82bd714f74a",
+        "3e71053c-1afe-4e0b-b0b9-3f3fa78a971a",
+        "374c1642-f5a9-4a4a-a128-d827b68bdc94"
       ],
       "settings": {
         "arrow_icon_next": "shopify:\/\/shop_images\/chevron-right.svg",
