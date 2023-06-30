@@ -1,4 +1,4 @@
-  <div class="swiper-container">
+  <div class="swiper-container mainSwiper">
     <div class="swiper-wrapper">
       {% for slide in section.blocks %}
         <div class="swiper-slide"> 
@@ -11,9 +11,9 @@
               sizes: "100vw",
               widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
             }}
-          {%- else -%}
-            {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-          {%- endif -%}
+            {%- else -%}
+              {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
           <div class="slider-text">
             {%- if slide.settings.slide_title -%}
               <h2 class="{{ slide.settings.heading_size }}" style="color:{{ slide.settings.heading_color }}; {% if slide.settings.heading_bold == true %} font-weight: bold;{% endif %}">{{ slide.settings.slide_title | escape }}</h2>
@@ -46,6 +46,23 @@
     </div>
     <div class="swiper-pagination"></div> 
   </div>
+  <div thumbsSlider="" class="swiper-container thumbnailsSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        {%- if slide.settings.slide_image -%}
+        {%- assign height = slide.settings.slide_image.width | divided_by: slide.settings.slide_image.aspect_ratio | round -%}
+        {{ slide.settings.slide_image | image_url: width: 3840 | image_tag:
+          loading: 'lazy',
+          height: height,
+          sizes: "100vw",
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+        }}
+        {%- else -%}
+          {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>  
 
 {% schema %}
 {
@@ -328,7 +345,7 @@
 
 {% javascript %}
 window.addEventListener('DOMContentLoaded', function() {
-  var swiper = new Swiper('.swiper-container', {
+  var swiperMain = new Swiper('.mainSwiper', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -338,17 +355,27 @@ window.addEventListener('DOMContentLoaded', function() {
       nextEl: '.custom-swiper-button-next',
     },
     loop: true,
+     thumbs: {
+        swiper: swiper,
+      },
     breakpoints: {
     920: {
         pagination: false,
-      },
+        },
     300: {
        pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
-      },
-    } 
-  }
+        },
+      } 
+    }
   });
+  var swiper = new Swiper(".thumbnailsSwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
 });
 {% endjavascript %}
