@@ -405,6 +405,7 @@ window.addEventListener('DOMContentLoaded', function() {
       slideToClickedSlide: true,
       grabCursor: true,
       centeredSlides: true, 
+      touchRatio: 0.2,
     });
   var swiperMain = new Swiper('.mainSwiper', {
     navigation: {
@@ -428,7 +429,7 @@ window.addEventListener('DOMContentLoaded', function() {
       } 
     }
   }); 
-  swiperMain[0].controller.control = swiperThumbs;
-  swiperThumbs[0].controller.control = swiperMain;
+  swiperMain[0].controller.control = swiperThumbs[0];
+  swiperThumbs[0].controller.control = swiperMain[0]; 
 });
 {% endjavascript %}
