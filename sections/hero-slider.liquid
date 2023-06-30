@@ -1,7 +1,7 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
       {% for slide in section.blocks %}
-        <div class="swiper-slide" style="width:100%">
+        <div class="swiper-slide" style="width:100% !important;"> 
           <div class="img-overlay" style="background:{{ slide.settings.overlay_color | hex_to_rgba: slide.settings.overlay_opacity }}"></div> 
             {%- if slide.settings.slide_image -%}
             {%- assign height = slide.settings.slide_image.width | divided_by: slide.settings.slide_image.aspect_ratio | round -%}
