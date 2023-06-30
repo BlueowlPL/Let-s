@@ -395,7 +395,7 @@ var swiperThumbs;
 window.addEventListener('DOMContentLoaded', function() {
   swiperThumbs = new Swiper(".thumbnailsSwiper", {
       spaceBetween: 8,
-      slidesPerView: 4, 
+      slidesPerView: 'auto',
       freeMode: true,
       watchSlidesProgress: true,
       watchSlidesProgress: true,
@@ -415,7 +415,9 @@ var swiperMain = new Swiper('.mainSwiper', {
       nextEl: '.custom-swiper-button-next',
     },
     grabCursor: true,
-    
+    thumbs: {
+      swiper: swiperThumbs,
+    },
     breakpoints: {
     920: {
         pagination: false,
@@ -428,6 +430,4 @@ var swiperMain = new Swiper('.mainSwiper', {
       } 
     }
   });
-swiperMain.controller.control = swiperThumbs;
-swiperThumbs.controller.control = swiperMain;
 {% endjavascript %}
