@@ -1,3 +1,4 @@
+<div class="section-wrapper">
   <div class="swiper-container mainSwiper">
     <div class="swiper-wrapper">
       {% for slide in section.blocks %}
@@ -64,7 +65,8 @@
         </div>
       {% endfor %}
     </div>
-  </div>  
+  </div> 
+</div>
 
 {% schema %}
 {
@@ -212,6 +214,10 @@
 {% endschema %}
 
 {% stylesheet %}
+.section-wrapper {
+  position: relative
+}
+  
 .mainSwiper { 
   width: 100%;
   max-width: 100%;
@@ -345,6 +351,9 @@
 
 .thumbnailsSwiper {
   overflow: hidden;
+  position: absolute;
+  bottom: 24px;
+  left: 28px;
 
   .swiper-wrapper {
     height: 256px;
