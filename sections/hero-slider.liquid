@@ -399,6 +399,14 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+  var thumbnailSlides = document.querySelectorAll('.thumbnailsSwiper .swiper-slide');
+  thumbnailSlides.forEach(function(slide, index) {
+    slide.addEventListener('click', function() {
+      swiperThumbs.slideTo(index); // Przesuwa swiperThumbs do wybranego indeksu slajdu
+    });
+  });
+});
+
 var swiperMain = new Swiper('.mainSwiper', {
     navigation: {
       nextEl: '.swiper-button-next',
