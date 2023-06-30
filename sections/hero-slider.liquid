@@ -430,6 +430,6 @@ var swiperMain = new Swiper('.mainSwiper', {
       } 
     }
   }); 
-  swiperMain.controller.control = swiperThumbs;
-  swiperThumbs.controller.control = swiperMain; 
+  swiperMain[0].controller.control = swiperThumbs;
+  swiperThumbs[0].controller.control = swiperMain; 
 {% endjavascript %}
