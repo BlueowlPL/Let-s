@@ -47,25 +47,27 @@
     </div>
     <div class="swiper-pagination"></div> 
   </div>
-  <div thumbsSlider="" class="swiper-container thumbnailsSwiper">
-    <div class="swiper-wrapper">
-      {% for slide in section.blocks %}
-        <div class="swiper-slide">
-          {%- if slide.settings.slide_image -%}
-          {%- assign height = slide.settings.slide_image.width | divided_by: slide.settings.slide_image.aspect_ratio | round -%}
-          {{ slide.settings.slide_image | image_url: width: 3840 | image_tag:
-            loading: 'lazy',
-            height: height,
-            sizes: "100vw",
-            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-          }}
-          {%- else -%}
-            {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-          {%- endif -%}
-        </div>
-      {% endfor %}
-    </div>
-  </div> 
+  <div class="thumbnailsSlider">
+    <div thumbsSlider="" class="swiper-container thumbnailsSwiper">
+      <div class="swiper-wrapper">
+        {% for slide in section.blocks %}
+          <div class="swiper-slide">
+            {%- if slide.settings.slide_image -%}
+            {%- assign height = slide.settings.slide_image.width | divided_by: slide.settings.slide_image.aspect_ratio | round -%}
+            {{ slide.settings.slide_image | image_url: width: 3840 | image_tag:
+              loading: 'lazy',
+              height: height,
+              sizes: "100vw",
+              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+            }}
+            {%- else -%}
+              {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </div>
+        {% endfor %}
+      </div>
+    </div> 
+  </div>
 </div>
 
 {% schema %}
@@ -349,20 +351,16 @@
   }
 }
 
-.thumbnailsSwiper {
+.thumbnailsSlider {
   overflow: hidden;
   position: absolute;
   bottom: 24px; 
   left: 28px;
-
-  .swiper-wrapper {
-    height: 256px;
-    width: 80px; 
-  }
+  height: 256px;
+  width: 80px; 
 
   .swiper-wrapper > div {
-    width:80px !important;
-    height: 56px;
+    width:80px !important; 
   }
 
   .swiper-slide img {
