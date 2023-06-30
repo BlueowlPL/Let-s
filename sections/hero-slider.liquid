@@ -2,7 +2,7 @@
     <div class="swiper-wrapper">
       {% for slide in section.blocks %}
         <div class="swiper-slide">
-          <div class="img-overlay"></div> 
+          <div class="img-overlay" style="background:{{ slide.settings.overlay_color | hex_to_rgba: slide.settings.overlay_opacity }}"></div> 
             {%- if slide.settings.slide_image -%}
             {%- assign height = slide.settings.slide_image.width | divided_by: slide.settings.slide_image.aspect_ratio | round -%}
             {{ slide.settings.slide_image | image_url: width: 3840 | image_tag:
@@ -78,6 +78,21 @@
           "type": "image_picker",
           "label": "Obraz slajdu",
           "id": "slide_image"
+        },
+        {
+        "type": "color",
+        "label": "Kolor nakładki",
+        "id": "overlay_color",
+        "default": "#000000"
+        },
+        {
+        "type": "range",
+        "id": "overlay_opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "label": "Przezroczystość nakładki",
+        "default": 0.2
         },
         {
           "type": "text",
@@ -251,8 +266,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.2); 
-  display: block;
+  display: block; 
 }
 
 .swiper-button-next, .swiper-button-prev {
