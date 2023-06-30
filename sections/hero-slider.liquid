@@ -387,13 +387,14 @@
 {% endstylesheet %}
 
 {% javascript %}
+var swiperThumbs;
 window.addEventListener('DOMContentLoaded', function() {
-  var swiperThumbs = new Swiper(".thumbnailsSwiper", {
+  swiperThumbs = new Swiper(".thumbnailsSwiper", {
       spaceBetween: 8,
       slidesPerView: 4,
       freeMode: true,
       watchSlidesProgress: true,
-      direction: 'vertical', 
+      direction: 'vertical',  
     });
 });
 
