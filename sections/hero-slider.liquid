@@ -406,9 +406,7 @@ window.addEventListener('DOMContentLoaded', function() {
       grabCursor: true,
       centeredSlides: true, 
     });
-});
-
-var swiperMain = new Swiper('.mainSwiper', {
+  var swiperMain = new Swiper('.mainSwiper', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -431,5 +429,6 @@ var swiperMain = new Swiper('.mainSwiper', {
     }
   }); 
   swiperMain[0].controller.control = swiperThumbs;
-  swiperThumbs[0].controller.control = swiperMain; 
+  swiperThumbs[0].controller.control = swiperMain;
+});
 {% endjavascript %}
