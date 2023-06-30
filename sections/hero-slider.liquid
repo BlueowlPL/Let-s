@@ -395,13 +395,12 @@ var swiperThumbs;
 window.addEventListener('DOMContentLoaded', function() {
   swiperThumbs = new Swiper(".thumbnailsSwiper", {
       spaceBetween: 8,
-      slidesPerView: 4,
       freeMode: true,
+      watchSlidesProgress: true,
       watchSlidesProgress: true,
       direction: 'vertical',
       slideToClickedSlide: true,
       grabCursor: true,
-      loop: true,
     });
 });
 
@@ -415,7 +414,6 @@ var swiperMain = new Swiper('.mainSwiper', {
       nextEl: '.custom-swiper-button-next',
     },
     grabCursor: true,
-    loop: true,
     thumbs: {
       swiper: swiperThumbs,
     },
