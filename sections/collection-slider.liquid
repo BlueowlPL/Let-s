@@ -60,9 +60,9 @@
     {% endif %}
   </div>
 </div>
+                        
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" async></script>
-<script src="{{ 'section-collection-slider.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
@@ -176,5 +176,26 @@
 {% stylesheet %}
 {% endstylesheet %}
 
-{% javascript %} 
+{% javascript %}
+{% if section.settings.products_to_show > 3 %}
+  window.addEventListener('DOMContentLoaded', function() {
+    var collectionSwiper = new Swiper('.collectionSwiper', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        disabledClass: 'swiper-button-disabled',
+        hiddenClass: 'swiper-button-hidden',
+        prevEl: '.custom-swiper-button-prev',
+        nextEl: '.custom-swiper-button-next',
+      },
+      pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+      },
+      grabCursor: true,
+      slidesPerView: 3,
+      spaceBetween: 24,
+    }); 
+  });
+{% endif %}
 {% endjavascript %}
