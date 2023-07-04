@@ -179,7 +179,7 @@
 {% javascript %}
 
   window.addEventListener('DOMContentLoaded', function() {
-      console.log('{{ section.settings.products_to_show }}');
+      console.log(section.settings.products_to_show); 
       var collectionSwiper = new Swiper('.collectionSwiper', { 
         navigation: {
           nextEl: '.swiper-button-next',
