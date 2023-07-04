@@ -34,15 +34,10 @@
       {% endfor %}
     </div>
     <div class="swiper-button-prev custom-swiper-button-prev">
-      {%- assign height = section.settings.arrow_icon_prev.width | divided_by: section.settings.arrow_icon_prev.aspect_ratio | round -%}
         <img src="{{ 'hero-arrow-left.svg' | asset_url }}"  width="42" height="42" />
     </div>
     <div class="swiper-button-next custom-swiper-button-next">
-        {%- assign height = section.settings.arrow_icon_next.width | divided_by: section.settings.arrow_icon_next.aspect_ratio | round -%}
-        {{ section.settings.arrow_icon_next | image_url: width: 42 | image_tag:
-            loading: 'lazy',
-            height: height
-        }}
+        <img src="{{ 'hero-arrow-right.svg' | asset_url }}"  width="42" height="42" />
     </div>
     <div class="swiper-pagination"></div> 
   </div>
