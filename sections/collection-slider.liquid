@@ -59,6 +59,11 @@
   ],
   "settings": [
     {
+      "type": "image_picker",
+      "id": "section_background",
+      "label": "t:sections.collection-slider.settings.section_background.label"
+    },
+    {
       "type": "text",
       "id": "collection_name",
       "label": "t:sections.collection-slider.settings.collection_name.label"
@@ -142,6 +147,9 @@
 {% endschema %}
 
 {% stylesheet %}
+  .collectionSlider {
+    background-image: url('{{ section.settings.section_background | image_url }}');
+  }
 {% endstylesheet %}
 
 {% javascript %} 
