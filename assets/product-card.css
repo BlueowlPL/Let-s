@@ -6,6 +6,8 @@
     position: absolute;
     top: 0;
     width: 100%;
+    padding: 8px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.00) 100%);
   }
 }
 .product-card img {
