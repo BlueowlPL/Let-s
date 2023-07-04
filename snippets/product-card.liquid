@@ -1,6 +1,8 @@
 {{ 'product-card.css' | asset_url | stylesheet_tag }}
 <div class="swiper-slide product-card"> 
-  <div class="product-type">{{ product_card.type }}</div>
+  <div class="product-type">
+    <span>{{ product_card.type }}</span>
+  </div>
   {%- if product_card.featured_image -%}
   {%- assign height = product_card.featured_image.width | divided_by: product_card.featured_image.aspect_ratio | round -%}
   {{ product_card.featured_image | image_url: width: 400 | image_tag:
