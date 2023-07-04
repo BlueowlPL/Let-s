@@ -1,5 +1,6 @@
 .collectionSlider {
   overflow: hidden;
+  background-image: url('{{ section.settings.section_background | image_url }}');
 
     .slider-wrapper {
       max-width: 1224px;
