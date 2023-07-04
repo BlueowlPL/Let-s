@@ -2594,6 +2594,12 @@
       "settings": {
         "title": {
           "label": "Wybierz kolekcję"
+        },
+        "collection_name": {
+          "label": "Nazwa kolekcji"
+        },
+        "section_heading": {
+          "label": "Nagłówek"
         }
       }
     },
