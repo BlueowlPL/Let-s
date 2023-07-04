@@ -2613,6 +2613,9 @@
         "collection_name_color": {
           "label": "Kolor czcionki"
         },
+        "collection_name_bold": {
+          "label": "Pogrubić czcionkę?"
+        },
         "section_heading": {
           "label": "Nagłówek"
         },
@@ -2630,6 +2633,9 @@
         },
         "heading_color": {
           "label": "Kolor czcionki"
+        },
+        "heading_bold": {
+          "label": "Pogrubić czcionkę?"
         }
       }
     },
