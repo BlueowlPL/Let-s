@@ -6,10 +6,12 @@
     position: absolute;
     top: 0;
     width: 100%;
-    padding: 16px;
+    padding: 8px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.00) 100%);
+  }
+
+  .product-type span {
     color: #454247;
-    font-family: Lato;
     font-size: 12px;
     font-style: normal;
     font-weight: 800;
