@@ -2610,6 +2610,9 @@
             "label": "Duży"
           }
         },
+        "collection_name_color": {
+          "label": "Kolor czcionki"
+        },
         "section_heading": {
           "label": "Nagłówek"
         },
@@ -2624,6 +2627,9 @@
           "options__3": {
             "label": "Duży"
           }
+        },
+        "heading_color": {
+          "label": "Kolor czcionki"
         }
       }
     },
