@@ -1,3 +1,7 @@
 .section-wrapper {
   overflow: hidden;
 }
+
+.swiper-slide {
+  max-width: 392px;
+}
