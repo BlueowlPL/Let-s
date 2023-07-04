@@ -11,6 +11,7 @@
       max-width: 1224px;
       margin: 0 auto;
       overflow: hidden;
+      padding: 80px 16px;
     }
 
     .swiper-button-next {
