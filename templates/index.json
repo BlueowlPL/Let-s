@@ -138,6 +138,7 @@
     "c4705aba-2fa5-45aa-8e75-f34d4c7e151b": {
       "type": "collection-slider",
       "settings": {
+        "section_background": "shopify:\/\/shop_images\/collection-slider-bg.jpg",
         "collection_name": "KOLEKCJA WIOSNA-LATO",
         "collection_name_size": "h3",
         "collection_name_color": "#262329",
