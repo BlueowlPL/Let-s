@@ -13,7 +13,7 @@
         type: 'bullets',
     },
     grabCursor: true,
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 24,
   }); 
 });
