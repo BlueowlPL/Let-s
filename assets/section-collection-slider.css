@@ -7,6 +7,10 @@
       align-items: center;
     }
 
+    .section-title h4, .section-title h2 {
+      margin: 0;
+    }
+
     .slider-wrapper {
       max-width: 1224px;
       margin: 0 auto;
