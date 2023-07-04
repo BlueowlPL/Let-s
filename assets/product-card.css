@@ -44,6 +44,7 @@
   .product-price {
     display: flex;
     align-items: center;
+    gap: 8px;
 
     .price-icon {
       height: 24px;
@@ -60,7 +61,8 @@
     }
 
     .price-promo {
-      
+      color: #262329;
+      font-weight: 800;
     }
   }
 }
