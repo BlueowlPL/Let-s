@@ -48,6 +48,20 @@
     .price-icon {
       height: 24px;
     }
+
+    .price-normal {
+      color: #7A767D;
+      font-size: 16px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      text-decoration-line: strikethrough;
+    }
+
+    .price-promo {
+      
+    }
   }
 }
 .product-card img {
