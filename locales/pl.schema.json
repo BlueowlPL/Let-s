@@ -2585,6 +2585,18 @@
         }
       }
     },
+    "collection-slider": {
+      "name": "Slider Kolekcji",
+      "presets": {
+        "name": "Slider Kolekcji",
+        "category": "ZAAWANSOWANY LAYOUT"
+      },
+      "settings": {
+        "title": {
+          "label": "Slider Kolekcji"
+        }
+      }
+    },
     "slideshow": {
       "name": "Pokaz slajdów",
       "settings": {
