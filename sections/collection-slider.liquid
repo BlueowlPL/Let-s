@@ -4,10 +4,10 @@
   <div class="slider-wrapper">
     <div class="section-title">
       {%- if section.settings.collection_name -%}
-        <h4 class="{{ section.settings.collection_name_size }}" style="color:{{ section.settings.collection_name_color }}; {% if section.settings.collection_name_bold %} font-weight: 800;{% endif %}">{{ section.settings.collection_name | escape }}</h4>
+        <h4 class="{{ section.settings.collection_name_size }}" style="color:{{ section.settings.collection_name_color }}; {% if section.settings.collection_name_bold %} font-weight: bold;{% endif %}">{{ section.settings.collection_name | escape }}</h4>
       {%- endif -%}
       {%- if section.settings.section_heading -%}
-        <h2 class="{{ section.settings.heading_size }}" style="color:{{ section.settings.heading_color }}; {% if section.settings.heading_bold %} font-weight: 800;{% endif %}">{{ section.settings.section_heading | escape }}</h2>
+        <h2 class="{{ section.settings.heading_size }}" style="color:{{ section.settings.heading_color }}; {% if section.settings.heading_bold %} font-weight: bold;{% endif %}">{{ section.settings.section_heading | escape }}</h2>
       {%- endif -%}
     </div>
     {% if section.settings.collection %}
