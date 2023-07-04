@@ -1,5 +1,6 @@
 .product-card {
   max-width: 392px;
+  position: relative;
 }
 .product-card img {
   width: 100%;
