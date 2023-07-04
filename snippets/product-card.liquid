@@ -1,6 +1,5 @@
 <div class="swiper-slide"> 
-  <h3>{{ product_card.title }}</h3>
-  <h3>{{ product_card.type }}</h3>
+  <p>{{ product_card.type }}</p>
   {%- if product_card.featured_image -%}
   {%- assign height = product_card.featured_image.width | divided_by: product_card.featured_image.aspect_ratio | round -%}
   {{ product_card.featured_image | image_url: width: 400 | image_tag:
@@ -12,6 +11,7 @@
   {%- else -%}
     {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
   {%- endif -%}
+  <h5>{{ product_card.title }}</h5>
   {% if product_card.price %}
     <div class="product-price">
       {% if product_card.compare_at_price > product_card.price %}
