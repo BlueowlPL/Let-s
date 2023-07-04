@@ -2598,8 +2598,32 @@
         "collection_name": {
           "label": "Nazwa kolekcji"
         },
+        "collection_name_size": {
+          "label": "Rozmiar czcionki",
+          "options__1": {
+            "label": "Mały"
+          },
+          "options__2": {
+            "label": "Średni"
+          },
+          "options__3": {
+            "label": "Duży"
+          }
+        },
         "section_heading": {
           "label": "Nagłówek"
+        },
+        "heading_size": {
+          "label": "Rozmiar czcionki",
+          "options__1": {
+            "label": "Mały"
+          },
+          "options__2": {
+            "label": "Średni"
+          },
+          "options__3": {
+            "label": "Duży"
+          }
         }
       }
     },
