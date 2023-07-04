@@ -30,5 +30,17 @@
     .swiper-button-next:after, .swiper-button-prev:after {
       content: '' !important; 
     }
+
+  .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background: transparent !important;
+    border: 1px solid #C5BEC5; 
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #262329!important;
+    border: none; 
+  }
 }
 
