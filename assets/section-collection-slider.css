@@ -1,7 +1,7 @@
 .collectionSlider {
   overflow: hidden;
 
-    slider-wrapper {
+    .slider-wrapper {
       max-width: 1224px;
       margin: 0 auto;
       overflow: hidden;
