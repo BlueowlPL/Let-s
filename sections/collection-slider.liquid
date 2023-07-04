@@ -30,10 +30,10 @@
               {%- endif -%}
               {% if product.price %}
                 <div class="product-price">
-                  <span>{{ product.price | money }}</span>
                   {% if product.compare_at_price > product.price %}
                   <span>{{ product.compare_at_price | money }}</span>
                   {% endif %}
+                  <span>{{ product.price | money }}</span>
                 </div>
               {% endif %}
             </div>
