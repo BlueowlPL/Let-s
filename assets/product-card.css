@@ -1,6 +1,7 @@
 .product-card {
   max-width: 392px;
   position: relative;
+  background: #fff;
 
   .product-type {
     position: absolute;
@@ -27,7 +28,6 @@
 
   .product-details {
     padding: 16px;
-    background: #fff;
   }
 
   .product-details h5 {
