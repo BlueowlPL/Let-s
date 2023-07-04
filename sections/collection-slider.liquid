@@ -9,8 +9,19 @@
       <div class="swiper-wrapper">
         {% for product in section.settings.collection.products %}
           <div class="swiper-slide"> 
-             <h3>{{ product.title }}</h3>
-            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}" width="400px" height="400px" />
+            <h3>{{ product.title }}</h3>
+            {%- if product.featured_image -%}
+            {%- assign height = product.featured_image.width | divided_by: product.featured_image.aspect_ratio | round -%}
+            {{ product.featured_image | image_url: width: 400 | image_tag:
+              loading: 'lazy',
+              height: height,
+              sizes: "100vw",
+              widths: '375, 400, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+            }}
+            {%- else -%}
+              {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+            
             <p>{{ product.price | money }}</p> 
           </div>
         {% endfor %}

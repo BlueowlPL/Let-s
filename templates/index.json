@@ -135,6 +135,12 @@
       "settings": {
       }
     },
+    "c4705aba-2fa5-45aa-8e75-f34d4c7e151b": {
+      "type": "collection-slider",
+      "settings": {
+        "collection": "kolekcja-lato-zima"
+      }
+    },
     "5cb4573a-362f-48da-ba45-0ad73cf35ee2": {
       "type": "slideshow",
       "blocks": {
@@ -688,17 +694,12 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "c4705aba-2fa5-45aa-8e75-f34d4c7e151b": {
-      "type": "collection-slider",
-      "settings": {
-        "collection": "kolekcja-lato-zima"
-      }
     }
   },
   "order": [
     "16788054201e42611a",
     "77693a34-1d1a-4940-ba6d-ec6d3cdb33df",
+    "c4705aba-2fa5-45aa-8e75-f34d4c7e151b",
     "5cb4573a-362f-48da-ba45-0ad73cf35ee2",
     "16790794612f3c2dcf",
     "96d8608b-3d5a-43ac-96c4-e9cbacac5c57",
@@ -713,7 +714,6 @@
     "3c0a3f09-6aa1-432f-a9c5-ca0856fda147",
     "ef312dd5-9e0a-4571-a003-505bccf1b0c8",
     "f476da7b-ca46-44dd-ad99-2970e46e7707",
-    "ac42c8db-676a-4735-8df5-8503ee52ad13",
-    "c4705aba-2fa5-45aa-8e75-f34d4c7e151b"
+    "ac42c8db-676a-4735-8df5-8503ee52ad13"
   ]
 }
