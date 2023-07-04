@@ -4,13 +4,12 @@
     .collectionSwiper {
       .swiper-slide {
         max-width: 392px;
-    
-      img {
+    }
+      .swiper-slide img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-    }
   }
 }
 
