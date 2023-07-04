@@ -177,26 +177,27 @@
 {% endstylesheet %}
 
 {% javascript %}
-  console.log({{ section.settings.products_to_show }});
-{% if section.settings.products_to_show > 3 %}
+
   window.addEventListener('DOMContentLoaded', function() {
-    var collectionSwiper = new Swiper('.collectionSwiper', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        disabledClass: 'swiper-button-disabled',
-        hiddenClass: 'swiper-button-hidden',
-        prevEl: '.custom-swiper-button-prev',
-        nextEl: '.custom-swiper-button-next',
-      },
-      pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-      },
-      grabCursor: true,
-      slidesPerView: 3,
-      spaceBetween: 24,
-    }); 
+    {% if section.settings.products_to_show > 3 %}
+      var collectionSwiper = new Swiper('.collectionSwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          disabledClass: 'swiper-button-disabled',
+          hiddenClass: 'swiper-button-hidden',
+          prevEl: '.custom-swiper-button-prev',
+          nextEl: '.custom-swiper-button-next',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        grabCursor: true,
+        slidesPerView: 3,
+        spaceBetween: 24,
+      }); 
+    {% endif %}
   });
-{% endif %}
+
 {% endjavascript %}
