@@ -16,7 +16,7 @@
           {% for product in section.settings.collection.products %}
             <div class="swiper-slide"> 
               <h3>{{ product.title }}</h3>
-              <h3>{{ product.category }}</h3>
+              <h3>{{ product.type }}</h3>
               {%- if product.featured_image -%}
               {%- assign height = product.featured_image.width | divided_by: product.featured_image.aspect_ratio | round -%}
               {{ product.featured_image | image_url: width: 400 | image_tag:
