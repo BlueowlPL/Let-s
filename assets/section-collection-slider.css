@@ -6,6 +6,7 @@
       flex-direction: column;
       align-items: center;
       gap: 16px;
+      margin-bottom: 82px;
     }
 
     .section-title h4, .section-title h2 {
