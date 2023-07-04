@@ -29,6 +29,15 @@
     padding: 16px;
     background: #fff;
   }
+
+  .product-details h5 {
+    color: #262329;
+    font-size: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 22px;
+  }
 }
 .product-card img {
   width: 100%;
