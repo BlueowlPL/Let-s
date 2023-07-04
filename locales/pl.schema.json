@@ -2592,8 +2592,8 @@
         "category": "ZAAWANSOWANY LAYOUT"
       },
       "settings": {
-        "title": {
-          "label": "Wybierz kolekcję"
+        "section_background": {
+          "label": "Tło sekcji"
         },
         "collection_name": {
           "label": "Nazwa kolekcji"
@@ -2636,6 +2636,9 @@
         },
         "heading_bold": {
           "label": "Pogrubić czcionkę?"
+        },
+        "title": {
+          "label": "Wybierz kolekcję"
         }
       }
     },
