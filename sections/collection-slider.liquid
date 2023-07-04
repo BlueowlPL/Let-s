@@ -3,7 +3,12 @@
 <div class="section-wrapper collectionSlider">
   <div class="slider-wrapper">
     <div class="section-title">
-  
+      {%- if section.settings.collection_name -%}
+        <h4 class="{{ section.settings.collection_name_size }}" style="color:{{ section.settings.collection_name_color }}; {% if section.settings.collection_name_bold == true %} font-weight: bold;{% endif %}">{{ section.settings.collection_name | escape }}</h4>
+      {%- endif -%}
+      {%- if section.settings.section_heading -%}
+        <h2 class="{{ section.settings.heading_size }}" style="color:{{ section.settings.heading_color }}; {% if section.settings.heading_bold == true %} font-weight: bold;{% endif %}">{{ section.settings.section_heading | escape }}</h2>
+      {%- endif -%}
     </div>
     {% if section.settings.collection %}
       <div class="swiper-container collectionSwiper">
@@ -53,6 +58,80 @@
     }
   ],
   "settings": [
+    {
+      "type": "text",
+      "id": "collection_name",
+      "label": "t:sections.collection-slider.settings.collection_name.label"
+    },
+    {
+      "type": "select",
+      "id": "collection_name_size",
+      "label": "t:sections.collection-slider.settings.collection_name_size.label",
+      "default": "h3",
+      "options": [
+        {
+          "value": "h5",
+          "label": "t:sections.collection-slider.settings.collection_name_size.options__1.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.collection-slider.settings.collection_name_size.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.collection-slider.settings.collection_name_size.options__3.label"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "collection_name_color",
+      "label": "t:sections.collection-slider.settings.collection_name_color.label",
+      "default": "#000000"
+    },
+    {
+      "type": "checkbox",
+      "id": "collection_name_bold",
+      "label": "t:sections.collection-slider.settings.collection_name_bold.label",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "t:sections.collection-slider.settings.section_heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "t:sections.collection-slider.settings.heading_size.label",
+      "default": "h1",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.collection-slider.settings.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.collection-slider.settings.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.collection-slider.settings.heading_size.options__3.label"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "t:sections.collection-slider.settings.heading_color.label",
+      "default": "#000000"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_bold",
+      "label": "t:sections.collection-slider.settings.heading_bold.label",
+      "default": false
+    },
     {
       "type": "collection",
       "id": "collection",
