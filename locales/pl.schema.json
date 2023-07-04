@@ -2514,16 +2514,6 @@
     },
     "hero-slider": {
       "name": "Hero slider",
-      "settings": {
-        "arrow_icon_next": {
-          "label": "Ikona strzałki - prawa",
-          "info": "Wgraj plik ikony strzałki prawej"
-        },
-        "arrow_icon_prev": {
-          "label": "Ikona strzałki - lewa",
-          "info": "Wgraj plik ikony strzałki lewej"
-        }
-      },
       "presets": {
         "name": "Hero Slider",
         "category": "ZAAWANSOWANY LAYOUT"
