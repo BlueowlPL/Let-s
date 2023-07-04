@@ -1,6 +1,6 @@
 {{ 'section-collection-slider.css' | asset_url | stylesheet_tag }}
 
-<div class="section-wrapper collectionSlider">
+<div class="section-wrapper collectionSlider" style="background-image: url('{{ section.settings.section_background | image_url }}');">
   <div class="slider-wrapper">
     <div class="section-title">
       {%- if section.settings.collection_name -%}
@@ -147,9 +147,6 @@
 {% endschema %}
 
 {% stylesheet %}
-  .collectionSlider {
-    background-image: url('{{ section.settings.section_background | image_url }}');
-  }
 {% endstylesheet %}
 
 {% javascript %} 
