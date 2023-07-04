@@ -2,6 +2,7 @@
   max-width: 392px;
   position: relative;
   background: #fff;
+  border: 1px solid #fff;
 
   .product-type {
     position: absolute;
