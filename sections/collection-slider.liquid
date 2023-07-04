@@ -179,7 +179,7 @@
 {% javascript %}
 
   window.addEventListener('DOMContentLoaded', function() {
-    {% if section.settings.products_to_show > 3 %}
+    
       var collectionSwiper = new Swiper('.collectionSwiper', {
         navigation: {
           nextEl: '.swiper-button-next',
@@ -197,7 +197,7 @@
         slidesPerView: 3,
         spaceBetween: 24,
       }); 
-    {% endif %}
+    
   });
 
 {% endjavascript %}
