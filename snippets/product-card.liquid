@@ -43,7 +43,7 @@
       {% if product.variants.size > 1 %}
         <input type="hidden" name="id" value="" id="selected-variant-id" />
       {% else %}
-        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+        <input type="hidden" name="id" value="{{ product_card.variants.first.id }}" />
       {% endif %}
       <input type="submit" value="Add to cart" class="btn" />
     </form>
