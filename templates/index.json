@@ -133,8 +133,6 @@
         "374c1642-f5a9-4a4a-a128-d827b68bdc94"
       ],
       "settings": {
-        "arrow_icon_next": "shopify:\/\/shop_images\/chevron-right.svg",
-        "arrow_icon_prev": "shopify:\/\/shop_images\/chevron-left.svg"
       }
     },
     "5cb4573a-362f-48da-ba45-0ad73cf35ee2": {
@@ -690,6 +688,12 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "c4705aba-2fa5-45aa-8e75-f34d4c7e151b": {
+      "type": "collection-slider",
+      "settings": {
+        "collection": "kolekcja-lato-zima"
+      }
     }
   },
   "order": [
@@ -709,6 +713,7 @@
     "3c0a3f09-6aa1-432f-a9c5-ca0856fda147",
     "ef312dd5-9e0a-4571-a003-505bccf1b0c8",
     "f476da7b-ca46-44dd-ad99-2970e46e7707",
-    "ac42c8db-676a-4735-8df5-8503ee52ad13"
+    "ac42c8db-676a-4735-8df5-8503ee52ad13",
+    "c4705aba-2fa5-45aa-8e75-f34d4c7e151b"
   ]
 }
