@@ -2639,6 +2639,9 @@
         },
         "title": {
           "label": "Wybierz kolekcję"
+        },
+        "products_to_show": {
+          "label": "Ilość produktów w sliderze"
         }
       }
     },
