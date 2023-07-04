@@ -40,6 +40,11 @@
     line-height: 22px;
     margin: 0 0 12px;
   }
+
+  .product-price {
+    display: flex;
+    align-items: center;
+  }
 }
 .product-card img {
   width: 100%;
