@@ -2516,16 +2516,6 @@
     },
     "hero-slider": {
       "name": "Hero slider",
-      "settings": {
-        "arrow_icon_next": {
-          "label": "Right arrow icon",
-          "info": "Upload the right arrow icon file"
-        },
-        "arrow_icon_prev": {
-          "label": "Left arrow icon",
-          "info": "Upload the left arrow icon file"
-        }
-      },
       "presets": {
         "name": "Hero Slider",
         "category": "ADVANCED LAYOUT"
