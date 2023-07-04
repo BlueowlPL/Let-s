@@ -1,6 +1,12 @@
 .collectionSlider {
   overflow: hidden;
 
+    .section-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .slider-wrapper {
       max-width: 1224px;
       margin: 0 auto;
