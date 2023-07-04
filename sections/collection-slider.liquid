@@ -1,12 +1,55 @@
+{{ 'collection-slider.css' | asset_url | stylesheet_tag }}
+
+<div class="section-wrapper">
+  <div class="section-title">
+
+  </div>
+  <div class="swiper-container collectionSwiper">
+    <div class="swiper-wrapper">
+      {% for product in collection.products %}
+        <div class="swiper-slide"> 
+           <h3>{{ product.title }}</h3>
+          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}" width="400px" height="400px" />
+          <p>{{ product.price | money }}</p> 
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-button-prev custom-swiper-button-prev">
+        <img src="{{ 'collection-slider-arrow-left.svg' | asset_url }}"  width="42" height="42" />
+    </div>
+    <div class="swiper-button-next custom-swiper-button-next">
+        <img src="{{ 'collection-slider-arrow-right.svg' | asset_url }}"  width="42" height="42" />
+    </div>
+    <div class="swiper-pagination"></div> 
+  </div>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" async></script>
+<script src="{{ 'collection-slider.js' | asset_url }}" defer="defer"></script>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "t:sections.collection-slider.name",
+  "tag": "section",
+  "class": "section",
+  "presets": [
+    {
+      "name": "t:sections.collection-slider.presets.name",
+      "category": "t:sections.collection-slider.presets.category"
+    }
+  ],
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:sections.collection-slider.settings.title.label"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
 {% endstylesheet %}
 
-{% javascript %}
+{% javascript %} 
 {% endjavascript %}
