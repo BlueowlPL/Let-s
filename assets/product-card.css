@@ -6,8 +6,16 @@
     position: absolute;
     top: 0;
     width: 100%;
-    padding: 8px;
+    padding: 16px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.00) 100%);
+    color: #454247;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
   }
 }
 .product-card img {
