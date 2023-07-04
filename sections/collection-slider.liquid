@@ -42,6 +42,10 @@
                   <span>{{ product.price | money }}</span>
                 </div>
               {% endif %}
+              <form action="/cart/add" method="post">
+                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                <input type="submit" value="Dodaj do koszyka" />
+              </form>
             </div>
           {% endfor %}
         </div>
