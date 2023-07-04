@@ -35,7 +35,7 @@
     </div>
     <div class="swiper-button-prev custom-swiper-button-prev">
       {%- assign height = section.settings.arrow_icon_prev.width | divided_by: section.settings.arrow_icon_prev.aspect_ratio | round -%}
-        {{ hero-arrow-left.svg | asset_url: width: 42 | image_tag:
+        {{ hero-arrow-left.svg | asset_url | width: 42 | image_tag:
             loading: 'lazy',
             height: height
         }}
