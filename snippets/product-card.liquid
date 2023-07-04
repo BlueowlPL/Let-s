@@ -16,10 +16,10 @@
   {%- endif -%}
   <div class="product-details">
     <h5>{{ product_card.title }}</h5>
-    {% if product.variants.size > 1 %}
+    {% if product_card.variants.size > 1 %}
       <div class="product-variants">
         <select name="variant" class="variant-select">
-          {% for variant in product.variants %}
+          {% for variant in product_card.variants %}
             <option value="{{ variant.id }}">{{ variant.title }}</option>
           {% endfor %}
         </select>
