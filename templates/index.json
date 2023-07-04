@@ -138,6 +138,14 @@
     "c4705aba-2fa5-45aa-8e75-f34d4c7e151b": {
       "type": "collection-slider",
       "settings": {
+        "collection_name": "KOLEKCJA WIOSNA-LATO",
+        "collection_name_size": "h3",
+        "collection_name_color": "#262329",
+        "collection_name_bold": true,
+        "section_heading": "MUST HAVE",
+        "heading_size": "h1",
+        "heading_color": "#262329",
+        "heading_bold": true,
         "collection": "kolekcja-lato-zima"
       }
     },
