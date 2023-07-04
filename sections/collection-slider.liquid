@@ -148,7 +148,8 @@
 
 {% stylesheet %}
   .collectionSlider {
-    background-image: url('{{ section.settings.section_background | image_url }}');
+    
+    background-image:url('{{ section.settings.section_background | img_url: 'master' }}');
   }
 {% endstylesheet %}
 
