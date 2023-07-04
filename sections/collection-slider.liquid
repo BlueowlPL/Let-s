@@ -14,39 +14,7 @@
       <div class="swiper-container collectionSwiper" data-products-to-show="{{ section.settings.products_to_show }}">
         <div class="swiper-wrapper" {% if section.settings.products_to_show < 4 %} style="gap: 24px;" {% endif %}>
           {% for product in section.settings.collection.products limit: section.settings.products_to_show %}
-            <div class="swiper-slide"> 
-              <h3>{{ product.title }}</h3>
-              <h3>{{ product.type }}</h3>
-              {%- if product.featured_image -%}
-              {%- assign height = product.featured_image.width | divided_by: product.featured_image.aspect_ratio | round -%}
-              {{ product.featured_image | image_url: width: 400 | image_tag:
-                loading: 'lazy',
-                height: height,
-                sizes: "100vw",
-                widths: '375, 400, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-              }}
-              {%- else -%}
-                {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-              {%- endif -%}
-              {% if product.price %}
-                <div class="product-price">
-                  {% if product.compare_at_price > product.price %}
-                  <span>
-                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.25 11H12.5L12.5 16.25M21.75 12C21.75 17.1086 17.6086 21.25 12.5 21.25C7.39137 21.25 3.25 17.1086 3.25 12C3.25 6.89137 7.39137 2.75 12.5 2.75C17.6086 2.75 21.75 6.89137 21.75 12Z" stroke="#21145F" stroke-width="1.5" stroke-linecap="square"/>
-                      <rect x="11.875" y="7.375" width="1.25" height="1.25" fill="black" stroke="black" stroke-width="0.25"/>
-                    </svg>
-                  </span>
-                  <span>{{ product.compare_at_price | money }}</span>
-                  {% endif %}
-                  <span>{{ product.price | money }}</span>
-                </div>
-              {% endif %}
-              <form method="post" action="/cart/add">
-                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                <input type="submit" value="Add to cart" class="btn" />
-              </form>
-            </div>
+            {% render 'product-card' %}
           {% endfor %}
         </div>
         <div class="swiper-button-prev custom-swiper-button-prev" {% if section.settings.products_to_show < 4 %} style="display: none;" {% endif %}>
