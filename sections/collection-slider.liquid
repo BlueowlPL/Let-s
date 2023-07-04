@@ -177,6 +177,7 @@
 {% endstylesheet %}
 
 {% javascript %}
+  console.log(section.settings.products_to_show);
 {% if section.settings.products_to_show > 3 %}
   window.addEventListener('DOMContentLoaded', function() {
     var collectionSwiper = new Swiper('.collectionSwiper', {
