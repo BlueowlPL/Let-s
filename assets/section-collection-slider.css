@@ -35,7 +35,8 @@
     width: 10px !important;
     height: 10px !important;
     background: transparent !important;
-    border: 1px solid #C5BEC5; 
+    border: 1px solid #7A767D; 
+    opacity: 1;
   }
   
   .swiper-pagination-bullet-active {
