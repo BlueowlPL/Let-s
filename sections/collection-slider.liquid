@@ -28,7 +28,14 @@
               {%- else -%}
                 {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
               {%- endif -%}
-              <p>{{ product.price | money }}</p> 
+              {% if product.price %}
+                <div class="product-price">
+                  <span>{{ product.price | money }}</span>
+                  {% if product.compare_at_price > product.price %}
+                  <span>{{ product.compare_at_price | money }}</span>
+                  {% endif %}
+                </div>
+              {% endif %}
             </div>
           {% endfor %}
         </div>
