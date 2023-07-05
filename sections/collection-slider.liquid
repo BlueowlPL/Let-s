@@ -151,26 +151,25 @@
 
   window.addEventListener('DOMContentLoaded', function() {
       var collectionSwiperContainer = document.querySelector('.collectionSwiper');
-      var productsToShow = collectionSwiperContainer.getAttribute('data-products-to-show');
-      var width = screen.width;
-      if (productsToShow > 3) {
-        var collectionSwiper = new Swiper('.collectionSwiper', { 
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-            disabledClass: 'swiper-button-disabled',
-            hiddenClass: 'swiper-button-hidden',
-            prevEl: '.custom-swiper-button-prev',
-            nextEl: '.custom-swiper-button-next',
-          },
-          pagination: {
-              el: '.swiper-pagination',
-              type: 'bullets',
-          },
-          grabCursor: true,
-          slidesPerView: 1,
-          spaceBetween: 24,
-          breakpoints: {
+    
+      function initSlider() {
+      var collectionSwiper = new Swiper('.collectionSwiper', { 
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          disabledClass: 'swiper-button-disabled',
+          hiddenClass: 'swiper-button-hidden',
+          prevEl: '.custom-swiper-button-prev',
+          nextEl: '.custom-swiper-button-next',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+        grabCursor: true,
+        slidesPerView: 1,
+        spaceBetween: 24,
+        breakpoints: {
           300: {
             slidesPerView: 1,
             spaceBetween: 18, 
@@ -182,8 +181,31 @@
             slidesPerView: 3,
           },
         },
-        }); 
-      } 
+      });
+    }
+    
+    function checkMediaConditions() {
+      var screenWidth = window.innerWidth;
+      var productsToShow = collectionSwiperContainer.getAttribute('data-products-to-show');
+      
+      if (screenWidth > 1256 && productsToShow > 3) {
+        initSlider();
+      } else if (screenWidth > 843 && productsToShow > 2) {
+        initSlider();
+      } else if (screenWidth > 300 && productsToShow > 1) {
+        initSlider();
+      } else {
+         if (collectionSwiper) {
+           collectionSwiper.destroy(); 
+         }
+      }
+    }
+    
+    checkMediaConditions();
+    
+    window.addEventListener('resize', function() {
+      checkMediaConditions();
+    });
 
     var variantSelects = document.querySelectorAll('.variant-select');
     variantSelects.forEach(function(variantSelect) {
