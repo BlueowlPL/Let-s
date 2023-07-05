@@ -1,4 +1,5 @@
 {{ 'section-collection-slider.css' | asset_url | stylesheet_tag }}
+{{ 'product-card.css' | asset_url | stylesheet_tag }}
 
 <div class="section-wrapper collectionSlider" {% if section.settings.section_background %} style="background-image: url('{{ section.settings.section_background | image_url }}'); background-size: cover;" {% endif %}>
   <div class="slider-wrapper">
