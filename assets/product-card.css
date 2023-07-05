@@ -95,8 +95,8 @@
 
   .cart-label svg {
       position: absolute;
-      left: 20px;
-      top: 50%;
+      left: 80px;
+      top: -2px;
     }
 }
 .product-card img {
