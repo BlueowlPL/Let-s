@@ -76,6 +76,7 @@
     margin-top: 18px;
     cursor: pointer;
     transition: all .5s ease;
+    transform: capitalize;
   }
 
   .product-card-submit:hover {
