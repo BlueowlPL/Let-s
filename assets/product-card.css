@@ -88,15 +88,6 @@
   .product-card-submit:hover {
     background: #4128bd;
   }
-
-  .product-card-submit:before {
-    content: "";
-    background: url(https://cdn.shopify.com/s/files/1/0706/3761/7469/t/5/assets/add-to-cart-icon.svg);
-    background-size: 25px 25px;
-    height: 25px;
-    width: 25px;
-    display: inline-flex;
-  }
 }
 .product-card img {
   width: 100%;
