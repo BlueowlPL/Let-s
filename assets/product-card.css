@@ -27,6 +27,12 @@
      }
   }
 
+  @media (max-width: 350px) {
+     .product-type {
+        max-width: 246px;
+     }
+  }
+
   .product-type span {
     color: #454247;
     font-size: 12px;
@@ -105,6 +111,12 @@
     }
   }
 
+  @media (max-width: 350px) {
+    .product-card-submit {
+      max-width: 205px;
+    }
+  }
+
   .product-card-submit:hover {
     background: #4128bd;
   }
@@ -122,6 +134,12 @@
   @media (max-width: 500px) {
     .cart-label svg {
       left: 40px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .cart-label svg {
+      left: 20px;
     }
   }
 }
