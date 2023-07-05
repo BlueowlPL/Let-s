@@ -176,9 +176,10 @@
     variantSelects.forEach(function(variantSelect) {
       var selectedVariantIdInput = document.querySelector('#selected-variant-id');
       variantSelect.addEventListener('change', function() {
-        var selectedVariantId = variantSelect.value;
-        console.log(selectedVariantIdInput);
-        selectedVariantIdInput.value = selectedVariantId; 
+        var selectedVariantIdInput = this.parentNode.querySelector('#selected-variant-id');
+      if (selectedVariantIdInput) {
+        selectedVariantIdInput.value = this.value;
+      }
       });
     });
   });
