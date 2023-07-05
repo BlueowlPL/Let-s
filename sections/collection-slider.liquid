@@ -152,7 +152,8 @@
   window.addEventListener('DOMContentLoaded', function() {
       var collectionSwiperContainer = document.querySelector('.collectionSwiper');
       var productsToShow = collectionSwiperContainer.getAttribute('data-products-to-show');
-      if (productsToShow > 3) {
+      var width = screen.width;
+      if (productsToShow > 3 && width > 1256) {
         var collectionSwiper = new Swiper('.collectionSwiper', { 
           navigation: {
             nextEl: '.swiper-button-next',
