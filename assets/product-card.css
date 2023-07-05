@@ -87,7 +87,7 @@
 
   .product-card-submit:before {
     content: '';
-    background-image: url('add-to-cart-icon.svg');
+    background-image: url(https://cdn.shopify.com/s/files/1/0706/3761/7469/t/5/assets/add-to-cart-icon.svg);
     background-size: 25px 25px;
     height: 25px;
     width: 25px;
