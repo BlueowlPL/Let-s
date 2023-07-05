@@ -41,6 +41,7 @@
       .slider-wrapper {
         max-width: 100%;
         overflow: visible; 
+        padding: 50px 16px 92px;
       }
     }
 
