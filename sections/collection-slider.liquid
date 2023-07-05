@@ -177,9 +177,10 @@
     console.log('test'); 
   
       if (variantSelect && selectedVariantIdInput) {
+        console.log('test2'); 
         variantSelect.addEventListener('change', function() {
           selectedVariantIdInput.value = variantSelect.value;
-          console.log('test2'); 
+          console.log('test3');
         });
       }
   });
