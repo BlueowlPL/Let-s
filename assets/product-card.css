@@ -41,6 +41,10 @@
     margin: 0 0 12px;
   }
 
+  .product-variants {
+    margin-bottom: 12px;
+  }
+
   .product-price {
     display: flex;
     align-items: center;
