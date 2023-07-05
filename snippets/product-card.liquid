@@ -45,19 +45,20 @@
       {% else %}
         <input type="hidden" name="id" value="{{ product_card.variants.first.id }}" />
       {% endif %}
-      <input type="submit" value="{{ translations.products.product_card.add_to_cart }}" class="btn" />
+      <input type="submit" value="{{ translations.products.product.add_to_cart }}" class="btn" />
     </form>
   </div>
 </div>
 
 <script>
-    // Skrypt obsługujący wybór wariantu przez użytkownika
-    var variantSelect = document.querySelector('.variant-select');
-    var selectedVariantIdInput = document.querySelector('#selected-variant-id');
-
-    if (variantSelect && selectedVariantIdInput) {
-      variantSelect.addEventListener('change', function() {
-        selectedVariantIdInput.value = variantSelect.value;
-      });
-    }
+    document.addEventListener("DOMContentLoaded", function() {
+      var variantSelect = document.querySelector('.variant-select');
+      var selectedVariantIdInput = document.querySelector('#selected-variant-id');
+  
+      if (variantSelect && selectedVariantIdInput) {
+        variantSelect.addEventListener('change', function() {
+          selectedVariantIdInput.value = variantSelect.value;
+        });
+      }
+    });
 </script>
