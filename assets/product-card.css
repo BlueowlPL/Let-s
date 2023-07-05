@@ -74,6 +74,7 @@
     max-width: 332px;
     border: none;
     margin-top: 18px;
+    cursor: pointer;
   }
 }
 .product-card img {
