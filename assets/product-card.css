@@ -114,6 +114,12 @@
       left: 80px;
       top: -2px;
     }
+
+  @media (max-width: 500px) {
+    .cart-label svg {
+      left: 40px;
+    }
+  }
 }
 .product-card img {
   width: 100%;
