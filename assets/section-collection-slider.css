@@ -39,7 +39,7 @@
 
     @media (max-width: 500px) {
       .slider-wrapper {
-        max-width: 100%;
+        max-width: 333px;
         overflow: visible; 
         padding: 50px 16px 92px;
       }
