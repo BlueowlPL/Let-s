@@ -29,6 +29,10 @@
 
   .product-details {
     padding: 16px;
+
+    label {
+      position: relative;
+    }
   }
 
   .product-details h5 {
