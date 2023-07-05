@@ -48,16 +48,3 @@
     </form>
   </div>
 </div>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var variantSelect = document.querySelector('.variant-select');
-      var selectedVariantIdInput = document.querySelector('#selected-variant-id');
-  
-      if (variantSelect && selectedVariantIdInput) {
-        variantSelect.addEventListener('change', function() {
-          selectedVariantIdInput.value = variantSelect.value;
-        });
-      }
-    });
-</script>
