@@ -51,10 +51,6 @@
       }
     }
 
-    .swiper-container {
-      position: relative;
-    }
-
     .swiper-button-next {
     right: 48px !important;
     }
