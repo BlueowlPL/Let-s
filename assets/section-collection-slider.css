@@ -39,7 +39,7 @@
     }
 
   .swiper-pagination {
-    margin-bottom: 32px;
+    margin: 32px 0;
   }
   
   .swiper-pagination-bullet {
