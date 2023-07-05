@@ -84,6 +84,10 @@
   .product-card-submit:hover {
     background: #4128bd;
   }
+
+  .product-card-submit:before {
+    content: url('add-to-cart-icon.svg');
+  }
 }
 .product-card img {
   width: 100%;
