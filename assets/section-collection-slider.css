@@ -37,6 +37,13 @@
       }
     }
 
+    @media (max-width: 500px) {
+      .slider-wrapper {
+        max-width: 100%;
+        overflow: visible;
+      }
+    }
+
     .swiper-button-next {
     right: 48px !important;
     }
