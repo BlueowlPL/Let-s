@@ -33,6 +33,10 @@
     label {
       position: relative;
     }
+
+    label svg {
+      position: absolute;
+    }
   }
 
   .product-details h5 {
