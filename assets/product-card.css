@@ -64,6 +64,11 @@
   .product-variants {
     margin-bottom: 12px;
 
+    .variant-select {
+      padding: 10px;
+      border: solid 1px #21145F;
+    }
+
     .variant-select:focus-visible {
       outline: none;
       outline-offset: 0;
