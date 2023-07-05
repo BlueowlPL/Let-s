@@ -172,13 +172,15 @@
         }); 
       } 
 
-    var variantSelect = document.querySelector('.variant-select');
-    var selectedVariantIdInput = document.querySelector('#selected-variant-id');
-      if (variantSelect && selectedVariantIdInput) {
-        variantSelect.addEventListener('change', function() {
-          selectedVariantIdInput.value = variantSelect.value;
-        });
-      }
+    var variantSelects = document.querySelectorAll('.variant-select');
+    variantSelects.forEach(function(variantSelect) {
+      var selectedVariantIdInput = variantSelect.parentNode.querySelector('.selected-variant-id');
+    
+      variantSelect.addEventListener('change', function() {
+        var selectedVariantId = variantSelect.value;
+        selectedVariantIdInput.value = selectedVariantId; 
+      });
+    });
   });
 
 {% endjavascript %}
