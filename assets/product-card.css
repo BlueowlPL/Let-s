@@ -76,6 +76,10 @@
     margin-top: 18px;
     cursor: pointer;
   }
+
+  .product-card-submit:hover {
+    background: #160d3f;
+  }
 }
 .product-card img {
   width: 100%;
