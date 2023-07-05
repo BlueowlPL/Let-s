@@ -171,6 +171,15 @@
           spaceBetween: 24,
         }); 
       } 
+
+    var variantSelect = document.querySelector('.variant-select');
+      var selectedVariantIdInput = document.querySelector('#selected-variant-id');
+  
+      if (variantSelect && selectedVariantIdInput) {
+        variantSelect.addEventListener('change', function() {
+          selectedVariantIdInput.value = variantSelect.value;
+        });
+      }
   });
 
 {% endjavascript %}
