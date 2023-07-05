@@ -17,6 +17,12 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.00) 100%);
   }
 
+  @media (max-width: 500px) {
+     .product-type {
+        max-width: 245px;
+     }
+  }
+
   .product-type span {
     color: #454247;
     font-size: 12px;
@@ -87,6 +93,12 @@
     text-transform: uppercase;
     font-family: Lato;
     font-weight: 800;
+  }
+
+  @media (max-width: 500px) {
+    .product-card-submit {
+      max-width: 245px;
+    }
   }
 
   .product-card-submit:hover {
