@@ -15,7 +15,8 @@
         <div class="swiper-wrapper" {% if section.settings.products_to_show < 4 %} style="gap: 24px;" {% endif %}>
           {% for product in section.settings.collection.products limit: section.settings.products_to_show %}
             {% render 'product-card',
-              product_card: product %}
+              product_card: product,
+              products: products %}
           {% endfor %}
         </div>
         <div class="swiper-button-prev custom-swiper-button-prev" {% if section.settings.products_to_show < 4 %} style="display: none;" {% endif %}>
