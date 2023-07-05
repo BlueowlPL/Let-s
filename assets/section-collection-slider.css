@@ -29,6 +29,14 @@
       }
     }
 
+    @media (max-width: 843px) {
+      .slider-wrapper {
+        max-width: 395px;
+        margin: 0 auto;
+        overflow: hidden; 
+      }
+    }
+
     .swiper-button-next {
     right: 48px !important;
     }
