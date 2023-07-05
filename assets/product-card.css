@@ -71,6 +71,8 @@
     background: #21145F;
     color: #fff;
     padding: 12px;
+    max-width: 332px;
+    border: none;
   }
 }
 .product-card img {
