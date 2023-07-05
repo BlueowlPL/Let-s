@@ -45,6 +45,12 @@
       }
     }
 
+    @media (max-width: 350px) {
+      .slider-wrapper {
+        max-width: 333px;
+      }
+    }
+
     .swiper-button-next {
     right: 48px !important;
     }
