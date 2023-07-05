@@ -4,8 +4,8 @@
   background: #fff;
   border-right: 1px solid #fff;
 
-  @media (max-width: 400px) {
-    max-width: 500px; 
+  @media (max-width: 500px) {
+    max-width: 326px; 
   } 
 
   .product-type {
