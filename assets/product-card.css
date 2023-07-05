@@ -5,15 +5,11 @@
   border-right: 1px solid #fff;
 
   @media (max-width: 500px) {
-    .product-card {
       max-width: 300px; 
-    }
   } 
 
   @media (max-width: 350px) {
-    .product-card {
       max-width: 260px; 
-    } 
   } 
 
   .product-type {
