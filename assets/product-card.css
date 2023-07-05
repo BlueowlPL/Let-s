@@ -5,7 +5,7 @@
   border-right: 1px solid #fff;
 
   @media (max-width: 500px) {
-    max-width: 100%; 
+    max-width: 300px; 
   } 
 
   .product-type {
