@@ -174,13 +174,9 @@
 
     var variantSelect = document.querySelector('.variant-select');
     var selectedVariantIdInput = document.querySelector('#selected-variant-id');
-    console.log('test'); 
-  
       if (variantSelect && selectedVariantIdInput) {
-        console.log(variantSelect.value);
         variantSelect.addEventListener('change', function() {
           selectedVariantIdInput.value = variantSelect.value;
-          console.log('test3');
         });
       }
   });
