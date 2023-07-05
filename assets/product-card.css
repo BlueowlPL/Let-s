@@ -65,6 +65,12 @@
       font-weight: 800;
     }
   }
+
+  .product-card-submit {
+    width: 100%;
+    background: #21145F;
+    color: #fff;
+  }
 }
 .product-card img {
   width: 100%;
