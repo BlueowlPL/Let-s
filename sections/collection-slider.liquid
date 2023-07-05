@@ -174,10 +174,13 @@
 
     var variantSelects = document.querySelectorAll('.variant-select');
     variantSelects.forEach(function(variantSelect) {
-      var selectedVariantIdInput = document.querySelector('#selected-variant-id');
       variantSelect.addEventListener('change', function() {
         var selectedVariantId = variantSelect.value;
-        selectedVariantIdInput.value = selectedVariantId; 
+        var productCard = variantSelect.closest('.product-card');
+        var selectedVariantIdInput = productCard.querySelector('#selected-variant-id');
+        if (selectedVariantIdInput) {
+          selectedVariantIdInput.value = selectedVariantId; 
+        }
       });
     });
   });
