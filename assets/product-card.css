@@ -65,8 +65,10 @@
     margin-bottom: 12px;
 
     .variant-select {
-      padding: 10px;
+      padding: 6px;
       border: solid 1px #21145F;
+      font-family: 'Lato';
+      font-weight: 700;
     }
 
     .variant-select:focus-visible {
