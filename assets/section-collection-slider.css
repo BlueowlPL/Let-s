@@ -23,6 +23,9 @@
     @media (max-width: 1256px) {
       .slider-wrapper {
         padding: 50px 16px 92px;
+        max-width: 816px;
+        margin: 0 auto;
+        overflow: hidden; 
       }
     }
 
