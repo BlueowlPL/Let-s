@@ -151,6 +151,70 @@
         "products_to_show": 6
       }
     },
+    "cc9a3ef0-57d2-4a64-bf1f-86e8af78d2d6": {
+      "type": "bullets",
+      "blocks": {
+        "1bf953f7-cebd-475b-bcad-41419336e92b": {
+          "type": "block",
+          "settings": {
+            "bullet_heading": "",
+            "heading_size": "h5",
+            "heading_color": "#000000",
+            "heading_bold": false,
+            "bullet_subheading": "",
+            "subheading_color": "#000000",
+            "subheading_bold": false,
+            "bullet_description": "",
+            "description_color": "#000000",
+            "description_bold": false
+          }
+        },
+        "fffcb304-aaca-4dc7-811d-0436873dbe57": {
+          "type": "block",
+          "settings": {
+            "bullet_heading": "",
+            "heading_size": "h5",
+            "heading_color": "#000000",
+            "heading_bold": false,
+            "bullet_subheading": "",
+            "subheading_color": "#000000",
+            "subheading_bold": false,
+            "bullet_description": "",
+            "description_color": "#000000",
+            "description_bold": false
+          }
+        },
+        "c53ef0fd-dba1-413d-837d-f85aae7f08cc": {
+          "type": "block",
+          "settings": {
+            "bullet_heading": "",
+            "heading_size": "h5",
+            "heading_color": "#000000",
+            "heading_bold": false,
+            "bullet_subheading": "",
+            "subheading_color": "#000000",
+            "subheading_bold": false,
+            "bullet_description": "",
+            "description_color": "#000000",
+            "description_bold": false
+          }
+        }
+      },
+      "block_order": [
+        "1bf953f7-cebd-475b-bcad-41419336e92b",
+        "fffcb304-aaca-4dc7-811d-0436873dbe57",
+        "c53ef0fd-dba1-413d-837d-f85aae7f08cc"
+      ],
+      "settings": {
+        "section_heading": "NASZE STANDARDY",
+        "heading_size": "h1",
+        "heading_color": "#262329",
+        "heading_bold": true,
+        "section_description": "",
+        "description_color": "#000000",
+        "description_bold": false
+      }
+    },
     "5cb4573a-362f-48da-ba45-0ad73cf35ee2": {
       "type": "slideshow",
       "blocks": {
@@ -187,11 +251,65 @@
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
+        },
+        "17f4b729-83a1-48db-91e7-177f8a65469d": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "eb8c7369-938f-412a-a271-881155c08ec9": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "1096801f-fed4-48b9-a512-edf86ab2b401": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "template--17610553000253__5cb4573a-362f-48da-ba45-0ad73cf35ee2-16781775778119511f-0",
-        "template--17610553000253__5cb4573a-362f-48da-ba45-0ad73cf35ee2-16781775778119511f-1"
+        "template--17610553000253__5cb4573a-362f-48da-ba45-0ad73cf35ee2-16781775778119511f-1",
+        "17f4b729-83a1-48db-91e7-177f8a65469d",
+        "eb8c7369-938f-412a-a271-881155c08ec9",
+        "1096801f-fed4-48b9-a512-edf86ab2b401"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -710,6 +828,7 @@
     "16788054201e42611a",
     "77693a34-1d1a-4940-ba6d-ec6d3cdb33df",
     "c4705aba-2fa5-45aa-8e75-f34d4c7e151b",
+    "cc9a3ef0-57d2-4a64-bf1f-86e8af78d2d6",
     "5cb4573a-362f-48da-ba45-0ad73cf35ee2",
     "16790794612f3c2dcf",
     "96d8608b-3d5a-43ac-96c4-e9cbacac5c57",
