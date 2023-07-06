@@ -1,4 +1,14 @@
 {{ 'section-hero-slider.css' | asset_url | stylesheet_tag }}
+{% include 'swiper' with 
+  swiperClass: 'mainSwiper',
+  slidesPerView: 1,
+  grabCursor: true,
+  spaceBetween: 0,
+  slidesPerView_mobile: 1,
+  slidesPerView_tablet: 1,
+  slidesPerView_desktop: 1,
+  spaceBetween_mobile: 0
+%}
 
 <div class="section-wrapper">
   <div class="swiper-container mainSwiper">
@@ -63,9 +73,6 @@
     </div> 
   </div>
 </div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" async></script>
-<script src="{{ 'section-hero-slider.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {
@@ -205,4 +212,21 @@
 {% endstylesheet %}
 
 {% javascript %} 
+window.addEventListener('DOMContentLoaded', function() {
+  var swiperThumbs = new Swiper(".thumbnailsSwiper", { 
+      spaceBetween: 8,
+      slidesPerView: 4, 
+      freeMode: true,
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      direction: 'vertical',
+      slideToClickedSlide: true,
+      grabCursor: true,
+      centeredSlides: true, 
+      touchRatio: 0.2,
+    });
+  
+  Slider.controller.control = swiperThumbs; 
+  swiperThumbs.controller.control = Slider; 
+});
 {% endjavascript %}
