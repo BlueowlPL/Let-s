@@ -157,60 +157,64 @@
         "1bf953f7-cebd-475b-bcad-41419336e92b": {
           "type": "block",
           "settings": {
-            "bullet_heading": "",
-            "heading_size": "h5",
-            "heading_color": "#000000",
-            "heading_bold": false,
+            "bullet_image": "shopify:\/\/shop_images\/free-shipping.svg",
+            "bullet_heading": "Darmowa dostawa",
+            "heading_size": "h4",
+            "heading_color": "#262329",
+            "heading_bold": true,
             "bullet_subheading": "",
             "subheading_color": "#000000",
             "subheading_bold": false,
-            "bullet_description": "",
-            "description_color": "#000000",
+            "bullet_description": "Już od 180 zł!",
+            "description_color": "#7a767d",
             "description_bold": false
           }
         },
         "fffcb304-aaca-4dc7-811d-0436873dbe57": {
           "type": "block",
           "settings": {
-            "bullet_heading": "",
-            "heading_size": "h5",
-            "heading_color": "#000000",
-            "heading_bold": false,
+            "bullet_image": "shopify:\/\/shop_images\/fast-shipping.svg",
+            "bullet_heading": "Szybka dostawa",
+            "heading_size": "h4",
+            "heading_color": "#262329",
+            "heading_bold": true,
             "bullet_subheading": "",
             "subheading_color": "#000000",
             "subheading_bold": false,
-            "bullet_description": "",
-            "description_color": "#000000",
+            "bullet_description": "Wysyłka w 24\/48 h w dni robocze",
+            "description_color": "#7a767d",
             "description_bold": false
           }
         },
         "c53ef0fd-dba1-413d-837d-f85aae7f08cc": {
           "type": "block",
           "settings": {
-            "bullet_heading": "",
-            "heading_size": "h5",
-            "heading_color": "#000000",
-            "heading_bold": false,
+            "bullet_image": "shopify:\/\/shop_images\/safe-payments.svg",
+            "bullet_heading": "Bezpieczne płatności",
+            "heading_size": "h4",
+            "heading_color": "#262329",
+            "heading_bold": true,
             "bullet_subheading": "",
             "subheading_color": "#000000",
             "subheading_bold": false,
-            "bullet_description": "",
-            "description_color": "#000000",
+            "bullet_description": "Nasz sklep jest szyfrowany SSL. Respektujemy płatności X",
+            "description_color": "#7a767d",
             "description_bold": false
           }
         },
         "16e7f7d6-492e-4f9f-883a-37caffa09314": {
           "type": "block",
           "settings": {
-            "bullet_heading": "",
-            "heading_size": "h5",
-            "heading_color": "#000000",
-            "heading_bold": false,
+            "bullet_image": "shopify:\/\/shop_images\/woman-support.svg",
+            "bullet_heading": "Kobiece wsparcie",
+            "heading_size": "h4",
+            "heading_color": "#262329",
+            "heading_bold": true,
             "bullet_subheading": "",
             "subheading_color": "#000000",
             "subheading_bold": false,
-            "bullet_description": "",
-            "description_color": "#000000",
+            "bullet_description": "Jesteśmy zawsze gotowe Ci pomóc, odpowiemy na wszystkie Twoje pytania!",
+            "description_color": "#7a767d",
             "description_bold": false
           }
         }
@@ -228,6 +232,90 @@
         "heading_bold": true,
         "section_description": "",
         "description_color": "#000000",
+        "description_bold": false
+      }
+    },
+    "2167be3b-05cf-4643-9915-652cf458132d": {
+      "type": "bullets",
+      "blocks": {
+        "4ee97f8e-8250-4ef2-be29-f38f42ac62e1": {
+          "type": "block",
+          "settings": {
+            "bullet_image": "shopify:\/\/shop_images\/cruelty-free.svg",
+            "bullet_heading": "Cruelty free",
+            "heading_size": "h4",
+            "heading_color": "#262329",
+            "heading_bold": true,
+            "bullet_subheading": "Place-holder text",
+            "subheading_color": "#7a767d",
+            "subheading_bold": false,
+            "bullet_description": "",
+            "description_color": "#000000",
+            "description_bold": false
+          }
+        },
+        "2cbd9f5b-5c19-4a68-82de-87044824006b": {
+          "type": "block",
+          "settings": {
+            "bullet_image": "shopify:\/\/shop_images\/vegan.svg",
+            "bullet_heading": "Vegan",
+            "heading_size": "h4",
+            "heading_color": "#262329",
+            "heading_bold": true,
+            "bullet_subheading": "Place-holder text",
+            "subheading_color": "#7a767d",
+            "subheading_bold": false,
+            "bullet_description": "",
+            "description_color": "#000000",
+            "description_bold": false
+          }
+        },
+        "90693619-0551-48f7-b43d-5193b99a6cdb": {
+          "type": "block",
+          "settings": {
+            "bullet_image": "shopify:\/\/shop_images\/im-green.svg",
+            "bullet_heading": "I’m green",
+            "heading_size": "h4",
+            "heading_color": "#262329",
+            "heading_bold": true,
+            "bullet_subheading": "Place-holder text",
+            "subheading_color": "#7a767d",
+            "subheading_bold": false,
+            "bullet_description": "",
+            "description_color": "#000000",
+            "description_bold": false
+          }
+        },
+        "1ef7dcfb-a649-4524-a1dd-dc79f9d57661": {
+          "type": "block",
+          "settings": {
+            "bullet_image": "shopify:\/\/shop_images\/placeholder.svg",
+            "bullet_heading": "Placeholder",
+            "heading_size": "h4",
+            "heading_color": "#262329",
+            "heading_bold": true,
+            "bullet_subheading": "Place-holder text",
+            "subheading_color": "#7a767d",
+            "subheading_bold": false,
+            "bullet_description": "",
+            "description_color": "#000000",
+            "description_bold": false
+          }
+        }
+      },
+      "block_order": [
+        "4ee97f8e-8250-4ef2-be29-f38f42ac62e1",
+        "2cbd9f5b-5c19-4a68-82de-87044824006b",
+        "90693619-0551-48f7-b43d-5193b99a6cdb",
+        "1ef7dcfb-a649-4524-a1dd-dc79f9d57661"
+      ],
+      "settings": {
+        "section_heading": "",
+        "heading_size": "h1",
+        "heading_color": "#000000",
+        "heading_bold": false,
+        "section_description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+        "description_color": "#7a767d",
         "description_bold": false
       }
     },
@@ -845,6 +933,7 @@
     "77693a34-1d1a-4940-ba6d-ec6d3cdb33df",
     "c4705aba-2fa5-45aa-8e75-f34d4c7e151b",
     "cc9a3ef0-57d2-4a64-bf1f-86e8af78d2d6",
+    "2167be3b-05cf-4643-9915-652cf458132d",
     "5cb4573a-362f-48da-ba45-0ad73cf35ee2",
     "16790794612f3c2dcf",
     "96d8608b-3d5a-43ac-96c4-e9cbacac5c57",
