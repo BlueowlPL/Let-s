@@ -1,12 +1,210 @@
+{{ 'section-bullets.css' | asset_url | stylesheet_tag }}
+
+<div class="section-bullets">
+  <div class="bullets-wrapper">
+    <div class="bullets-heading">
+      {%- if section.settings.section_heading -%}
+        <h2 class="{{ section.settings.heading_size }}" style="color:{{ section.settings.heading_color }}; {% if section.settings.heading_bold %} font-weight: bold;{% endif %}">{{ section.settings.section_heading | escape }}</h2>
+      {%- endif -%}
+    </div> 
+    <div class="bullets">
+      {% for block in section.blocks %}
+        <div class="bullet-single">
+          <div class="single-wrapper">
+            <div class="single-image">
+              {%- if block.settings.bullet_image -%}
+              {%- assign height = block.settings.bullet_image.width | divided_by: block.settings.bullet_image.aspect_ratio | round -%}
+              {{ block.settings.bullet_image | image_url: width: 40 | image_tag:
+                loading: 'lazy',
+                height: height,
+                sizes: "100vw",
+                widths: '20, 40, 60, 80, 100'
+              }}
+              {%- else -%}
+                {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            <div class="single-heading">
+              {%- if block.settings.bullet_heading -%}
+                <h5 class="{{ block.settings.heading_size }}" style="color:{{ block.settings.heading_color }}; {% if block.settings.heading_bold %} font-weight: bold;{% endif %}">{{ block.settings.bullet_heading | escape }}</h5>
+              {%- endif -%}
+              {%- if block.settings.bullet_subheading -%}
+                <p style="color:{{ block.settings.subheading_color }}; {% if block.settings.subheading_bold %} font-weight: bold;{% endif %}">{{ block.settings.bullet_subheading | escape }}</p>
+              {%- endif -%}
+            </div>
+          </div>
+          <div class="single-description">
+            {%- if block.settings.bullet_description -%}
+              <p style="color:{{ block.settings.description_color }}; {% if block.settings.description_bold %} font-weight: bold;{% endif %}">{{ block.settings.bullet_description | escape }}</p>
+            {%- endif -%}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="bullets-description">
+      {%- if section.settings.section_description -%}
+        <p style="color:{{ section.settings.description_color }}; {% if section.settings.description_bold %} font-weight: bold;{% endif %}">{{ section.settings.section_description | escape }}</p>
+      {%- endif -%}
+    </div> 
+  </div>   
+</div>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "t:sections.bullets.name",
+  "tag": "section",
+  "class": "section",
+  "presets": [
+    {
+      "name": "t:sections.bullets.presets.name",
+      "category": "t:sections.bullets.presets.category"
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "t:sections.bullets.settings.section_heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "t:sections.bullets.settings.heading_size.label",
+      "default": "h1",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.bullets.settings.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.bullets.settings.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.bullets.settings.heading_size.options__3.label"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "t:sections.bullets.settings.heading_color.label",
+      "default": "#000000"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_bold",
+      "label": "t:sections.bullets.settings.heading_bold.label",
+      "default": false
+    },
+    {
+      "type": "textarea",
+      "id": "section_description",
+      "label": "t:sections.bullets.settings.section_description.label"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "t:sections.bullets.settings.description_color.label",
+      "default": "#000000"
+    },
+    {
+      "type": "checkbox",
+      "id": "description_bold",
+      "label": "t:sections.bullets.settings.description_bold.label",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "t:sections.bullets.blocks.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "t:sections.bullets.blocks.settings.bullet_image.label",
+          "id": "bullet_image"
+        },
+        {
+          "type": "text",
+          "label": "t:sections.bullets.blocks.settings.bullet_heading.label",
+          "id": "bullet_heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h6",
+              "label": "t:sections.bullets.blocks.settings.heading_size.options__1.label"
+            },
+            {
+              "value": "h5",
+              "label": "t:sections.bullets.blocks.settings.heading_size.options__2.label"
+            },
+            {
+              "value": "h4",
+              "label": "t:sections.bullets.blocks.settings.heading_size.options__3.label"
+            }
+          ],
+          "default": "h5",
+          "label": "t:sections.bullets.blocks.settings.heading_size.label"
+        }, 
+        {
+        "type": "color",
+        "label": "t:sections.bullets.blocks.settings.heading_color.label",
+        "id": "heading_color",
+        "default": "#000000"
+        }, 
+        {
+        "type": "checkbox",
+        "id": "heading_bold",
+        "label": "t:sections.bullets.blocks.settings.heading_bold.label",
+        "default": false
+        }, 
+        {
+          "type": "text",
+          "label": "t:sections.bullets.blocks.settings.bullet_subheading.label",
+          "id": "bullet_subheading"
+        },
+        {
+        "type": "color",
+        "label": "t:sections.bullets.blocks.settings.subheading_color.label",
+        "id": "subheading_color",
+        "default": "#000000"
+        }, 
+        {
+        "type": "checkbox",
+        "id": "subheading_bold",
+        "label": "t:sections.bullets.blocks.settings.subheading_bold.label",
+        "default": false
+        },
+        {
+          "type": "textarea",
+          "label": "t:sections.bullets.blocks.settings.bullet_description.label",
+          "id": "bullet_description"
+        },
+        {
+        "type": "color",
+        "label": "t:sections.bullets.blocks.settings.description_color.label",
+        "id": "description_color",
+        "default": "#000000"
+        }, 
+        {
+        "type": "checkbox",
+        "id": "description_bold",
+        "label": "t:sections.bullets.blocks.settings.description_bold.label",
+        "default": false
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
 {% endstylesheet %}
 
-{% javascript %}
+{% javascript %} 
 {% endjavascript %}

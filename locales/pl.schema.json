@@ -2645,6 +2645,92 @@
         }
       }
     },
+    "bullets": {
+      "name": "Bullety",
+      "presets": {
+        "name": "Bullety",
+        "category": "ZAAWANSOWANY LAYOUT"
+      },
+      "settings": {
+        "section_heading": {
+          "label": "Nagłówek sekcji"
+        },
+        "heading_size": {
+          "label": "Rozmiar czcionki",
+          "options__1": {
+            "label": "Mały"
+          },
+          "options__2": {
+            "label": "Średni"
+          },
+          "options__3": {
+            "label": "Duży"
+          }
+        },
+        "heading_color": {
+          "label": "Kolor czcionki"
+        },
+        "heading_bold": {
+          "label": "Pogrubić czcionkę?"
+        },
+        "section_description": {
+          "label": "Opis pod sekcją"
+        },
+        "description_color": {
+          "label": "Kolor czcionki"
+        },
+        "description_bold": {
+          "label": "Pogrubić czcionkę?"
+        }
+      },
+      "blocks": {
+        "name": "Bullet",
+        "settings": {
+          "bullet_image": {
+            "label": "Ikona"
+          },
+          "bullet_heading": {
+            "label": "Nagłówek"
+          },
+          "heading_size": {
+            "label": "Rozmiar czcionki",
+            "options__1": {
+              "label": "Mały"
+            },
+            "options__2": {
+              "label": "Średni"
+            },
+            "options__3": {
+              "label": "Duży"
+            }
+          },
+          "heading_color": {
+            "label": "Kolor czcionki"
+          },
+          "heading_bold": {
+            "label": "Pogrubić czcionkę?"
+          },
+          "bullet_subheading": {
+            "label": "Nagłówek podrzędny"
+          },
+          "subheading_color": {
+            "label": "Kolor czcionki"
+          },
+          "subheading_bold": {
+            "label": "Pogrubić czcionkę?"
+          },
+          "bullet_description": {
+            "label": "Opis"
+          },
+          "description_color": {
+            "label": "Kolor czcionki"
+          },
+          "description_bold": {
+            "label": "Pogrubić czcionkę?"
+          }
+        }
+      }
+    },
     "slideshow": {
       "name": "Pokaz slajdów",
       "settings": {
