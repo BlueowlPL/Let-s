@@ -22,6 +22,12 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 16px;
     }
+
+    @media (max-width: 1256px) {
+    .bullets {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
   }
 
   @media (max-width: 1256px) {
