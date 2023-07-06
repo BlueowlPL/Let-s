@@ -1,0 +1,15 @@
+.section-bullets {
+  width: 100%;
+  background: #fff;
+
+  .bullets-wrapper {
+    width: 100%;
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 42px 0;
+  }
+
+  @media (max-width: 1256px) {
+    padding: 42px 16px;
+  }
+}
