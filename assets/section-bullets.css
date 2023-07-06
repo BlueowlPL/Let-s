@@ -79,6 +79,14 @@
         grid-template-columns: 100%;
       }
     }
+
+    .bullets-description {
+      margin-top: 36px;
+    }
+
+    .bullets-description p {
+      margin: 0;
+    }
   }
 
   @media (max-width: 1256px) {
