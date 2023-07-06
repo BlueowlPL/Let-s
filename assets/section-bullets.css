@@ -10,6 +10,23 @@
   }
 
   @media (max-width: 1256px) {
-    padding: 42px 16px;
+    .bullets-wrapper {
+      padding: 42px 16px;
+    }
   }
+
+  .bullets-heading {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+  .bullets-heading h2 {
+      margin: 0;
+    }
+
+  .bullets {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 16px;
+    }
 }
