@@ -35,6 +35,20 @@
           display: flex;
           gap: 8px;
           align-items: center;
+
+          .single-heading {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+          }
+
+          .single-heading h5 {
+            margin: 0;
+          }
+
+          .single-heading p {
+            margin: 0;
+          }
         }
       }
 
