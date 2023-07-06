@@ -2587,6 +2587,66 @@
         }
       }
     },
+    "collection-slider": {
+      "name": "Collection Slider",
+      "presets": {
+        "name": "Collection Slider",
+        "category": "ADVANCED LAYOUT"
+      },
+      "settings": {
+        "section_background": {
+          "label": "Section background"
+        },
+        "collection_name": {
+          "label": "Collection name"
+        },
+        "collection_name_size": {
+          "label": "Font size",
+          "options__1": {
+            "label": "Small"
+          },
+          "options__2": {
+            "label": "Medium"
+          },
+          "options__3": {
+            "label": "Large"
+          }
+        },
+        "collection_name_color": {
+          "label": "Font color"
+        },
+        "collection_name_bold": {
+          "label": "Bold?"
+        },
+        "section_heading": {
+          "label": "Heading"
+        },
+        "heading_size": {
+          "label": "Font size",
+          "options__1": {
+            "label": "Small"
+          },
+          "options__2": {
+            "label": "Medium"
+          },
+          "options__3": {
+            "label": "Large"
+          }
+        },
+        "heading_color": {
+          "label": "Font color"
+        },
+        "heading_bold": {
+          "label": "Bold?"
+        },
+        "title": {
+          "label": "Choose collection"
+        },
+        "products_to_show": {
+          "label": "Number of products in the slider"
+        }
+      }
+    },
     "slideshow": {
       "name": "Slideshow",
       "settings": {
