@@ -310,10 +310,10 @@
         "1ef7dcfb-a649-4524-a1dd-dc79f9d57661"
       ],
       "settings": {
-        "section_heading": "",
+        "section_heading": "NASZE CERTYFIKATY",
         "heading_size": "h1",
-        "heading_color": "#000000",
-        "heading_bold": false,
+        "heading_color": "#262329",
+        "heading_bold": true,
         "section_description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
         "description_color": "#7a767d",
         "description_bold": false
