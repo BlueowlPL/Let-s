@@ -225,8 +225,9 @@ window.addEventListener('DOMContentLoaded', function() {
       centeredSlides: true, 
       touchRatio: 0.2,
     });
+  var mainSwiper = document.querySelector('.mainSwiper').swiper;
   
-  Slider.controller.control = swiperThumbs; 
-  swiperThumbs.controller.control = Slider; 
+  mainSwiper.controller.control = swiperThumbs; 
+  swiperThumbs.controller.control = mainSwiper; 
 });
 {% endjavascript %}
