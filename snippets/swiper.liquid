@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" async></script>
+
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    
+      function initSlider() {
+      var collectionSwiper = new Swiper('.collectionSwiper', { 
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          disabledClass: 'swiper-button-disabled',
+          hiddenClass: 'swiper-button-hidden',
+          prevEl: '.custom-swiper-button-prev',
+          nextEl: '.custom-swiper-button-next',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+        grabCursor: {{ grabCursor }},
+        slidesPerView: {{ slidesPerView }},
+        spaceBetween: {{ spaceBetween }},
+        breakpoints: {
+          300: {
+            slidesPerView: {{ slidesPerView_mobile }},
+            spaceBetween: {{ spaceBetween_mobile }}, 
+          },
+          843: {
+            slidesPerView: {{ slidesPerView_tablet }},
+          },
+          1256: {
+            slidesPerView: {{ slidesPerView_desktop }},
+          },
+        },
+      });
+    }
+});
+</script>
