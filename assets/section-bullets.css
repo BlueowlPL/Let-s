@@ -13,7 +13,7 @@
       margin-bottom: 56px;
     }
 
-    @media (max-width: 1256px) {
+    @media (max-width: 992px) {
       .bullets-heading {
         margin-bottom: 24px;
       }
@@ -27,9 +27,19 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 16px;
+
+      .bullet-single {
+        background: #fff;
+      }
+
+      @media (max-width: 992px) {
+      .bullet-single {
+        padding: 16px;
+      }
+    }
     }
 
-    @media (max-width: 1256px) {
+    @media (max-width: 992px) {
       .bullets {
         grid-template-columns: 1fr 1fr;
       }
@@ -39,6 +49,12 @@
   @media (max-width: 1256px) {
     .bullets-wrapper {
       padding: 42px 16px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .bullets-wrapper {
+      background: #F5F3F5;
     }
   }
 }
