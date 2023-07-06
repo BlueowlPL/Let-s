@@ -2,11 +2,11 @@
 
 <div class="section-bullets">
   <div class="bullets-wrapper">
-    <div class="bullets-heading">
-      {%- if section.settings.section_heading -%}
-        <h2 class="{{ section.settings.heading_size }}" style="color:{{ section.settings.heading_color }}; {% if section.settings.heading_bold %} font-weight: 800;{% endif %}">{{ section.settings.section_heading | escape }}</h2>
-      {%- endif -%}
-    </div> 
+    {%- if section.settings.section_heading -%}
+      <div class="bullets-heading">
+          <h2 class="{{ section.settings.heading_size }}" style="color:{{ section.settings.heading_color }}; {% if section.settings.heading_bold %} font-weight: 800;{% endif %}">{{ section.settings.section_heading | escape }}</h2>
+      </div> 
+    {%- endif -%}
     <div class="bullets">
       {% for block in section.blocks %}
         <div class="bullet-single">
@@ -33,19 +33,19 @@
               {%- endif -%}
             </div>
           </div>
-          <div class="single-description">
-            {%- if block.settings.bullet_description -%}
-              <p style="color:{{ block.settings.description_color }}; {% if block.settings.description_bold %} font-weight: bold;{% endif %}">{{ block.settings.bullet_description | escape }}</p>
-            {%- endif -%}
-          </div>
+          {%- if block.settings.bullet_description -%}
+            <div class="single-description">
+                <p style="color:{{ block.settings.description_color }}; {% if block.settings.description_bold %} font-weight: bold;{% endif %}">{{ block.settings.bullet_description | escape }}</p>
+            </div>
+          {%- endif -%}
         </div>
       {% endfor %}
     </div>
-    <div class="bullets-description">
-      {%- if section.settings.section_description -%}
-        <p style="color:{{ section.settings.description_color }}; {% if section.settings.description_bold %} font-weight: bold;{% endif %}">{{ section.settings.section_description | escape }}</p>
-      {%- endif -%}
-    </div> 
+    {%- if section.settings.section_description -%}
+      <div class="bullets-description">
+          <p style="color:{{ section.settings.description_color }}; {% if section.settings.description_bold %} font-weight: bold;{% endif %}">{{ section.settings.section_description | escape }}</p>
+      </div> 
+    {%- endif -%}
   </div>   
 </div>
 
