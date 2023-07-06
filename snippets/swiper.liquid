@@ -3,8 +3,9 @@
 
 <script>
 window.addEventListener('DOMContentLoaded', function() {
-    
-      var Slider = new Swiper('.{{ swiperClass }}', {
+      var swiperClass = '{{ swiperClass }}';
+  
+      var Slider = new Swiper('.' + swiperClass, {
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev', 
