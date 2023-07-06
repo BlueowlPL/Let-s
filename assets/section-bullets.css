@@ -30,6 +30,12 @@
 
       .bullet-single {
         background: #fff;
+
+        .single-wrapper {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+        }
       }
 
       @media (max-width: 992px) {
