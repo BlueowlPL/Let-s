@@ -2,7 +2,7 @@
 
 <div class="section-bullets">
   <div class="bullets-wrapper">
-    {%- if section.settings.section_heading -%}
+    {%- if section.settings.section_heading != blank -%}
       <div class="bullets-heading">
           <h2 class="{{ section.settings.heading_size }}" style="color:{{ section.settings.heading_color }}; {% if section.settings.heading_bold %} font-weight: 800;{% endif %}">{{ section.settings.section_heading | escape }}</h2>
       </div> 
@@ -25,15 +25,15 @@
               {%- endif -%}
             </div>
             <div class="single-heading">
-              {%- if block.settings.bullet_heading -%}
+              {%- if block.settings.bullet_heading != blank -%}
                 <h5 class="{{ block.settings.heading_size }}" style="color:{{ block.settings.heading_color }}; {% if block.settings.heading_bold %} font-weight: 800;{% endif %}">{{ block.settings.bullet_heading | escape }}</h5>
               {%- endif -%}
-              {%- if block.settings.bullet_subheading -%}
+              {%- if block.settings.bullet_subheading != blank -%}
                 <p style="color:{{ block.settings.subheading_color }}; {% if block.settings.subheading_bold %} font-weight: bold;{% endif %}">{{ block.settings.bullet_subheading | escape }}</p>
               {%- endif -%}
             </div>
           </div>
-          {%- if block.settings.bullet_description -%}
+          {%- if block.settings.bullet_description != blank -%}
             <div class="single-description">
                 <p style="color:{{ block.settings.description_color }}; {% if block.settings.description_bold %} font-weight: bold;{% endif %}">{{ block.settings.bullet_description | escape }}</p>
             </div>
@@ -41,7 +41,7 @@
         </div>
       {% endfor %}
     </div>
-    {%- if section.settings.section_description -%}
+    {%- if section.settings.section_description != blank -%}
       <div class="bullets-description">
           <p style="color:{{ section.settings.description_color }}; {% if section.settings.description_bold %} font-weight: bold;{% endif %}">{{ section.settings.section_description | escape }}</p>
       </div> 
