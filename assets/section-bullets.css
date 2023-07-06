@@ -50,6 +50,14 @@
             margin: 0;
           }
         }
+
+        .single-description {
+          margin-top: 24px;
+        }
+
+        .single-description p {
+          margin: 0;
+        }
       }
 
       @media (max-width: 992px) {
