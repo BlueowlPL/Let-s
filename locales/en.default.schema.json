@@ -2647,6 +2647,92 @@
         }
       }
     },
+    "bullets": {
+      "name": "Bullets",
+      "presets": {
+        "name": "Bullets",
+        "category": "ADVANCED LAYOUT"
+      },
+      "settings": {
+        "section_heading": {
+          "label": "Section heading"
+        },
+        "heading_size": {
+          "label": "Font size",
+          "options__1": {
+            "label": "Small"
+          },
+          "options__2": {
+            "label": "Medium"
+          },
+          "options__3": {
+            "label": "Large"
+          }
+        },
+        "heading_color": {
+          "label": "Font color"
+        },
+        "heading_bold": {
+          "label": "Bold?"
+        },
+        "section_description": {
+          "label": "Description under section"
+        },
+        "description_color": {
+          "label": "Font color"
+        },
+        "description_bold": {
+          "label": "Bold?"
+        }
+      },
+      "blocks": {
+        "name": "Bullet",
+        "settings": {
+          "bullet_image": {
+            "label": "Icon"
+          },
+          "bullet_heading": {
+            "label": "Heading"
+          },
+          "heading_size": {
+            "label": "Font size",
+            "options__1": {
+              "label": "Small"
+            },
+            "options__2": {
+              "label": "Medium"
+            },
+            "options__3": {
+              "label": "Large"
+            }
+          },
+          "heading_color": {
+            "label": "Font color"
+          },
+          "heading_bold": {
+            "label": "Bold?"
+          },
+          "bullet_subheading": {
+            "label": "Subheading"
+          },
+          "subheading_color": {
+            "label": "Font color"
+          },
+          "subheading_bold": {
+            "label": "Bold?"
+          },
+          "bullet_description": {
+            "label": "Description"
+          },
+          "description_color": {
+            "label": "Font color"
+          },
+          "description_bold": {
+            "label": "Bold?"
+          }
+        }
+      }
+    },
     "slideshow": {
       "name": "Slideshow",
       "settings": {
