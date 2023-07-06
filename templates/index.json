@@ -198,12 +198,28 @@
             "description_color": "#000000",
             "description_bold": false
           }
+        },
+        "16e7f7d6-492e-4f9f-883a-37caffa09314": {
+          "type": "block",
+          "settings": {
+            "bullet_heading": "",
+            "heading_size": "h5",
+            "heading_color": "#000000",
+            "heading_bold": false,
+            "bullet_subheading": "",
+            "subheading_color": "#000000",
+            "subheading_bold": false,
+            "bullet_description": "",
+            "description_color": "#000000",
+            "description_bold": false
+          }
         }
       },
       "block_order": [
         "1bf953f7-cebd-475b-bcad-41419336e92b",
         "fffcb304-aaca-4dc7-811d-0436873dbe57",
-        "c53ef0fd-dba1-413d-837d-f85aae7f08cc"
+        "c53ef0fd-dba1-413d-837d-f85aae7f08cc",
+        "16e7f7d6-492e-4f9f-883a-37caffa09314"
       ],
       "settings": {
         "section_heading": "NASZE STANDARDY",
