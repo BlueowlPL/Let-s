@@ -1,0 +1,205 @@
+{{ 'tabs-section.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+   .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="page-width section-{{ section.id }}-padding">
+  <div class="tabs-section">
+    {% for block in section.blocks %}
+      <input type="radio" name="tabs-{{ section.id }}" id="tab{{ forloop.index }}" {% if forloop.first %}checked="checked"{% endif %}>
+      <label for="tab{{ forloop.index }}">{{ block.settings.tab_title | escape }}</label>
+      <div class="tab">
+        {{ block.settings.tab_text }}
+       {% if block.settings.vertical_alignment == 'image' %}
+          <div class="tab--image__container">
+            {% for i in (1..block.settings.number_of_images) %}
+              <div class="tab-image">
+                {% assign image_id = 'image_' | append: i %}
+                {% if block.settings[image_id] != blank %}
+                  {{ block.settings[image_id] | image_url: width: 320, height: 240 | class:'card-media' | image_tag:
+                    loading: 'lazy',
+                    sizes: sizes,
+                    widths: '165, 320'
+                  }}
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        {% elsif block.settings.vertical_alignment == 'text' %}
+          <p>Tekst</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+    
+{% schema %}
+  {
+    "name": "Tabs section product",
+    "settings": [
+      {
+        "type": "select",
+        "id": "color_scheme",
+        "options": [
+          {
+            "value": "accent-1",
+            "label": "t:sections.all.colors.accent_1.label"
+          },
+          {
+            "value": "accent-2",
+            "label": "t:sections.all.colors.accent_2.label"
+          },
+          {
+            "value": "background-1",
+            "label": "t:sections.all.colors.background_1.label"
+          },
+          {
+            "value": "background-2",
+            "label": "t:sections.all.colors.background_2.label"
+          },
+          {
+            "value": "inverse",
+            "label": "t:sections.all.colors.inverse.label"
+          }
+        ],
+        "default": "background-1",
+        "label": "t:sections.all.colors.label"
+      },
+      {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+    ],
+      "blocks": [
+    {
+      "type": "block",
+      "name": "tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Tab title",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "tab_text",
+          "default": "<p>Answer goes here...</p>",
+          "label": "Tab text"
+          
+        },
+        {
+          "type": "select",
+          "id": "vertical_alignment",
+          "label": "Tab content",
+          "options": [
+            {
+              "value": "image",
+              "label": "Images + text"
+            },
+            {
+              "value": "Text",
+              "label": "Only text"
+            }
+          ],
+          "default": "Text"
+        },
+        {
+          "type": "range",
+          "id": "number_of_images",
+          "label": "Ilość zdjęć w tabie(max: 3)",
+          "min": 1,
+          "max": 3,
+          "default": 3
+        },
+        {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Image 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Image 2"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_3",
+            "label": "Image 3"
+          }
+      ]
+    }
+    ],
+    "presets": [
+    {
+      "name": "Tab section"
+    }
+  ]
+  }
+{% endschema %}
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const radios = document.querySelectorAll('input[type="radio"]');
+  console.log(tabs)
+  
+  radios.forEach(radio => {
+  radio.addEventListener('change', (event) => {
+    // znajdź zakładkę, która odpowiada wybranej opcji
+    const targetTab = document.querySelector(`#${event.target.id} + .tab`);
+    // usuń aktywną klasę ze wszystkich zakładek
+    tabs.forEach(tab => tab.classList.remove('active'));
+    // dodaj aktywną klasę do wybranej zakładki
+    targetTab.classList.add('active');
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

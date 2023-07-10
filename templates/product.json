@@ -12,13 +12,11 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -28,8 +26,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -39,8 +36,7 @@
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
@@ -85,7 +81,7 @@
           }
         },
         "8829fc02-ca45-4a88-81e3-8b2bb8ff4d53": {
-          "type": "shopify:\/\/apps\/xo-story-feeds\/blocks\/xo-story\/73c32a5d-481e-4b4e-99f6-012a00af21b7",
+          "type": "shopify://apps/xo-story-feeds/blocks/xo-story/73c32a5d-481e-4b4e-99f6-012a00af21b7",
           "settings": {
             "id": 1,
             "padding_top": 10,
@@ -120,19 +116,60 @@
         "padding_bottom": 12
       }
     },
+    "efb5dbbe-cf72-41e5-b6a5-596954577d81": {
+      "type": "tabs-section",
+      "blocks": {
+        "919420a6-a602-41e8-9e14-026eb6dec9b8": {
+          "type": "block",
+          "settings": {
+            "tab_title": "O Produkcie",
+            "tab_text": "<p>Answer goes here...</p>",
+            "vertical_alignment": "image",
+            "number_of_images": 3,
+            "image_1": "shopify://shop_images/Story_Influ_Kasia__1679077598326.jpg"
+          }
+        },
+        "0c57e791-51ac-4182-8861-bd6d594cac67": {
+          "type": "block",
+          "settings": {
+            "tab_title": "Zastosowanie",
+            "tab_text": "<p>Answer goes here...</p><ol><li>lorem ipsum</li><li>lorem ipsum</li></ol>",
+            "vertical_alignment": "Tekst",
+            "number_of_images": 3
+          }
+        },
+        "7cd9d4d4-411d-4ca9-9adb-776cd222c7a7": {
+          "type": "block",
+          "settings": {
+            "tab_title": "Stosowanie",
+            "tab_text": "<ul><li>Answer goes here...</li><li>Answer goes here...</li><li>Answer goes here...</li><li>Answer goes here...</li></ul>",
+            "vertical_alignment": "zdjęcie",
+            "number_of_images": 3
+          }
+        }
+      },
+      "block_order": [
+        "919420a6-a602-41e8-9e14-026eb6dec9b8",
+        "0c57e791-51ac-4182-8861-bd6d594cac67",
+        "7cd9d4d4-411d-4ca9-9adb-776cd222c7a7"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1676385121648d3da2": {
       "type": "apps",
       "blocks": {
         "b01e1449-d83d-40c8-a31e-5d3ddef9bb72": {
-          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify://apps/yotpo-product-photo-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
           }
         }
       },
-      "block_order": [
-        "b01e1449-d83d-40c8-a31e-5d3ddef9bb72"
-      ],
+      "block_order": ["b01e1449-d83d-40c8-a31e-5d3ddef9bb72"],
       "settings": {
         "include_margins": true
       }
@@ -150,15 +187,12 @@
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_style": "body"
           }
         }
       },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
+      "block_order": ["image-with-text-0", "image-with-text-1"],
       "settings": {
         "height": "small",
         "desktop_image_width": "medium",
@@ -179,7 +213,7 @@
           "type": "column",
           "settings": {
             "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -188,16 +222,13 @@
           "type": "column",
           "settings": {
             "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": [
-        "column-0",
-        "column-1"
-      ],
+      "block_order": ["column-0", "column-1"],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -243,7 +274,7 @@
       "type": "apps",
       "blocks": {
         "3802da17-eae3-4fdc-99a5-47ce03f32573": {
-          "type": "shopify:\/\/apps\/xo-story-feeds\/blocks\/xo-story\/73c32a5d-481e-4b4e-99f6-012a00af21b7",
+          "type": "shopify://apps/xo-story-feeds/blocks/xo-story/73c32a5d-481e-4b4e-99f6-012a00af21b7",
           "settings": {
             "id": 1,
             "padding_top": 10,
@@ -251,27 +282,24 @@
           }
         }
       },
-      "block_order": [
-        "3802da17-eae3-4fdc-99a5-47ce03f32573"
-      ],
+      "block_order": ["3802da17-eae3-4fdc-99a5-47ce03f32573"],
       "settings": {
         "include_margins": true
       }
     },
     "section-for-test": {
       "type": "test-section",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
     "main",
+    "efb5dbbe-cf72-41e5-b6a5-596954577d81",
     "1676385121648d3da2",
     "image-with-text",
     "multicolumn",
     "product-recommendations",
     "custom-recommendations",
-    "16789659680385f660",
-    "section-for-test"
+    "16789659680385f660"
   ]
 }

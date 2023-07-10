@@ -1,0 +1,383 @@
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ 'component-header2.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+
+{% liquid
+  assign count = 0
+  assign dropdownLinksArr = section.blocks | where: 'type','dropdownBottomLink'   
+  assign dropdownLinksTextArr = '' 
+  assign dropdownLinksUrlsArr = ''
+  for block in dropdownLinksArr 
+     assign count = count | plus: 1  
+    unless forloop.last 
+      assign dropdownLinksTextArr = dropdownLinksTextArr | append:  block.settings.dropdownLinkText |append: ' ' 
+        if block.settings.dropdownLinkUrl != blank
+          assign dropdownLinksUrlsArr = dropdownLinksUrlsArr | append:  block.settings.dropdownLinkUrl |append: ' ' 
+        else 
+          assign dropdownLinksUrlsArr = dropdownLinksUrlsArr | append:'blank'|append:" "
+        endif 
+      else
+        assign dropdownLinksTextArr = dropdownLinksTextArr | append:  block.settings.dropdownLinkText 
+        if block.settings.dropdownLinkUrl != blank
+          assign dropdownLinksUrlsArr = dropdownLinksUrlsArr | append:  block.settings.dropdownLinkUrl 
+        else 
+          assign dropdownLinksUrlsArr = dropdownLinksUrlsArr | append:'blank'
+        endif 
+    endunless 
+  endfor 
+ assign test = dropdownLinksTextArr | split: " " 
+%}
+
+<header class="header-wrapper flex">
+  {{ 'nav-pink-sprite.svg' | asset_url | img_tag: 'pink-sprite', "pink-nav-sprite" }}
+  {{ 'logo-letters.svg' | asset_url | img_tag: 'Logo letters', "logo-letters" }}
+  <nav role="navigation">
+    <ul class="header__desktop-main-links">
+      {%- for link in linklists.test-menu.links -%}
+        <li class="{% if link.links != blank %}availableExpand{% endif %}">
+          <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+            {{ link.title }}
+          </a>
+          {%- if link.links != blank -%}
+            <ul class="header__desktop-second-list">
+              <div class="flex header__desktop-second-list-links-container">
+                {%- for child_link in link.links -%}
+                  <li class="flex-col">
+                    <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+                      {{ child_link.title }}
+                    </a>
+                    {%- if child_link.links != blank -%}
+                      <ul>
+                        {%- for grandchild_link in child_link.links -%}
+                          <li>
+                            <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+                              {{ grandchild_link.title }}
+                            </a>
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif -%}
+                  </li>
+                {%- endfor -%}
+              </div>
+              <div class="flex header__desktop-second-list-footer">
+                <ul class="flex">
+                  {% for block in section.blocks %}
+                    {% case block.type %}
+                      {% when 'bottomLink' %}
+                   <li class="header__desktop-bottom-link">  {{ block.settings.linkText | link_to: block.settings.linkurl  }}</li>                            
+                    {% endcase %}
+                  {% endfor %}
+                </ul>
+                <ul class="flex">
+                  <button>WIOSNA-LATO</button>
+                  <button disabled aria-disabled="true">JESIEŃ-ZIMA</button>
+                </ul>
+              </div>
+            </ul>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+    <div class="header__main-links-mobile header__mobile-main-links" id="dropdown-menu">
+      <form
+        action="{{ routes.search_url }}"
+        method="get"
+        role="search"
+        class="search search-modal__form">
+<div class="search-input-container flex" style="">
+  <span class="nav-icon">
+    {% render 'icon-search' %}
+    </span>
+  <input       placeholder="{{ 'general.search.search' | t }}"   type="search">
+</div>
+       
+          {%- if settings.predictive_search_enabled -%}
+            <div
+              class="predictive-search predictive-search--header"
+              tabindex="-1"
+              data-predictive-search>
+              <div class="predictive-search__loading-state">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  class="spinner"
+                  viewBox="0 0 66 66"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle
+                    class="path"
+                    fill="none"
+                    stroke-width="6"
+                    cx="33"
+                    cy="33"
+                    r="30"></circle>
+              </svg>
+            </div>
+          </div>
+          <span
+            class="predictive-search-status visually-hidden"
+            role="status"
+            aria-hidden="true"></span>
+        {%- endif -%}
+      </form>
+      <ul>
+        {%- for link in linklists.test-menu.links -%}
+          {%- if link.links != blank -%}
+            <li>
+              <ul class="">
+                <div class="">
+                  {%- for child_link in link.links -%}
+                    <li class="">
+                      <div class="header__mobile-second-list-container flex">
+                        <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+                          {{ child_link.title }}
+                        </a>
+                        <button>
+                          <span class="chevron-down">{% render 'icon-chevron-down' %}</span>
+                        </button>
+                      </div>
+                      {%- if child_link.links != blank -%}
+                        <ul class="header__mobile-third-list-container">
+                          {%- for grandchild_link in child_link.links -%}
+                            <li>
+                              <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+                                {{ grandchild_link.title }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </div>
+                <div class="header__mobile-second-list-footer">
+                  <div {% unless count > 0 %} style="display:none;"{% endunless %} class="flex header__mobile-mini-slider" >
+                    <div class="mobile-footer-links-container  flex hedaer__mobile-footer-links-container">
+                      <ul class="flex" id="mobile-footer-links">
+                        </ul>
+                        </div>
+                        <button  {% unless count > 3 %}style="display:none;"{% endunless %}>
+                          <span class="chevrons-right" id="chevrons-right">
+                            {% render 'chevrons-right' %}
+                          </span>
+                    </button>
+                  </div>
+                  <ul class="flex hedaer__mobile-footer-buttons-container">
+                    <button>WIOSNA-LATO</button>
+                    <button disabled aria-disabled="true">JESIEŃ-ZIMA</button>
+                  </ul>
+                </div>
+
+              </ul>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </nav>
+
+  <summary
+    class="header-summary flex"
+    aria-haspopup="dialog"
+    aria-label="{{ 'general.search.search' | t }}">
+    <a href="#" class="nav-icon">
+      {% render 'icon-search' %}
+    </a>
+    <a href="#" class="nav-icon">
+      {% render 'icon-account' %}
+    </a>
+    <a href="{{ routes.cart_url }}" class="nav-icon">
+      <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+      <span class="flex header-cart ">
+        {% render 'icon-cart2' %}
+        <span class="header-cart-items-count">0</span>
+      </span>
+      <span class="cart-money-indicator">
+        {{ cart.total_price | money }}
+      </span>
+    </a>
+    <button class="nav-icon hamburger">
+      <span class="nav-icon active " id="icon-hamburger">
+        {% render 'icon-hamburger' %}
+      </span>
+      <span class="nav-icon " id="icon-close">
+        {% render 'icon-close' %}
+      </span>
+    </button>
+  </summary>
+</header>
+
+
+
+<script>
+
+const dropdownLinksTextArr = `{{dropdownLinksTextArr}}`.split(" ");
+const dropdownLinksUrlsArr = `{{dropdownLinksUrlsArr}}`.split(" ");
+
+const hamburgerIcon = document.getElementById("icon-hamburger");
+const closeIcon = document.getElementById("icon-close");
+const dropDown = document.getElementById("dropdown-menu");
+const chevrons = document.getElementsByClassName("chevron-down");
+const chevronsRight = document.getElementById("chevrons-right");
+const mobileFooterLinks = document.getElementById("mobile-footer-links");
+let direction = "RIGHT";
+let currentIndex = 0;
+let actualPos = 0;
+const toogleClasses = () => {
+  closeIcon.classList.toggle("active");
+  hamburgerIcon.classList.toggle("active");
+  dropDown.classList.toggle("active");
+};
+Array.from(chevrons).forEach(function (element) {
+  element.addEventListener("click", (e) => {
+    const chevron = e.currentTarget;
+    chevron.closest("div").nextSibling.classList.toggle("expand");
+    chevron.classList.toggle("active");
+  });
+});
+hamburgerIcon.addEventListener("click", toogleClasses);
+closeIcon.addEventListener("click", toogleClasses);
+chevronsRight.addEventListener("click", () => {
+  if (currentIndex === mobileFooterLinks.children.length - 1) {
+    direction = "LEFT";
+  }
+  if (currentIndex === 0) direction = "RIGHT";
+  if (direction === "RIGHT") {
+    mobileFooterLinks.style.transform = `translate(-${
+      actualPos + mobileFooterLinks.children[currentIndex + 1].offsetWidth
+    }px)`;
+    actualPos += mobileFooterLinks.children[currentIndex + 1].offsetWidth;
+    currentIndex += 1;
+    if (currentIndex === mobileFooterLinks.children.length - 1) {
+      chevronsRight.classList.toggle("active");
+    }
+  }
+  if (direction === "LEFT") {
+    mobileFooterLinks.style.transform = `translate(-${
+      actualPos - mobileFooterLinks.children[currentIndex - 1].offsetWidth
+    }px)`;
+    actualPos -= mobileFooterLinks.children[currentIndex - 1].offsetWidth;
+    currentIndex -= 1;
+    if (currentIndex === 0) chevronsRight.classList.toggle("active");
+  }
+});
+const formFooterLinksDom = () => {
+  if (!dropdownLinksTextArr.length) return;
+  let tripleArr = [];
+  dropdownLinksTextArr.forEach((text, index) => {
+    tripleArr.push(text);
+    if (tripleArr.length === 3) {
+      const div = document.createElement("div");
+      div.classList.add("mobile-footer-links-cluster");
+      div.style.width = `${
+        document.getElementsByClassName("mobile-footer-links-container")[0]
+          .clientWidth
+      }px`;
+      tripleArr.forEach((text) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.innerText = text;
+        a.href = dropdownLinksUrlsArr[index];
+        li.appendChild(a);
+        div.appendChild(li);
+      });
+      mobileFooterLinks.appendChild(div);
+      tripleArr = [];
+    }
+  });
+
+  if (tripleArr.length) {
+    const div = document.createElement("div");
+    div.classList.add("mobile-footer-links-cluster");
+    div.style.width = `${
+      document.getElementsByClassName("mobile-footer-links-container")[0]
+      .clientWidth
+      }px`;
+      tripleArr.forEach((text) => {
+      const index = dropdownLinksTextArr.findIndex((link)=>link===text);
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.innerText = text;
+      a.href = dropdownLinksUrlsArr[index];
+      li.appendChild(a);
+      div.appendChild(li);
+      mobileFooterLinks.appendChild(div);
+    });
+    tripleArr = [];
+  }
+};
+window.addEventListener("DOMContentLoaded", () => formFooterLinksDom());
+
+
+</script>
+
+{% schema %}
+  {
+    "name": "header2",
+    "settings": [ 
+    ],	"blocks": [
+     {
+       "name": "Bottom Link",
+       "type": "bottomLink",
+       "limit": 6,
+       "settings": [
+         {  
+           "type": "text",
+           "id": "linkText",
+           "label": "Link text"
+         },{
+          "id": "linkurl",
+          "type": "url",
+          "label": "URL link"
+        }
+       ]
+     }, {
+       "name": "Dropdown Bottom Link",
+       "type": "dropdownBottomLink",
+       "settings": [
+         {  
+           "type": "text",
+           "id": "dropdownLinkText",
+           "label": "Link text"
+         },{
+          "id": "dropdownLinkUrl",
+          "type": "url",
+          "label": "URL link"
+        }
+       ]
+     }
+   ],
+   "default": {
+    "blocks": [
+      {
+        "type": "bottomLink"
+      },
+      {
+        "type": "bottomLink"
+      },  {
+        "type": "bottomLink"
+      },
+      {
+        "type": "bottomLink"
+      },  {
+        "type": "dropdownBottomLink"
+      },
+      {
+        "type": "dropdownBottomLink"
+      },  {
+        "type": "dropdownBottomLink"
+      },
+      {
+        "type": "dropdownBottomLink"
+      }
+    ]
+  }
+   
+     
+  }
+{% endschema %}
+

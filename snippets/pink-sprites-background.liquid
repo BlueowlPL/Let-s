@@ -1,0 +1,76 @@
+<style>
+  .sprites-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: var(--brand-2-300)
+  }
+  .sprites-second-svg-container {
+    height: 100%;
+    width: 50%;
+    right: 0;
+    position: absolute;
+  }
+
+
+  .pink-sprites-background-logo-letters {
+    position: absolute;
+    height: 6.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4rem;
+  }
+  .pink-sprites-filler {
+    right: 0;
+    top: 0;
+    width: 50%;
+    background-color: #E3B1BE;
+
+  }
+  .pink-sprites-filler-mask {
+
+    background-color: white;
+    opacity: 0.42;
+    height: 100%;
+  }
+  @media only screen and (min-width:500px) {
+    .pink-sprites-filler {
+      height: 100%;
+      position: absolute;
+      display: block !important;
+    }
+    .pink-sprites-filler-mask {
+      display: block !important;
+    }
+  }
+  @media only screen and (min-width:992px) {
+    .pink-sprites-filler {
+      width: 70%
+    }
+
+  }
+</style>
+
+
+
+<div class="sprites-container">
+  <div class="sprites-second-svg-container">
+    {{ 'logo-letters.svg' | asset_url | img_tag: 'Logo letters', "pink-sprites-background-logo-letters" }}
+    <svg
+      width="253"
+      height="96"
+      viewBox="0 0 253 96"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M127 0H269.5V96H0L127 0Z" fill="#E3B1BE" />
+      <path
+        d="M127 0H269.5V96H0L127 0Z"
+        fill="white"
+        fill-opacity="0.42" />
+    </svg>
+    <div class="pink-sprites-filler">
+      <div class="pink-sprites-filler-mask"></div>
+    </div>
+  </div>
+
+</div>
