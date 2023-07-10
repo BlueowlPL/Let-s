@@ -157,11 +157,11 @@
 {% javascript %}
 
   window.addEventListener('DOMContentLoaded', function() {
-      var collectionSwiperContainer = document.querySelector('.collectionSwiper');
+      let collectionSwiperContainer = document.querySelector('.collectionSwiper');
     
     function checkMediaConditions() {
-      var screenWidth = window.innerWidth;
-      var productsToShow = collectionSwiperContainer.getAttribute('data-products-to-show');
+      let screenWidth = window.innerWidth;
+      let productsToShow = collectionSwiperContainer.getAttribute('data-products-to-show');
       
       if (screenWidth > 1256 && productsToShow > 3) {
         
@@ -182,12 +182,12 @@
       checkMediaConditions();
     });
 
-    var variantSelects = document.querySelectorAll('.variant-select');
+    let variantSelects = document.querySelectorAll('.variant-select');
     variantSelects.forEach(function(variantSelect) {
       variantSelect.addEventListener('change', function() {
-        var selectedVariantId = variantSelect.value;
-        var productCard = variantSelect.closest('.product-card');
-        var selectedVariantIdInput = productCard.querySelector('#selected-variant-id');
+        let selectedVariantId = variantSelect.value;
+        let productCard = variantSelect.closest('.product-card');
+        let selectedVariantIdInput = productCard.querySelector('#selected-variant-id');
         if (selectedVariantIdInput) {
           selectedVariantIdInput.value = selectedVariantId; 
         }
