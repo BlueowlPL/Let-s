@@ -68,7 +68,7 @@
                   {% for block in section.blocks %}
                     {% case block.type %}
                       {% when 'bottomLink' %}
-                   <li>  {{ block.settings.linkText | link_to: block.settings.linkurl  }}</li>                            
+                   <li class="header__desktop-bottom-link">  {{ block.settings.linkText | link_to: block.settings.linkurl  }}</li>                            
                     {% endcase %}
                   {% endfor %}
                 </ul>
@@ -155,7 +155,7 @@
                   {%- endfor -%}
                 </div>
                 <div class="header__mobile-second-list-footer">
-                  <div {% unless count> 0 %} style="display:none;"{% endunless %} class="flex header__mobile-mini-slider" >
+                  <div {% unless count > 0 %} style="display:none;"{% endunless %} class="flex header__mobile-mini-slider" >
                     <div class="mobile-footer-links-container  flex hedaer__mobile-footer-links-container">
                       <ul class="flex" id="mobile-footer-links">
                         </ul>
