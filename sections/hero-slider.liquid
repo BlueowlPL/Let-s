@@ -213,7 +213,7 @@
 
 {% javascript %} 
 window.addEventListener('DOMContentLoaded', function() {
-  var swiperThumbs = new Swiper(".thumbnailsSwiper", { 
+  let swiperThumbs = new Swiper(".thumbnailsSwiper", { 
       spaceBetween: 8,
       slidesPerView: 4, 
       freeMode: true,
@@ -225,7 +225,7 @@ window.addEventListener('DOMContentLoaded', function() {
       centeredSlides: true, 
       touchRatio: 0.2,
     });
-  var mainSwiper = document.querySelector('.mainSwiper').swiper;
+  let mainSwiper = document.querySelector('.mainSwiper').swiper;
   
   mainSwiper.controller.control = swiperThumbs; 
   swiperThumbs.controller.control = mainSwiper;  
