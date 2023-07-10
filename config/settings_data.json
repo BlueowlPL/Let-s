@@ -11,9 +11,9 @@
     "gradient_background_1": "",
     "colors_background_2": "#f3f3f3",
     "gradient_background_2": "",
-    "type_header_font": "assistant_n4",
+    "type_header_font": "raleway_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "lato_n4",
     "body_scale": 100,
     "page_width": 1600,
     "spacing_sections": 0,
@@ -142,7 +142,6 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "{{ shop.brand.logo }}",
           "logo_width": 90,
           "logo_position": "middle-center",
           "menu": "kolekcje",
@@ -160,12 +159,18 @@
         "blocks": {
           "footer-0": {
             "type": "link_list",
-            "settings": { "heading": "Informacje", "menu": "footer" }
+            "settings": {
+              "heading": "Informacje",
+              "menu": "footer"
+            }
           },
           "footer-1": {
             "type": "link_list",
             "disabled": true,
-            "settings": { "heading": "Info", "menu": "" }
+            "settings": {
+              "heading": "Info",
+              "menu": ""
+            }
           },
           "footer-2": {
             "type": "text",
@@ -199,21 +204,26 @@
       },
       "main-password-footer": {
         "type": "main-password-footer",
-        "settings": { "color_scheme": "background-1" }
+        "settings": {
+          "color_scheme": "background-1"
+        }
       }
     },
     "content_for_index": [],
     "blocks": {
-      // "8962992520437913685": {
-      //   "type": "shopify://apps/yotpo-loyalty-rewards/blocks/loader-app-embed-block/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
-      //   "disabled": false,
-      //   "settings": { "inject_modules_loader": true, "inject_sdk_loader": true }
-      // },
-      // "8257630261509358238": {
-      //   "type": "shopify://apps/yotpo-subscriptions/blocks/app-embed-block/ef25e582-ada5-4bb0-b4e7-f94e97ab1bb4",
-      //   "disabled": false,
-      //   "settings": {}
-      // },
+      "8962992520437913685": {
+        "type": "shopify://apps/yotpo-loyalty-rewards/blocks/loader-app-embed-block/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
+        "disabled": false,
+        "settings": {
+          "inject_modules_loader": true,
+          "inject_sdk_loader": true
+        }
+      },
+      "8257630261509358238": {
+        "type": "shopify://apps/yotpo-subscriptions/blocks/app-embed-block/ef25e582-ada5-4bb0-b4e7-f94e97ab1bb4",
+        "disabled": false,
+        "settings": {}
+      },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
@@ -398,11 +408,17 @@
           "blocks": {
             "footer-0": {
               "type": "link_list",
-              "settings": { "heading": "Quick links", "menu": "footer" }
+              "settings": {
+                "heading": "Quick links",
+                "menu": "footer"
+              }
             },
             "footer-1": {
               "type": "link_list",
-              "settings": { "heading": "Info", "menu": "footer" }
+              "settings": {
+                "heading": "Info",
+                "menu": "footer"
+              }
             },
             "footer-2": {
               "type": "text",
@@ -436,7 +452,9 @@
         },
         "main-password-footer": {
           "type": "main-password-footer",
-          "settings": { "color_scheme": "background-1" }
+          "settings": {
+            "color_scheme": "background-1"
+          }
         }
       }
     }

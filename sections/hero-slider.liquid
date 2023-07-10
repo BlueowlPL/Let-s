@@ -1,0 +1,233 @@
+{{ 'section-hero-slider.css' | asset_url | stylesheet_tag }}
+{% include 'swiper' with 
+  swiperClass: 'mainSwiper',
+  slidesPerView: 1,
+  grabCursor: true,
+  spaceBetween: 0,
+  slidesPerView_mobile: 1,
+  slidesPerView_tablet: 1,
+  slidesPerView_desktop: 1,
+  spaceBetween_mobile: 0
+%}
+
+<div class="section-wrapper">
+  <div class="swiper-container mainSwiper">
+    <div class="swiper-wrapper">
+      {% for slide in section.blocks %}
+        <div class="swiper-slide"> 
+          <div class="img-overlay" style="background:{{ slide.settings.overlay_color | hex_to_rgba: slide.settings.overlay_opacity }}"></div> 
+            {%- if slide.settings.slide_image -%}
+            {%- assign height = slide.settings.slide_image.width | divided_by: slide.settings.slide_image.aspect_ratio | round -%}
+            {{ slide.settings.slide_image | image_url: width: 3840 | image_tag:
+              loading: 'lazy',
+              height: height,
+              sizes: "100vw",
+              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+            }}
+            {%- else -%}
+              {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          <div class="slider-text">
+            {%- if slide.settings.slide_title -%}
+              <h2 class="{{ slide.settings.heading_size }}" style="color:{{ slide.settings.heading_color }}; {% if slide.settings.heading_bold %} font-weight: 800;{% endif %}">{{ slide.settings.slide_title | escape }}</h2>
+            {%- endif -%}
+            {%- if slide.settings.slide_description -%}
+              <h4 class="{{ slide.settings.description_size }}" style="color:{{ slide.settings.description_color }}; {% if slide.settings.description_bold %} font-weight: 800;{% endif %}">{{ slide.settings.slide_description | escape }}</h4>
+            {%- endif -%}
+            {%- if slide.settings.button_label != blank -%}
+              <div class="heroSlider-button">
+                <a{% if slide.settings.button_link %} href="{{ slide.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="button" style="color:{{ slide.settings.button_label_color }}">{{ slide.settings.button_label | escape }}</a>
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-button-prev custom-swiper-button-prev">
+        <img src="{{ 'hero-arrow-left.svg' | asset_url }}"  width="42" height="42" />
+    </div>
+    <div class="swiper-button-next custom-swiper-button-next">
+        <img src="{{ 'hero-arrow-right.svg' | asset_url }}"  width="42" height="42" />
+    </div>
+    <div class="swiper-pagination"></div> 
+  </div>
+  <div class="thumbnailsSlider">
+    <div thumbsSlider="" class="swiper-container thumbnailsSwiper">
+      <div class="swiper-wrapper">
+        {% for slide in section.blocks %}
+          <div class="swiper-slide">
+            {%- if slide.settings.slide_image -%}
+            {%- assign height = slide.settings.slide_image.width | divided_by: slide.settings.slide_image.aspect_ratio | round -%}
+            {{ slide.settings.slide_image | image_url: width: 3840 | image_tag:
+              loading: 'lazy',
+              height: height,
+              sizes: "100vw",
+              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+            }}
+            {%- else -%}
+              {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </div>
+        {% endfor %}
+      </div>
+    </div> 
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.hero-slider.name",
+  "tag": "section",
+  "class": "section",
+  "presets": [
+    {
+      "name": "t:sections.hero-slider.presets.name",
+      "category": "t:sections.hero-slider.presets.category"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "t:sections.hero-slider.blocks.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "t:sections.hero-slider.blocks.settings.slide_image.label",
+          "id": "slide_image"
+        },
+        {
+        "type": "color",
+        "label": "t:sections.hero-slider.blocks.settings.overlay_color.label",
+        "id": "overlay_color",
+        "default": "#000000"
+        },
+        {
+        "type": "range",
+        "id": "overlay_opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "label": "t:sections.hero-slider.blocks.settings.overlay_opacity.label",
+        "default": 0.2
+        },
+        {
+          "type": "text",
+          "label": "t:sections.hero-slider.blocks.settings.slide_title.label",
+          "id": "slide_title"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h3",
+              "label": "t:sections.hero-slider.blocks.settings.heading_size.options__1.label"
+            },
+            {
+              "value": "h2",
+              "label": "t:sections.hero-slider.blocks.settings.heading_size.options__2.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.hero-slider.blocks.settings.heading_size.options__3.label"
+            }
+          ],
+          "default": "h2",
+          "label": "t:sections.hero-slider.blocks.settings.heading_size.label"
+        }, 
+        {
+        "type": "color",
+        "label": "t:sections.hero-slider.blocks.settings.heading_color.label",
+        "id": "heading_color",
+        "default": "#000000"
+        }, 
+        {
+        "type": "checkbox",
+        "id": "heading_bold",
+        "label": "t:sections.hero-slider.blocks.settings.heading_bold.label",
+        "default": false
+        }, 
+        {
+          "type": "textarea",
+          "label": "t:sections.hero-slider.blocks.settings.slide_description.label",
+          "id": "slide_description"
+        },
+        {
+          "type": "select",
+          "id": "description_size",
+          "options": [
+            {
+              "value": "h5",
+              "label": "t:sections.hero-slider.blocks.settings.description_size.options__1.label"
+            },
+            {
+              "value": "h4",
+              "label": "t:sections.hero-slider.blocks.settings.description_size.options__2.label"
+            },
+            {
+              "value": "h3",
+              "label": "t:sections.hero-slider.blocks.settings.description_size.options__3.label"
+            }
+          ],
+          "default": "h4",
+          "label": "t:sections.hero-slider.blocks.settings.description_size.label"
+        }, 
+        {
+        "type": "color",
+        "label": "t:sections.hero-slider.blocks.settings.description_color.label",
+        "id": "description_color",
+        "default": "#000000"
+        }, 
+        {
+        "type": "checkbox",
+        "id": "description_bold",
+        "label": "t:sections.hero-slider.blocks.settings.description_bold.label",
+        "default": false
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:sections.hero-slider.blocks.settings.button_label.label",
+          "info": "t:sections.hero-slider.blocks.settings.button_label.info"
+        },
+        {
+        "type": "color",
+        "label": "t:sections.hero-slider.blocks.settings.button_label_color.label",
+        "id": "button_label_color",
+        "default": "#000000"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.hero-slider.blocks.settings.button_link.label"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %} 
+window.addEventListener('DOMContentLoaded', function() {
+  var swiperThumbs = new Swiper(".thumbnailsSwiper", { 
+      spaceBetween: 8,
+      slidesPerView: 4, 
+      freeMode: true,
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      direction: 'vertical',
+      slideToClickedSlide: true,
+      grabCursor: true,
+      centeredSlides: true, 
+      touchRatio: 0.2,
+    });
+  var mainSwiper = document.querySelector('.mainSwiper').swiper;
+  
+  mainSwiper.controller.control = swiperThumbs; 
+  swiperThumbs.controller.control = mainSwiper;  
+});
+{% endjavascript %}
