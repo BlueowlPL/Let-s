@@ -114,6 +114,10 @@ nav {
   color: inherit;
 }
 
+.header__desktop-second-list a:hover {
+  color: var(--brand-1-300);
+}
+
 
 .header__desktop-main-links>li>a {
   margin-inline: 2rem;
