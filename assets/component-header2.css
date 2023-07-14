@@ -151,7 +151,9 @@ nav {
 }
 
 .header__desktop-main-links .header__desktop-second-list .flex-col {
-  width: 200px;
+  width: fit-content;
+  max-width: 200px;
+  margin-right: 4rem;
 }
 
 .header__desktop-main-links .header__desktop-second-list-links-container>li>a {
