@@ -11,16 +11,10 @@
             "padding_top": 16,
             "padding_bottom": 16
           }
-        },
-        "79166cf2-5252-4b89-a7ce-642ff11cb083": {
-          "type": "shopify:\/\/apps\/magic-menu\/blocks\/app-block\/a5335477-2400-4780-948e-a3d486d0ea7a",
-          "settings": {
-          }
         }
       },
       "block_order": [
-        "0ee2f7c6-e50b-43bc-be4d-114bb408c49d",
-        "79166cf2-5252-4b89-a7ce-642ff11cb083"
+        "0ee2f7c6-e50b-43bc-be4d-114bb408c49d"
       ],
       "settings": {
         "include_margins": true
