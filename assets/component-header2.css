@@ -122,6 +122,14 @@ nav {
   color: var(--neutrals-500);
 }
 
+.header__desktop-second-list-footer ul button:hover {
+  color: var(--brand-1-300);
+}
+
+.header__desktop-second-list-footer ul button:first-child:hover {
+  color: var(--categories-y1-600);
+}
+
 .header__desktop-main-links>li>a {
   margin-inline: 2rem;
   font-weight: 700;
