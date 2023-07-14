@@ -3079,5 +3079,5 @@ details-disclosure>details {
 }
 
 .xos-arrow {
-  display: none;
+  display: none !important;
 }
