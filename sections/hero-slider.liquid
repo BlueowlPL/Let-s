@@ -225,7 +225,7 @@ window.addEventListener('DOMContentLoaded', function() {
       centeredSlides: true, 
       touchRatio: 0.2,
     });
-  let mainSwiper = document.querySelector('.mainSwiper').swiper;
+  const mainSwiper = document.querySelector('.mainSwiper').swiper;
   
   mainSwiper.controller.control = swiperThumbs; 
   swiperThumbs.controller.control = mainSwiper;  
