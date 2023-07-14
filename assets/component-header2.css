@@ -161,7 +161,7 @@ nav {
   font-size: 1.4rem;
   margin-bottom: 2rem;
   color: var(--neutrals-600);
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .header__desktop-main-links .header__desktop-second-list-links-container {
