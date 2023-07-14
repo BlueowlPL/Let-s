@@ -52,7 +52,7 @@
   }
 
   .product-details h5 {
-    color: #262329;
+    color: var(--neutrals-600);
     font-size: 20px;
     font-family: Raleway;
     font-style: normal;
@@ -66,7 +66,7 @@
 
     .variant-select {
       padding: 6px;
-      border: solid 1px #21145F;
+      border: solid 1px var(--brand-1-340);
       font-family: 'Lato';
       font-weight: 700;
     }
@@ -89,7 +89,7 @@
     }
 
     .price-normal {
-      color: #7A767D;
+      color: var(--neutrals-400);
       font-size: 16px;
       font-family: Lato;
       font-style: normal;
@@ -99,15 +99,15 @@
     }
 
     .price-promo {
-      color: #262329;
+      color: var(--neutrals-600);
       font-weight: 800;
     }
   }
 
   .product-card-submit {
     width: 100%;
-    background: #21145F;
-    color: #fff;
+    background: var(--brand-1-300);
+    color: var(--neutrals-000);
     padding: 12px;
     max-width: 332px;
     border: none;
@@ -161,5 +161,5 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 1.323px solid #C5BEC5;
+  border: 1.323px solid var(--neutrals-350);
 }
