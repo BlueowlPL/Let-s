@@ -114,7 +114,7 @@ nav {
   color: inherit;
 }
 
-.header__desktop-second-list a:hover {
+.header__desktop-second-list .flex-col a:hover {
   color: var(--brand-1-300);
 }
 
