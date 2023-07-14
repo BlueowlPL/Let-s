@@ -3067,3 +3067,7 @@ details-disclosure>details {
   display: flex;
   flex-direction: row;
 }
+
+.ia_menu_collections {
+  padding: 0;
+}
