@@ -4,11 +4,12 @@
       "type": "apps",
       "blocks": {
         "b608f894-03c2-41b1-a5d2-56c016d3c385": {
-          "type": "shopify://apps/magic-menu/blocks/app-block/a5335477-2400-4780-948e-a3d486d0ea7a",
-          "settings": {}
+          "type": "shopify:\/\/apps\/magic-menu\/blocks\/app-block\/a5335477-2400-4780-948e-a3d486d0ea7a",
+          "settings": {
+          }
         },
         "0ee2f7c6-e50b-43bc-be4d-114bb408c49d": {
-          "type": "shopify://apps/xo-story-feeds/blocks/xo-story/73c32a5d-481e-4b4e-99f6-012a00af21b7",
+          "type": "shopify:\/\/apps\/xo-story-feeds\/blocks\/xo-story\/73c32a5d-481e-4b4e-99f6-012a00af21b7",
           "settings": {
             "id": 2,
             "container_width": 0,
@@ -31,7 +32,7 @@
         "a45b5ff0-afc5-461c-9f2f-a073f287920f": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/slide-1.jpg",
+            "slide_image": "shopify:\/\/shop_images\/slide-1.jpg",
             "overlay_color": "#000000",
             "overlay_opacity": 0.2,
             "slide_title": "“Almost before we knew it!“",
@@ -44,13 +45,13 @@
             "description_bold": true,
             "button_label": "ODKRYJ",
             "button_label_color": "#262329",
-            "button_link": "shopify://pages/contact"
+            "button_link": "shopify:\/\/pages\/contact"
           }
         },
         "a894f6ef-0d9a-4c7e-8aef-f2d0988979b2": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/slide-2.jpg",
+            "slide_image": "shopify:\/\/shop_images\/slide-2.jpg",
             "overlay_color": "#000000",
             "overlay_opacity": 0.2,
             "slide_title": "“Almost before we knew it!“",
@@ -63,13 +64,13 @@
             "description_bold": true,
             "button_label": "ODKRYJ",
             "button_label_color": "#262329",
-            "button_link": "shopify://pages/home"
+            "button_link": "shopify:\/\/pages\/home"
           }
         },
         "e009e6de-22b6-4fd2-a4c2-e82bd714f74a": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/slide-1.jpg",
+            "slide_image": "shopify:\/\/shop_images\/slide-1.jpg",
             "overlay_color": "#000000",
             "overlay_opacity": 0.2,
             "slide_title": "",
@@ -88,7 +89,7 @@
         "3e71053c-1afe-4e0b-b0b9-3f3fa78a971a": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/slide-2.jpg",
+            "slide_image": "shopify:\/\/shop_images\/slide-2.jpg",
             "overlay_color": "#000000",
             "overlay_opacity": 0.2,
             "slide_title": "",
@@ -107,7 +108,7 @@
         "374c1642-f5a9-4a4a-a128-d827b68bdc94": {
           "type": "slide",
           "settings": {
-            "slide_image": "shopify://shop_images/slide-1.jpg",
+            "slide_image": "shopify:\/\/shop_images\/slide-1.jpg",
             "overlay_color": "#000000",
             "overlay_opacity": 0.2,
             "slide_title": "",
@@ -131,12 +132,13 @@
         "3e71053c-1afe-4e0b-b0b9-3f3fa78a971a",
         "374c1642-f5a9-4a4a-a128-d827b68bdc94"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "c4705aba-2fa5-45aa-8e75-f34d4c7e151b": {
       "type": "collection-slider",
       "settings": {
-        "section_background": "shopify://shop_images/collection-slider-bg.jpg",
+        "section_background": "shopify:\/\/shop_images\/collection-slider-bg.jpg",
         "collection_name": "KOLEKCJA WIOSNA-LATO",
         "collection_name_size": "h3",
         "collection_name_color": "#262329",
@@ -146,7 +148,7 @@
         "heading_color": "#262329",
         "heading_bold": true,
         "collection": "kolekcja-lato-zima",
-        "products_to_show": 3
+        "products_to_show": 6
       }
     },
     "cc9a3ef0-57d2-4a64-bf1f-86e8af78d2d6": {
@@ -155,7 +157,7 @@
         "1bf953f7-cebd-475b-bcad-41419336e92b": {
           "type": "block",
           "settings": {
-            "bullet_image": "shopify://shop_images/free-shipping.svg",
+            "bullet_image": "shopify:\/\/shop_images\/free-shipping.svg",
             "bullet_heading": "Darmowa dostawa",
             "heading_size": "h4",
             "heading_color": "#262329",
@@ -171,7 +173,7 @@
         "fffcb304-aaca-4dc7-811d-0436873dbe57": {
           "type": "block",
           "settings": {
-            "bullet_image": "shopify://shop_images/fast-shipping.svg",
+            "bullet_image": "shopify:\/\/shop_images\/fast-shipping.svg",
             "bullet_heading": "Szybka dostawa",
             "heading_size": "h4",
             "heading_color": "#262329",
@@ -179,7 +181,7 @@
             "bullet_subheading": "",
             "subheading_color": "#000000",
             "subheading_bold": false,
-            "bullet_description": "Wysyłka w 24/48 h w dni robocze",
+            "bullet_description": "Wysyłka w 24\/48 h w dni robocze",
             "description_color": "#7a767d",
             "description_bold": false
           }
@@ -187,7 +189,7 @@
         "c53ef0fd-dba1-413d-837d-f85aae7f08cc": {
           "type": "block",
           "settings": {
-            "bullet_image": "shopify://shop_images/safe-payments.svg",
+            "bullet_image": "shopify:\/\/shop_images\/safe-payments.svg",
             "bullet_heading": "Bezpieczne płatności",
             "heading_size": "h4",
             "heading_color": "#262329",
@@ -203,7 +205,7 @@
         "16e7f7d6-492e-4f9f-883a-37caffa09314": {
           "type": "block",
           "settings": {
-            "bullet_image": "shopify://shop_images/woman-support.svg",
+            "bullet_image": "shopify:\/\/shop_images\/woman-support.svg",
             "bullet_heading": "Kobiece wsparcie",
             "heading_size": "h4",
             "heading_color": "#262329",
@@ -239,7 +241,7 @@
         "4ee97f8e-8250-4ef2-be29-f38f42ac62e1": {
           "type": "block",
           "settings": {
-            "bullet_image": "shopify://shop_images/cruelty-free.svg",
+            "bullet_image": "shopify:\/\/shop_images\/cruelty-free.svg",
             "bullet_heading": "Cruelty free",
             "heading_size": "h4",
             "heading_color": "#262329",
@@ -255,7 +257,7 @@
         "2cbd9f5b-5c19-4a68-82de-87044824006b": {
           "type": "block",
           "settings": {
-            "bullet_image": "shopify://shop_images/vegan.svg",
+            "bullet_image": "shopify:\/\/shop_images\/vegan.svg",
             "bullet_heading": "Vegan",
             "heading_size": "h4",
             "heading_color": "#262329",
@@ -271,7 +273,7 @@
         "90693619-0551-48f7-b43d-5193b99a6cdb": {
           "type": "block",
           "settings": {
-            "bullet_image": "shopify://shop_images/im-green.svg",
+            "bullet_image": "shopify:\/\/shop_images\/im-green.svg",
             "bullet_heading": "I’m green",
             "heading_size": "h4",
             "heading_color": "#262329",
@@ -287,7 +289,7 @@
         "1ef7dcfb-a649-4524-a1dd-dc79f9d57661": {
           "type": "block",
           "settings": {
-            "bullet_image": "shopify://shop_images/placeholder.svg",
+            "bullet_image": "shopify:\/\/shop_images\/placeholder.svg",
             "bullet_heading": "Placeholder",
             "heading_size": "h4",
             "heading_color": "#262329",
@@ -427,7 +429,7 @@
       "type": "apps",
       "blocks": {
         "d87420da-ec34-41be-904b-27d94a174e81": {
-          "type": "shopify://apps/xo-story-feeds/blocks/xo-story/73c32a5d-481e-4b4e-99f6-012a00af21b7",
+          "type": "shopify:\/\/apps\/xo-story-feeds\/blocks\/xo-story\/73c32a5d-481e-4b4e-99f6-012a00af21b7",
           "settings": {
             "id": 3,
             "padding_top": 10,
@@ -435,7 +437,9 @@
           }
         }
       },
-      "block_order": ["d87420da-ec34-41be-904b-27d94a174e81"],
+      "block_order": [
+        "d87420da-ec34-41be-904b-27d94a174e81"
+      ],
       "settings": {
         "include_margins": true
       }
@@ -516,7 +520,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -524,7 +528,11 @@
           }
         }
       },
-      "block_order": ["heading", "text", "button"],
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -618,18 +626,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand</p>",
+            "heading": "<p>Talk about your brand<\/p>",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
         }
       },
-      "block_order": ["heading", "text"],
+      "block_order": [
+        "heading",
+        "text"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -689,7 +700,11 @@
           }
         }
       },
-      "block_order": ["collection-0", "product", "collection-1"],
+      "block_order": [
+        "collection-0",
+        "product",
+        "collection-1"
+      ],
       "settings": {
         "heading": "Multimedia collage",
         "heading_size": "h2",
@@ -706,7 +721,7 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
@@ -721,7 +736,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -730,7 +745,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -739,13 +754,17 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": ["column1", "column2", "column3"],
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -776,12 +795,13 @@
         "template--17610553000253__1c7d747c-aeee-4791-9134-3956c768421c-1676451283d447ea12-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
           }
         },
         "template--17610553000253__1c7d747c-aeee-4791-9134-3956c768421c-1676451283d447ea12-2": {
           "type": "email_form",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -798,11 +818,13 @@
     },
     "3c0a3f09-6aa1-432f-a9c5-ca0856fda147": {
       "type": "shogun-custom-63ff2f2fbcfa4c00d3629495",
-      "settings": {}
+      "settings": {
+      }
     },
     "ef312dd5-9e0a-4571-a003-505bccf1b0c8": {
       "type": "shogun-custom-63ff39907d4b03010d52cdbc",
-      "settings": {}
+      "settings": {
+      }
     },
     "f476da7b-ca46-44dd-ad99-2970e46e7707": {
       "type": "collection-list",

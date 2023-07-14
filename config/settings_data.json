@@ -135,8 +135,11 @@
             }
           }
         },
-        "block_order": ["announcement-bar-0"],
-        "settings": {}
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
       },
       "header": {
         "type": "header",
@@ -176,11 +179,15 @@
             "type": "text",
             "settings": {
               "heading": "Kontakt",
-              "subtext": "<p>Let's kosmetyki</p><p>Rynek Głowny 54</p><p>31-055 Kraków</p>"
+              "subtext": "<p>Let's kosmetyki<\/p><p>Rynek Głowny 54<\/p><p>31-055 Kraków<\/p>"
             }
           }
         },
-        "block_order": ["footer-0", "footer-1", "footer-2"],
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "footer-2"
+        ],
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
@@ -209,10 +216,12 @@
         }
       }
     },
-    "content_for_index": [],
+    "content_for_index": [
+
+    ],
     "blocks": {
       "8962992520437913685": {
-        "type": "shopify://apps/yotpo-loyalty-rewards/blocks/loader-app-embed-block/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
+        "type": "shopify:\/\/apps\/yotpo-loyalty-rewards\/blocks\/loader-app-embed-block\/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
         "disabled": false,
         "settings": {
           "inject_modules_loader": true,
@@ -220,29 +229,34 @@
         }
       },
       "8257630261509358238": {
-        "type": "shopify://apps/yotpo-subscriptions/blocks/app-embed-block/ef25e582-ada5-4bb0-b4e7-f94e97ab1bb4",
+        "type": "shopify:\/\/apps\/yotpo-subscriptions\/blocks\/app-embed-block\/ef25e582-ada5-4bb0-b4e7-f94e97ab1bb4",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "7570552984445421165": {
-        "type": "shopify://apps/yotpo-product-photo-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "7682102568729335718": {
-        "type": "shopify://apps/storiefy-product-stories/blocks/app-embeded/1a3393e7-6890-40af-9e0f-590fb41ea0ae",
+        "type": "shopify:\/\/apps\/storiefy-product-stories\/blocks\/app-embeded\/1a3393e7-6890-40af-9e0f-590fb41ea0ae",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       },
       "1645462046225424150": {
-        "type": "shopify://apps/xo-story-feeds/blocks/xo-story-scripts/73c32a5d-481e-4b4e-99f6-012a00af21b7",
+        "type": "shopify:\/\/apps\/xo-story-feeds\/blocks\/xo-story-scripts\/73c32a5d-481e-4b4e-99f6-012a00af21b7",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       }
     }
   },
@@ -383,8 +397,11 @@
               }
             }
           },
-          "block_order": ["announcement-bar-0"],
-          "settings": {}
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {
+          }
         },
         "header": {
           "type": "header",
@@ -424,11 +441,15 @@
               "type": "text",
               "settings": {
                 "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
               }
             }
           },
-          "block_order": ["footer-0", "footer-1", "footer-2"],
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
           "settings": {
             "color_scheme": "background-1",
             "newsletter_enable": true,
