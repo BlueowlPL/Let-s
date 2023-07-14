@@ -3069,5 +3069,6 @@ details-disclosure>details {
 }
 
 .ia_menu_collections {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
