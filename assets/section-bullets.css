@@ -1,6 +1,6 @@
 .section-bullets {
   width: 100%;
-  background: #fff;
+  background: var(--neutrals-000);
 
   .bullets-wrapper {
     width: 100%;
