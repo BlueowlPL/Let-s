@@ -98,7 +98,7 @@
   }
   
   .swiper-pagination-bullet-active {
-    background: #262329!important;
+    background: var(--neutrals-600)!important;
     border: none; 
   }
   
