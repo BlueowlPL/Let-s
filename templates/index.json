@@ -3,12 +3,6 @@
     "16788054201e42611a": {
       "type": "apps",
       "blocks": {
-        "b608f894-03c2-41b1-a5d2-56c016d3c385": {
-          "type": "shopify:\/\/apps\/magic-menu\/blocks\/app-block\/a5335477-2400-4780-948e-a3d486d0ea7a",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "0ee2f7c6-e50b-43bc-be4d-114bb408c49d": {
           "type": "shopify:\/\/apps\/xo-story-feeds\/blocks\/xo-story\/73c32a5d-481e-4b4e-99f6-012a00af21b7",
           "settings": {
@@ -20,7 +14,6 @@
         }
       },
       "block_order": [
-        "b608f894-03c2-41b1-a5d2-56c016d3c385",
         "0ee2f7c6-e50b-43bc-be4d-114bb408c49d"
       ],
       "settings": {
