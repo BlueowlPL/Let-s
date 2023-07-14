@@ -131,7 +131,7 @@
   }
 
   .product-card-submit:hover {
-    background: #4128bd;
+    background: var(--brand-1-100);
   }
 
   .cart-label {
