@@ -277,14 +277,17 @@ const formFooterLinksDom = () => {
         document.getElementsByClassName("mobile-footer-links-container")[0]
           .clientWidth
       }px`;
-      tripleArr.forEach((text) => {
+      for (let index = 0; index < tripleArr.length; index++) {
+        const text = tripleArr[index];
         const li = document.createElement("li");
         const a = document.createElement("a");
         a.innerText = text;
-        a.href = dropdownLinksUrlsArr[index];
+        if (index < dropdownLinksUrlsArr.length) {
+          a.href = dropdownLinksUrlsArr[index];
+        }
         li.appendChild(a);
         div.appendChild(li);
-      });
+      }
       mobileFooterLinks.appendChild(div);
       tripleArr = [];
     }
