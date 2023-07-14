@@ -114,8 +114,8 @@ nav {
   color: inherit;
 }
 
-.header__desktop-second-list-links-container li:hover>a {
-  color: var(--brand-1-300);
+.header__desktop-second-list-links-container li a:hover {
+  color: var(--brand-1-100);
 }
 
 
