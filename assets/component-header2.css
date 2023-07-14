@@ -150,7 +150,7 @@ nav {
   flex-direction: column;
 }
 
-.header__desktop-main-links .header__desktop-second-list li {
+.header__desktop-main-links .header__desktop-second-list .flex-col {
   margin-right: 4.2rem
 }
 
