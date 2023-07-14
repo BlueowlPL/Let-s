@@ -1,8 +1,8 @@
 .product-card {
   max-width: 392px;
   position: relative;
-  background: #fff;
-  border-right: 1px solid #fff;
+  background: var(--neutrals-000);
+  border-right: 1px solid var(--neutrals-000);
 
   @media (max-width: 500px) {
       max-width: 300px; 
