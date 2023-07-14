@@ -119,7 +119,7 @@ nav {
 }
 
 .header__desktop-main-links>li>a:hover {
-  color: var(--neutrals-300);
+  color: var(--neutrals-600);
 }
 
 .header__desktop-main-links>li>a {
