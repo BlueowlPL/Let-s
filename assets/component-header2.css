@@ -151,7 +151,7 @@ nav {
 }
 
 .header__desktop-main-links .header__desktop-second-list .flex-col {
-  margin-right: 4.2rem
+  width: 200px;
 }
 
 .header__desktop-main-links .header__desktop-second-list-links-container>li>a {
