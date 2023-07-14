@@ -77,12 +77,12 @@
     width: 10px !important;
     height: 10px !important;
     background: transparent !important;
-    border: 1px solid #7A767D; 
+    border: 1px solid var(--neutrals-400); 
     opacity: 1;
   }
   
   .swiper-pagination-bullet-active {
-    background: #262329!important;
+    background: var(--neutrals-600) !important;
     border: none; 
   }
 }
