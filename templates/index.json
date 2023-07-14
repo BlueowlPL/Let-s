@@ -5,6 +5,7 @@
       "blocks": {
         "b608f894-03c2-41b1-a5d2-56c016d3c385": {
           "type": "shopify:\/\/apps\/magic-menu\/blocks\/app-block\/a5335477-2400-4780-948e-a3d486d0ea7a",
+          "disabled": true,
           "settings": {
           }
         },
@@ -13,8 +14,8 @@
           "settings": {
             "id": 2,
             "container_width": 0,
-            "padding_top": 10,
-            "padding_bottom": 10
+            "padding_top": 16,
+            "padding_bottom": 16
           }
         }
       },
