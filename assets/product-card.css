@@ -136,6 +136,7 @@
 
   .cart-label {
       position: relative;
+      width: 100%;
     }
 
   .cart-label svg {
