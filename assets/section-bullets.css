@@ -29,7 +29,7 @@
       column-gap: 16px;
 
       .bullet-single {
-        background: #fff;
+        background: var(--neutrals-000);
 
         .single-wrapper {
           display: flex;
@@ -97,7 +97,7 @@
 
   @media (max-width: 992px) {
     .bullets-wrapper {
-      background: #F5F3F5;
+      background: var(--neutrals-100);
     }
   }
 }
