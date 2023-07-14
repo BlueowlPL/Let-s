@@ -214,6 +214,84 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "header2": {
+        "type": "header2",
+        "blocks": {
+          "header2-0": {
+            "type": "bottomLink",
+            "settings": {
+              "linkText": "MUST HAVE",
+              "linkurl": ""
+            }
+          },
+          "header2-1": {
+            "type": "bottomLink",
+            "settings": {
+              "linkText": "POMYSŁ NA PREZENT",
+              "linkurl": ""
+            }
+          },
+          "header2-2": {
+            "type": "bottomLink",
+            "settings": {
+              "linkText": "ZESTAWY",
+              "linkurl": ""
+            }
+          },
+          "header2-3": {
+            "type": "bottomLink",
+            "settings": {
+              "linkText": "WSZYSTKIE PRODUKTY",
+              "linkurl": ""
+            }
+          },
+          "header2-4": {
+            "type": "dropdownBottomLink",
+            "settings": {
+              "dropdownLinkText": "",
+              "dropdownLinkUrl": ""
+            }
+          },
+          "header2-5": {
+            "type": "dropdownBottomLink",
+            "settings": {
+              "dropdownLinkText": "",
+              "dropdownLinkUrl": ""
+            }
+          },
+          "header2-6": {
+            "type": "dropdownBottomLink",
+            "settings": {
+              "dropdownLinkText": "",
+              "dropdownLinkUrl": ""
+            }
+          },
+          "header2-7": {
+            "type": "dropdownBottomLink",
+            "settings": {
+              "dropdownLinkText": "",
+              "dropdownLinkUrl": ""
+            }
+          }
+        },
+        "block_order": [
+          "header2-0",
+          "header2-1",
+          "header2-2",
+          "header2-3",
+          "header2-4",
+          "header2-5",
+          "header2-6",
+          "header2-7"
+        ],
+        "settings": {
+        }
+      },
+      "footer2": {
+        "type": "footer2",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
