@@ -354,6 +354,7 @@ nav {
   padding: 1.2rem;
   background: var(--neutrals-000);
   align-items: center;
+  border: none;
 }
 
 .search-input-container input {
