@@ -263,8 +263,8 @@
           "header2-6": {
             "type": "dropdownBottomLink",
             "settings": {
-              "dropdownLinkText": "",
-              "dropdownLinkUrl": ""
+              "dropdownLinkText": "ZESTAWY",
+              "dropdownLinkUrl": "shopify:\/\/collections"
             }
           },
           "header2-7": {
