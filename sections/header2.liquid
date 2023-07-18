@@ -235,7 +235,21 @@ const toogleClasses = () => {
 Array.from(chevrons).forEach(function (element) {
   element.addEventListener("click", (e) => {
     const chevron = e.currentTarget;
-    chevron.closest("div").nextSibling.classList.toggle("expand");
+    const parentDiv = chevron.closest("div");
+    const collapse = parentDiv.nextSibling;
+
+    // Sprawdź, czy inny "collapse" jest otwarty
+    const activeCollapse = document.querySelector(".expand");
+    if (activeCollapse && activeCollapse !== collapse) {
+      activeCollapse.classList.remove("expand");
+      const activeChevron = activeCollapse.previousSibling.querySelector(".chevron-down");
+      if (activeChevron) {
+        activeChevron.classList.remove("active");
+      }
+    }
+
+    // Otwórz/zwiń aktualny "collapse"
+    collapse.classList.toggle("expand");
     chevron.classList.toggle("active");
   });
 });
