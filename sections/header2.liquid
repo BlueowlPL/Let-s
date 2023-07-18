@@ -303,11 +303,14 @@ const formFooterLinksDom = () => {
       clusterDiv = document.createElement("div");
       clusterDiv.classList.add("mobile-footer-links-cluster");
       clusterDiv.style.width = `${linksContainer.clientWidth}px`;
+    } else if ((index + 1) % 3 !== 0 && index === dropdownLinksTextArr.length - 1) {
+      // Sprawdzenie, czy to jest ostatni element, który nie jest w pełnym klastrze
+      mobileFooterLinks.appendChild(clusterDiv);
     }
   });
 };
 
-window.addEventListener("DOMContentLoaded", () => formFooterLinksDom()); 
+window.addEventListener("DOMContentLoaded", () => formFooterLinksDom());
 
 
 </script>
