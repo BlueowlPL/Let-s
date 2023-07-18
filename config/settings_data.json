@@ -249,14 +249,14 @@
           "header2-4": {
             "type": "dropdownBottomLink",
             "settings": {
-              "dropdownLinkText": "MUST-HAVE",
+              "dropdownLinkText": "MUSTHAVE",
               "dropdownLinkUrl": "shopify:\/\/collections"
             }
           },
           "header2-5": {
             "type": "dropdownBottomLink",
             "settings": {
-              "dropdownLinkText": "POMYSŁ-NA-PREZENT",
+              "dropdownLinkText": "POMYSŁ NA PREZENT",
               "dropdownLinkUrl": "shopify:\/\/collections"
             }
           },
