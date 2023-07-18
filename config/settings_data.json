@@ -291,6 +291,7 @@
       "footer2": {
         "type": "footer2",
         "settings": {
+          "footer_desc": "My nadążamy za Twoim aktywnym trybem życia, a Ty możesz nadążać za naszymi nowościami. Zostaw nam swojego maila i otrzymuj porady oraz oferty specjalne!"
         }
       }
     },
