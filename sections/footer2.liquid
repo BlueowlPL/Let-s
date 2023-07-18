@@ -73,15 +73,21 @@
       </div>
       <div>
         <div class="flex  footer__collapsible-header">
-          <h3>Kontakt</h3>
+          {%- if section.settings.newsletter_desc != blank -%}
+            <h3>{{ section.settings.footer_contact_heading | escape }}</h3>
+          {%- endif -%}
           <span class="footer__chevron-down">{% render 'icon-chevron-down' %}</span>
         </div>
         <div class="footer__collapsible-content flex-col">
-          <span>Obsługa klienta</span>
-          <span>lets@nazwa.com</span>
-          <span>Jesteśmy tutaj od 9:00 do 16:00</span>
-          <span>Współpraca +48 48 111 111 111</span>
-          <span>Adres ul. / kod pocztowy</span>
+          {% for block in section.blocks %}
+            {% if block.type == "contactBlock" %}
+              {% for setting in block.settings %}
+                {% if setting.type == "text" %}
+                  <span>{{ setting.label }}: {{ setting.value }}</span>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>
