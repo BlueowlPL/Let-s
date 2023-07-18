@@ -807,6 +807,14 @@
         }
       }
     },
+    "footer2": {
+      "name": "Stopka",
+      "settings": {
+        "footer_desc": {
+          "label": "Tekst w stopce"
+        }
+      }
+    },
     "header": {
       "name": "Nagłówek",
       "settings": {
