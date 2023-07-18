@@ -1001,6 +1001,44 @@
         }
       }
     },
+    "header2": {
+      "name": "Header",
+      "blocks": {
+        "bottomLink": {
+          "name": "Bottom link desktop",
+          "settings": {
+            "linkText": {
+              "label": "Link text"
+            },
+            "linkurl": {
+              "label": "Link URL"
+            }
+          }
+        },
+        "dropdownBottomLink": {
+          "name": "Bottom link mobile",
+          "settings": {
+            "dropdownLinkText": {
+              "label": "Link text"
+            },
+            "dropdownLinkUrl": {
+              "label": "Link URL"
+            }
+          }
+        },
+        "bottomLinkCollection": {
+          "name": "Bottom collection link",
+          "settings": {
+            "bottomLinkCollectionText": {
+              "label": "Link text"
+            },
+            "bottomLinkCollectionUrl": {
+              "label": "Link URL"
+            }
+          }
+        }
+      }
+    },
     "image-banner": {
       "name": "Image banner",
       "settings": {
