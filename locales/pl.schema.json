@@ -833,6 +833,18 @@
         },
         "newsletter_desc": {
           "label": "Opis newslettera"
+        },
+        "footer_menu_1_heading": {
+          "label": "Nagłówek menu 1"
+        },
+        "footer_menu_1": {
+          "label": "Wybierz menu 1"
+        },
+        "footer_menu_2_heading": {
+          "label": "Nagłówek menu 2"
+        },
+        "footer_menu_2": {
+          "label": "Wybierz menu 2"
         }
       }
     },
