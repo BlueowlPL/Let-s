@@ -355,11 +355,11 @@ nav {
   gap: 2.4rem;
 }
 
-.hedaer__mobile-footer-buttons-container .collection-menu a:first-of-type {
+.hedaer__mobile-footer-buttons-container a:first-of-type {
   color: var(--categories-y1-400);
 }
 
-.hedaer__mobile-footer-buttons-container .collection-menu a {
+.hedaer__mobile-footer-buttons-container a {
   color: var(--brand-1-000);
   font-weight: 800;
 }
