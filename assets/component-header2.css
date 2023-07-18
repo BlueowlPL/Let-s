@@ -245,6 +245,7 @@ nav {
 
 .header__desktop-second-list-footer a {
   color: var(--brand-1-000);
+  font-weight: 800;
 }
 
 .header-summary {
