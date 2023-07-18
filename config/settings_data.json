@@ -249,14 +249,14 @@
           "header2-4": {
             "type": "dropdownBottomLink",
             "settings": {
-              "dropdownLinkText": "MUST HAVE",
+              "dropdownLinkText": "MUST-HAVE",
               "dropdownLinkUrl": "shopify:\/\/collections"
             }
           },
           "header2-5": {
             "type": "dropdownBottomLink",
             "settings": {
-              "dropdownLinkText": "POMYSŁ NA PREZENT",
+              "dropdownLinkText": "POMYSŁ-NA-PREZENT",
               "dropdownLinkUrl": "shopify:\/\/collections"
             }
           },
@@ -270,7 +270,7 @@
           "header2-7": {
             "type": "dropdownBottomLink",
             "settings": {
-              "dropdownLinkText": "WSZYSTKIE PRODUKTY",
+              "dropdownLinkText": "WSZYSTKIE-PRODUKTY",
               "dropdownLinkUrl": "shopify:\/\/collections"
             }
           }
