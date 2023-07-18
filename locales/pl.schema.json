@@ -810,6 +810,21 @@
     "footer2": {
       "name": "Stopka",
       "settings": {
+        "select": {
+          "label": "Wybierz typ obrazu"
+        },
+        "svg": {
+          "label": "SVG"
+        },
+        "img": {
+          "label": "Obraz"
+        },
+        "svg_code": {
+          "label": "Wklej kod SVG"
+        },
+        "image": {
+          "label": "Wybierz obraz"
+        },
         "footer_desc": {
           "label": "Tekst w stopce"
         },
