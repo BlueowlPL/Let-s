@@ -292,8 +292,8 @@ const formFooterLinksDom = () => {
       tripleArr.forEach((text) => {
         const li = document.createElement("li");
         const a = document.createElement("a");
-        a.innerText = text;
-        a.href = dropdownLinksUrlsArr[index];
+        a.innerText = text.replace(/(^")|("$)/g, ""); // Usunięcie cudzysłowia z tekstu linku
+        a.href = dropdownLinksUrlsArr[index].replace(/(^")|("$)/g, ""); // Usunięcie cudzysłowia z adresu URL
         li.appendChild(a);
         div.appendChild(li);
       });
@@ -307,14 +307,14 @@ const formFooterLinksDom = () => {
     div.classList.add("mobile-footer-links-cluster");
     div.style.width = `${
       document.getElementsByClassName("mobile-footer-links-container")[0]
-      .clientWidth
-      }px`;
-      tripleArr.forEach((text) => {
-      const index = dropdownLinksTextArr.findIndex((link)=>link===text);
+        .clientWidth
+    }px`;
+    tripleArr.forEach((text) => {
+      const index = dropdownLinksTextArr.findIndex((link) => link === text);
       const li = document.createElement("li");
       const a = document.createElement("a");
-      a.innerText = text;
-      a.href = dropdownLinksUrlsArr[index];
+      a.innerText = text.replace(/(^")|("$)/g, ""); // Usunięcie cudzysłowia z tekstu linku
+      a.href = dropdownLinksUrlsArr[index].replace(/(^")|("$)/g, ""); // Usunięcie cudzysłowia z adresu URL
       li.appendChild(a);
       div.appendChild(li);
       mobileFooterLinks.appendChild(div);
