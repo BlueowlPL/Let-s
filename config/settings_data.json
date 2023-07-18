@@ -270,7 +270,7 @@
           "header2-7": {
             "type": "dropdownBottomLink",
             "settings": {
-              "dropdownLinkText": "WSZYSTKIE-PRODUKTY",
+              "dropdownLinkText": "WSZYSTKIE PRODUKTY",
               "dropdownLinkUrl": "shopify:\/\/collections"
             }
           }
