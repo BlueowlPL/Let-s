@@ -15,7 +15,9 @@
   </div>
   <div class="footer__sections-container flex">
     <div class="footer__first_section flex-col">
-      <p>My nadążamy za Twoim aktywnym trybem życia, a Ty możesz nadążać za naszymi nowościami. Zostaw nam swojego maila i otrzymuj porady oraz oferty specjalne!</p>
+      {%- if section.settings.footer_desc != blank -%}
+          <p>{{ section.settings.footer_desc | escape }}</p>
+      {%- endif -%}
       <p>
         <span>ZAPIS DO NEWSLETTERA</span>
         Pamiętaj, że możesz zrezygnować w każdej chwili.
