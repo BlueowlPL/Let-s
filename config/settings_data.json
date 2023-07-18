@@ -273,6 +273,20 @@
               "dropdownLinkText": "WSZYSTKIE PRODUKTY",
               "dropdownLinkUrl": "shopify:\/\/collections"
             }
+          },
+          "ca13d57c-9e55-4192-8022-76fec3851de4": {
+            "type": "bottomLinkCollection",
+            "settings": {
+              "bottomLinkCollectionText": "WIOSNA-LATO",
+              "bottomLinkCollectionUrl": "shopify:\/\/collections"
+            }
+          },
+          "c75c1119-ccf4-4334-8b52-f424b72069b7": {
+            "type": "bottomLinkCollection",
+            "settings": {
+              "bottomLinkCollectionText": "JESIEŃ-ZIMA",
+              "bottomLinkCollectionUrl": "shopify:\/\/collections"
+            }
           }
         },
         "block_order": [
@@ -283,7 +297,9 @@
           "header2-4",
           "header2-5",
           "header2-6",
-          "header2-7"
+          "header2-7",
+          "ca13d57c-9e55-4192-8022-76fec3851de4",
+          "c75c1119-ccf4-4334-8b52-f424b72069b7"
         ],
         "settings": {
         }
