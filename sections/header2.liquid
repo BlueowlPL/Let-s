@@ -75,7 +75,7 @@
                   {% for block in section.blocks %}
                     {% case block.type %}
                       {% when 'bottomLinkCollection' %}
-                   <button>  {{ block.settings.bottomLinkCollectionText | link_to: block.settings.bottomLinkCollectionUrl  }}</button>                             
+                         {{ block.settings.bottomLinkCollectionText | link_to: block.settings.bottomLinkCollectionUrl  }}                         
                     {% endcase %}
                   {% endfor %}
                   <button>WIOSNA-LATO</button>
