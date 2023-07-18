@@ -61,11 +61,13 @@
           <span class="footer__chevron-down">{% render 'icon-chevron-down' %}</span>
         </div>
         <div class="footer__collapsible-content">
-          <a href="#">Regulamin Polityka Prywatności</a>
-          <a href="#">Dostawa, zamówienia i płatności</a>
-          <a href="#">Zwroty FAQ
-          </div>
-        </a>
+          {% if section.settings.footer_menu_1 %}
+            {% assign menu_handle = section.settings.footer_menu_1 %}
+            {% for link in linklists[menu_handle].links %}
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+          {% endif %}
+        </div>
       </div>
       <div>
         <div class="flex  footer__collapsible-header">
@@ -90,11 +92,12 @@
           <span class="footer__chevron-down">{% render 'icon-chevron-down' %}</span>
         </div>
         <div class="footer__collapsible-content">
-          <a href="#">Sklep</a>
-          <a href="#">O nas</a>
-          <a href="#">Program lojalnościowy</a>
-          <a href="#">Blog</a>
-          <a href="#">Zapytaj ekspertki</a>
+          {% if section.settings.footer_menu_2 %}
+            {% assign menu_handle = section.settings.footer_menu_2 %}
+            {% for link in linklists[menu_handle].links %}
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+          {% endif %}
         </div>
       </div>
       <div>
