@@ -108,8 +108,12 @@
         </div>
       </div>
       <div>
-        <h3>Let's do this together!</h3>
-        <span class="footer__watch-us-span">Obserwuj nas</span>
+        {%- if section.settings.newsletter_desc != blank -%}
+            <h3>{{ section.settings.social_heading | escape }}</h3>
+        {%- endif -%}
+        {%- if section.settings.newsletter_desc != blank -%}
+            <span class="footer__watch-us-span">{{ section.settings.social_subheading | escape }}</span>
+        {%- endif -%}
         <div class="footer_social-links-container flex">
           <a href="#" class="footer__social-link">{% render 'icon-facebook' %}</a>
           <a href="#" class="footer__social-link">{% render 'icon-twitter' %}</a>
@@ -209,6 +213,22 @@
           "id": "footer_contact_heading",
           "label": "t:sections.footer2.settings.footer_contact_heading.label",
           "info": "t:sections.footer2.settings.footer_contact_heading.info"
+        },
+        {
+          "type": "text",
+          "id": "social_heading",
+          "label": "t:sections.footer2.settings.social_heading.label",
+          "info": "t:sections.footer2.settings.social_heading.info"
+        },
+        {
+          "type": "text",
+          "id": "social_subheading",
+          "label": "t:sections.footer2.settings.social_subheading.label"
+        },
+        {
+          "type": "text",
+          "id": "copyrights",
+          "label": "t:sections.footer2.settings.copyrights.label"
         }
     ],	
     "blocks": [
