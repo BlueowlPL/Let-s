@@ -83,7 +83,7 @@
             {% if block.type == "contactBlock" %}
               {% for setting in block.settings %}
                 {% if setting.type == "text" %}
-                  <span>{{ setting.label }}: {{ setting.value }}</span>
+                  <span>{{ setting.value }}</span>
                 {% endif %}
               {% endfor %}
             {% endif %}
