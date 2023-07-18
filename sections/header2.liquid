@@ -11,24 +11,23 @@
   assign dropdownLinksTextArr = '' 
   assign dropdownLinksUrlsArr = ''
   for block in dropdownLinksArr 
-     assign count = count | plus: 1  
+    assign count = count | plus: 1  
     unless forloop.last 
-      assign dropdownLinksTextArr = dropdownLinksTextArr | append:  block.settings.dropdownLinkText |append: ' ' 
+      assign dropdownLinksTextArr = dropdownLinksTextArr | append:  block.settings.dropdownLinkText | append: ',' 
         if block.settings.dropdownLinkUrl != blank
-          assign dropdownLinksUrlsArr = dropdownLinksUrlsArr | append:  block.settings.dropdownLinkUrl |append: ' ' 
+          assign dropdownLinksUrlsArr = dropdownLinksUrlsArr | append:  block.settings.dropdownLinkUrl | append: ',' 
         else 
-          assign dropdownLinksUrlsArr = dropdownLinksUrlsArr | append:'blank'|append:" "
+          assign dropdownLinksUrlsArr = dropdownLinksUrlsArr | append:'blank'|append: ","
         endif 
-      else
-        assign dropdownLinksTextArr = dropdownLinksTextArr | append:  block.settings.dropdownLinkText 
-        if block.settings.dropdownLinkUrl != blank
-          assign dropdownLinksUrlsArr = dropdownLinksUrlsArr | append:  block.settings.dropdownLinkUrl 
-        else 
-          assign dropdownLinksUrlsArr = dropdownLinksUrlsArr | append:'blank'
-        endif 
+    else
+      assign dropdownLinksTextArr = dropdownLinksTextArr | append:  block.settings.dropdownLinkText 
+      if block.settings.dropdownLinkUrl != blank
+        assign dropdownLinksUrlsArr = dropdownLinksUrlsArr | append:  block.settings.dropdownLinkUrl 
+      else 
+        assign dropdownLinksUrlsArr = dropdownLinksUrlsArr | append:'blank'
+      endif 
     endunless 
   endfor 
- assign test = dropdownLinksTextArr | split: " " 
 %}
 
 <header class="header-wrapper flex">
