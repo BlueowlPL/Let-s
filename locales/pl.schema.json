@@ -853,10 +853,10 @@
       },
       "blocks": {
         "contactBlock": {
-          "name": "Blok kontaktowy",
+          "name": "Wiersz kontaktowy",
           "settings": {
             "contact_row": {
-              "label": "Wiersz kontaktowy"
+              "label": "Treść"
             }
           }
         }
