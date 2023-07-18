@@ -353,36 +353,39 @@ window.addEventListener("DOMContentLoaded", () => {
 
 {% schema %}
   {
-    "name": "header2",
+    "name": "t:sections.header.name",
     "settings": [ 
-    ],	"blocks": [
+    ],	
+    "blocks": [
      {
-       "name": "Bottom Link",
+       "name": "t:sections.header.blocks.bottomLink.name",
        "type": "bottomLink",
-       "limit": 6,
+       "limit": 4,
        "settings": [
          {  
            "type": "text",
            "id": "linkText",
-           "label": "Link text"
+           "label": "t:sections.header.blocks.bottomLink.settings.linkText.label"
          },{
           "id": "linkurl",
           "type": "url",
-          "label": "URL link"
+          "label": "t:sections.header.blocks.bottomLink.settings.linkurl.label"
         }
        ]
-     }, {
+     }, 
+      {
        "name": "Dropdown Bottom Link",
        "type": "dropdownBottomLink",
+       "limit": 4,
        "settings": [
          {  
            "type": "text",
            "id": "dropdownLinkText",
-           "label": "Link text"
+           "label": "t:sections.header.blocks.bottomLink.settings.dropdownLinkText.label"
          },{
           "id": "dropdownLinkUrl",
           "type": "url",
-          "label": "URL link"
+          "label": "t:sections.header.blocks.bottomLink.settings.dropdownLinkUrl.label"
         }
        ]
      }
