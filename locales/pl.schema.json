@@ -846,6 +846,16 @@
         "footer_menu_2": {
           "label": "Wybierz menu 2"
         }
+      },
+      "blocks": {
+        "contactBlock": {
+          "name": "Blok kontaktowy",
+          "settings": {
+            "contact_row": {
+              "label": "Wiersz kontaktowy"
+            }
+          }
+        }
       }
     },
     "header": {
