@@ -277,6 +277,7 @@ chevronsRight.addEventListener("click", () => {
     if (currentIndex === 0) chevronsRight.classList.toggle("active");
   }
 });
+  
 const formFooterLinksDom = () => {
   if (!dropdownLinksTextArr.length) return;
 
@@ -288,26 +289,23 @@ const formFooterLinksDom = () => {
   clusterDiv.classList.add("mobile-footer-links-cluster");
   clusterDiv.style.width = `${linksContainer.clientWidth}px`;
 
-  dropdownLinksTextArr.forEach((text, index) => {
+  for (let i = 0; i < dropdownLinksTextArr.length; i++) {
     const li = document.createElement("li");
     const a = document.createElement("a");
-    a.innerText = text;
-    a.href = dropdownLinksUrlsArr[index];
+    a.innerText = dropdownLinksTextArr[i];
+    a.href = dropdownLinksUrlsArr[i];
     li.appendChild(a);
 
     clusterDiv.appendChild(li);
 
-    if ((index + 1) % 3 === 0 || index === dropdownLinksTextArr.length - 1) {
+    if ((i + 1) % 3 === 0 || i === dropdownLinksTextArr.length - 1) {
       mobileFooterLinks.appendChild(clusterDiv);
 
       clusterDiv = document.createElement("div");
       clusterDiv.classList.add("mobile-footer-links-cluster");
       clusterDiv.style.width = `${linksContainer.clientWidth}px`;
-    } else if ((index + 1) % 3 !== 0 && index === dropdownLinksTextArr.length - 1) {
-      // Sprawdzenie, czy to jest ostatni element, który nie jest w pełnym klastrze
-      mobileFooterLinks.appendChild(clusterDiv);
     }
-  });
+  }
 };
 
 window.addEventListener("DOMContentLoaded", () => formFooterLinksDom());
