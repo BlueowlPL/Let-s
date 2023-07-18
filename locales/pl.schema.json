@@ -847,8 +847,14 @@
           "label": "Wybierz menu 2"
         },
         "footer_contact_heading": {
-          "label": "Nagłówek bloku kontakt",
-          "info": "Dodaj wiersz w bloku kontakt aby wyświetlić"
+          "label": "Nagłówek podrzędny bloku social"
+        },
+        "social_heading": {
+          "label": "Nagłówek bloku social",
+          "info": "Dodaj wiersz w bloku social media aby wyświetlić ikony"
+        },
+        "copyrights": {
+          "label": "Informacja o prawach autorskich"
         }
       },
       "blocks": {
