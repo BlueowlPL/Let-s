@@ -283,7 +283,9 @@ const formFooterLinksDom = () => {
   let visibleElements = 3; // Domyślna liczba widocznych elementów
   const windowWidth = window.innerWidth;
 
-  if (windowWidth <= 600) {
+  if (windowWidth <= 400) {
+    visibleElements = 1; // Na ekranach o szerokości 400px lub mniejszej, wyświetlamy tylko 1 element
+  } else if (windowWidth <= 600) {
     visibleElements = 2; // Na ekranach o szerokości 600px lub mniejszej, wyświetlamy tylko 2 elementy
   }
 
