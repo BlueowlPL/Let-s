@@ -9,7 +9,24 @@
 
 <footer>
   {{ 'nav-pink-sprite.svg' | asset_url | img_tag: 'pink-sprite', "footer__pink-nav-sprite" }}
-  {{ 'logo-letters.svg' | asset_url | img_tag: 'Logo letters', "footer__logo-letters" }}
+  {% if section.settings.select == "svg" %}
+    {% if section.settings.svg_code != blank %}
+      <div class="footer__logo-letters">
+        {{ section.settings.svg_code }}
+      </div>
+    {% endif %}
+  {% elsif section.settings.select == "img" %}
+    {% if section.settings.image != blank %}
+      <img class="footer__logo-letters"
+        srcset="{% if section.settings.image.width >= 80 %}{{ section.settings.image | image_url: width: 80 }} 80w,{% endif %}
+        {% if section.settings.image.width >= 100 %}{{ section.settings.image | image_url: width: 100 }} 100w,{% endif %}
+        {% if section.settings.image.width >= 150 %}{{ section.settings.image | image_url: width: 150 }} 150w,{% endif %}
+        {{ section.settings.image | image_url }} {{ section.settings.image.width }}w"
+        alt="{{ section.settings.image.alt | escape }}"
+        src="{{ section.settings.image | image_url }}"
+        loading="lazy" />
+    {% endif %}
+  {% endif %}
   <div class="footer__mobile-top-bar">
     {% render 'pink-sprites-background' %}
   </div>
@@ -116,6 +133,32 @@
   {
     "name": "t:sections.footer2.name",
     "settings": [ 
+      {
+      "type": "select",
+      "id": "select",
+      "options": [
+        {
+          "value": "svg",
+          "label": "t:sections.footer2.settings.svg.label"
+        },
+        {
+          "value": "img",
+          "label": "t:sections.footer2.settings.img.label"
+        }
+      ],
+      "default": "svg",
+      "label": "t:sections.footer2.settings.select.label"
+      },
+      {
+        "type": "text",
+        "id": "svg_code",
+        "label": "t:sections.footer2.settings.svg-code.label"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "t:sections.footer2.settings.image.label"
+      },
        {
           "type": "text",
           "id": "footer_desc",
