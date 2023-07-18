@@ -948,6 +948,17 @@
               "label": "Url linku"
             }
           }
+        },
+        "bottomLinkCollection": {
+          "name": "Dolny link kolekcji",
+          "settings": {
+            "bottomLinkCollectionText": {
+              "label": "Tekst linku"
+            },
+            "bottomLinkCollectionUrl": {
+              "label": "Url linku"
+            }
+          }
         }
       }
     },
