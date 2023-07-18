@@ -847,11 +847,15 @@
           "label": "Wybierz menu 2"
         },
         "footer_contact_heading": {
-          "label": "Nagłówek podrzędny bloku social"
+          "label": "Nagłówek bloku kontakt",
+          "info": "Dodaj wiersz w bloku kontakt aby wyświetlić"
         },
         "social_heading": {
           "label": "Nagłówek bloku social",
           "info": "Dodaj wiersz w bloku social media aby wyświetlić ikony"
+        },
+        "social_subheading": {
+          "label": "Nagłówek podrzędny bloku social"
         },
         "copyrights": {
           "label": "Informacja o prawach autorskich"
