@@ -937,6 +937,17 @@
               "label": "Url linku"
             }
           }
+        },
+        "dropdownBottomLink": {
+          "name": "Dolny link mobile",
+          "settings": {
+            "dropdownLinkText": {
+              "label": "Tekst linku"
+            },
+            "dropdownLinkUrl": {
+              "label": "Url linku"
+            }
+          }
         }
       }
     },
