@@ -166,6 +166,15 @@
             </button>
           </div>
           <ul class="flex hedaer__mobile-footer-buttons-container">
+            {% for block in section.blocks %}
+              {% if block.type == "bottomLinkCollection" %}
+                {% for setting in block.settings %}
+                  {% if setting.type == "text" and block.settings.size > 0 %}
+                      <a href="{{ block.settings[1].value }}">{{ setting.value }}</a>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
             <button>WIOSNA-LATO</button>
             <button disabled aria-disabled="true">JESIEŃ-ZIMA</button>
           </ul>
