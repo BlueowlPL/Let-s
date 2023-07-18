@@ -256,8 +256,8 @@
           "header2-5": {
             "type": "dropdownBottomLink",
             "settings": {
-              "dropdownLinkText": "",
-              "dropdownLinkUrl": ""
+              "dropdownLinkText": "POMYSŁ NA PREZENT",
+              "dropdownLinkUrl": "shopify:\/\/collections"
             }
           },
           "header2-6": {
