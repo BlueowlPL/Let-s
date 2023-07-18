@@ -310,31 +310,31 @@
           "d7b51d0f-6f27-4ed1-a7fb-f7b1348810b3": {
             "type": "contactBlock",
             "settings": {
-              "contact_row": "asdasdasd"
+              "contact_row": "Obsługa klienta"
             }
           },
           "c8cfd5b4-a4ae-4c4d-a277-b6a47df86c33": {
             "type": "contactBlock",
             "settings": {
-              "contact_row": ""
+              "contact_row": "lets@nazwa.com"
             }
           },
           "81ceb5cd-5b56-4a2f-b832-5127f494b1f6": {
             "type": "contactBlock",
             "settings": {
-              "contact_row": ""
+              "contact_row": "Jesteśmy tutaj od 9:00 do 16:00"
             }
           },
           "56b043a6-8641-4af5-bd01-0b06f1aaa08b": {
             "type": "contactBlock",
             "settings": {
-              "contact_row": ""
+              "contact_row": "Współpraca +48 48 111 111 111"
             }
           },
           "bbc7ed76-7b2f-4efc-8093-b7562306c84b": {
             "type": "contactBlock",
             "settings": {
-              "contact_row": ""
+              "contact_row": "Adres ul. \/ kod pocztowy"
             }
           }
         },
