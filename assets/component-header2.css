@@ -247,12 +247,12 @@ nav {
   color: var(--categories-y1-600);
 }
 
-.header__desktop-second-list-footer a {
+.header__desktop-second-list-footer .collection-menu a {
   color: var(--brand-1-000);
   font-weight: 800;
 }
 
-.header__desktop-second-list-footer a:hover {
+.header__desktop-second-list-footer .collection-menu a:hover {
   color: var(--brand-1-300);
 }
 
