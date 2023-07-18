@@ -19,15 +19,19 @@
           <p>{{ section.settings.footer_desc | escape }}</p>
       {%- endif -%}
       <p>
-        <span>ZAPIS DO NEWSLETTERA</span>
-        Pamiętaj, że możesz zrezygnować w każdej chwili.
+        {%- if section.settings.newsletter_heading != blank -%}
+          <span>{{ section.settings.newsletter_heading | escape }}</span>
+        {%- endif -%}
+        {%- if section.settings.newsletter_desc != blank -%}
+          {{ section.settings.newsletter_desc | escape }}
+        {%- endif -%}
       </p>
       <div>
         <form class="" action="">
           <div class="flex">
             <input type="text" placeholder="myemail@email.com">
           </div>
-          <button type="submit">wyślij</button>
+          <button type="submit">{{ 'contact.form.send' | t }}</button>
         </form>
       </div>
     </div>
@@ -116,6 +120,16 @@
           "type": "text",
           "id": "footer_desc",
           "label": "t:sections.footer2.settings.footer_desc.label"
+        },
+        {
+          "type": "text",
+          "id": "newsletter_heading",
+          "label": "t:sections.footer2.settings.newsletter_heading.label"
+        },
+        {
+          "type": "text",
+          "id": "newsletter_desc",
+          "label": "t:sections.footer2.settings.newsletter_desc.label"
         }
     ],	
     "blocks": [
