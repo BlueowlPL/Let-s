@@ -276,26 +276,37 @@ chevronsRight.addEventListener("click", () => {
     if (currentIndex === 0) chevronsRight.classList.toggle("active");
   }
 });
+  
 const formFooterLinksDom = () => {
   if (!dropdownLinksTextArr.length) return;
+
+  let visibleElements = 3; // Domyślna liczba widocznych elementów
+  const windowWidth = window.innerWidth;
+
+  if (windowWidth <= 600) {
+    visibleElements = 2; // Na ekranach o szerokości 600px lub mniejszej, wyświetlamy tylko 2 elementy
+  }
+
   let tripleArr = [];
   dropdownLinksTextArr.forEach((text, index) => {
     tripleArr.push(text);
-    if (tripleArr.length === 3) {
+    if (tripleArr.length === visibleElements) {
       const div = document.createElement("div");
       div.classList.add("mobile-footer-links-cluster");
       div.style.width = `${
         document.getElementsByClassName("mobile-footer-links-container")[0]
           .clientWidth
       }px`;
+
       tripleArr.forEach((text) => {
         const li = document.createElement("li");
         const a = document.createElement("a");
-        a.innerText = text;
-        a.href = dropdownLinksUrlsArr[index];
+        a.innerText = text.replace(/(^")|("$)/g, "");
+        a.href = dropdownLinksUrlsArr[index].replace(/(^")|("$)/g, "");
         li.appendChild(a);
         div.appendChild(li);
       });
+
       mobileFooterLinks.appendChild(div);
       tripleArr = [];
     }
@@ -306,22 +317,34 @@ const formFooterLinksDom = () => {
     div.classList.add("mobile-footer-links-cluster");
     div.style.width = `${
       document.getElementsByClassName("mobile-footer-links-container")[0]
-      .clientWidth
-      }px`;
-      tripleArr.forEach((text) => {
-      const index = dropdownLinksTextArr.findIndex((link)=>link===text);
+        .clientWidth
+    }px`;
+
+    tripleArr.forEach((text) => {
+      const index = dropdownLinksTextArr.findIndex((link) => link === text);
       const li = document.createElement("li");
       const a = document.createElement("a");
-      a.innerText = text;
-      a.href = dropdownLinksUrlsArr[index];
+      a.innerText = text.replace(/(^")|("$)/g, "");
+      a.href = dropdownLinksUrlsArr[index].replace(/(^")|("$)/g, "");
       li.appendChild(a);
       div.appendChild(li);
       mobileFooterLinks.appendChild(div);
     });
+
     tripleArr = [];
   }
 };
-window.addEventListener("DOMContentLoaded", () => formFooterLinksDom());
+
+// Dodajemy obsługę zmiany rozdzielczości ekranu
+window.addEventListener("DOMContentLoaded", () => {
+  formFooterLinksDom();
+
+  window.addEventListener("resize", () => {
+    // Przy każdej zmianie szerokości okna przeglądarki, wywołujemy funkcję ponownie
+    mobileFooterLinks.innerHTML = ""; // Czyścimy zawartość diva
+    formFooterLinksDom();
+  });
+});
 
 
 </script>
