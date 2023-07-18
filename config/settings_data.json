@@ -249,7 +249,7 @@
           "header2-4": {
             "type": "dropdownBottomLink",
             "settings": {
-              "dropdownLinkText": "MUSTHAVE",
+              "dropdownLinkText": "MUST  HAVE",
               "dropdownLinkUrl": "shopify:\/\/collections"
             }
           },
