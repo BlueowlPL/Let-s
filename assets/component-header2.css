@@ -238,12 +238,12 @@ nav {
   font-weight: 800;
 }
 
-.header__desktop-second-list-footer a:first-of-type {
+.header__desktop-second-list-footer .collection-menu a:first-of-type {
   margin-right: 4rem;
   color: var(--categories-y1-400);
 }
 
-.header__desktop-second-list-footer a {
+.header__desktop-second-list-footer .collection-menu a {
   color: var(--brand-1-000);
   font-weight: 800;
 }
