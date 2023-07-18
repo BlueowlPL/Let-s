@@ -811,19 +811,19 @@
       "name": "Stopka",
       "settings": {
         "select": {
-          "label": "Wybierz typ obrazu"
+          "label": "Wybierz typ obrazu logo"
         },
         "svg": {
-          "label": "SVG"
+          "label": "Logo SVG"
         },
         "img": {
-          "label": "Obraz"
+          "label": "Logo Obraz"
         },
         "svg_code": {
-          "label": "Wklej kod SVG"
+          "label": "Wklej kod SVG loga"
         },
         "image": {
-          "label": "Wybierz obraz"
+          "label": "Wybierz obraz loga"
         },
         "footer_desc": {
           "label": "Tekst w stopce"
