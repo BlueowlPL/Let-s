@@ -243,9 +243,17 @@ nav {
   color: var(--categories-y1-400);
 }
 
+.header__desktop-second-list-footer .collection-menu a:first-of-type:hover {
+  color: var(--categories-y1-600);
+}
+
 .header__desktop-second-list-footer .collection-menu a {
   color: var(--brand-1-000);
   font-weight: 800;
+}
+
+.header__desktop-second-list-footer .collection-menu a:hover {
+  color: var(--brand-1-300);
 }
 
 .header-summary {
@@ -347,8 +355,13 @@ nav {
   gap: 2.4rem;
 }
 
-.hedaer__mobile-footer-buttons-container button:first-of-type {
+.hedaer__mobile-footer-buttons-container .collection-menu a:first-of-type {
   color: var(--categories-y1-400);
+}
+
+.hedaer__mobile-footer-buttons-container .collection-menu a {
+  color: var(--brand-1-000);
+  font-weight: 800;
 }
 
 .search-input-container {
