@@ -57,7 +57,9 @@
     <div class="footer__second_section">
       <div>
         <div class="flex  footer__collapsible-header">
-          <h3>Pomoc</h3>
+          {%- if section.settings.newsletter_desc != blank -%}
+            <h3>{{ section.settings.footer_menu_1_heading | escape }}</h3>
+          {%- endif -%}
           <span class="footer__chevron-down">{% render 'icon-chevron-down' %}</span>
         </div>
         <div class="footer__collapsible-content">
@@ -88,7 +90,9 @@
     <div class="footer__third_section">
       <div>
         <div class="flex footer__collapsible-header">
-          <h3>O nas</h3>
+          {%- if section.settings.newsletter_desc != blank -%}
+            <h3>{{ section.settings.footer_menu_2_heading | escape }}</h3>
+          {%- endif -%}
           <span class="footer__chevron-down">{% render 'icon-chevron-down' %}</span>
         </div>
         <div class="footer__collapsible-content">
