@@ -80,13 +80,10 @@
         </div>
         <div class="footer__collapsible-content flex-col">
           {% for block in section.blocks %}
-            {% if block.type == "contactBlock" %}
-              {% for setting in block.settings %}
-                {% if setting.type == "text" %}
-                  <span>{{ setting.value }}</span>
-                {% endif %}
-              {% endfor %}
-            {% endif %}
+            {% case block.type %}
+              {% when 'contactBlock' %}
+                 <span>{{ block.settings.contact_row}}</span>                        
+            {% endcase %}
           {% endfor %}
         </div>
       </div>
