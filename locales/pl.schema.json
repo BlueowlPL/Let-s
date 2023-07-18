@@ -845,6 +845,10 @@
         },
         "footer_menu_2": {
           "label": "Wybierz menu 2"
+        },
+        "footer_contact_heading": {
+          "label": "Nagłówek bloku kontakt",
+          "info": "Dodaj wiersz w bloku kontakt aby wyświetlić"
         }
       },
       "blocks": {
