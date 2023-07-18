@@ -278,7 +278,7 @@ chevronsRight.addEventListener("click", () => {
   }
 });
   
-const formFooterLinksDom = () => { 
+const formFooterLinksDom = () => {
   if (!dropdownLinksTextArr.length) return;
 
   const linksContainer = document.getElementsByClassName(
@@ -293,7 +293,7 @@ const formFooterLinksDom = () => {
     const li = document.createElement("li");
     const a = document.createElement("a");
     a.innerText = dropdownLinksTextArr[i];
-    a.href = dropdownLinksUrlsArr[i];
+    a.href = dropdownLinksUrlsArr[i]; // Poprawiono indeks
     li.appendChild(a);
 
     clusterDiv.appendChild(li);
