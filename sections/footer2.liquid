@@ -105,3 +105,34 @@
     e.currentTarget.classList.toggle('active');
   }))
 </script>
+
+{% schema %}
+  {
+    "name": "footer2",
+    "settings": [ 
+       {
+          "type": "text",
+          "id": "footer_desc",
+          "label": "t:sections.footer2.settings.footer_desc.label"
+        }
+    ],	
+    "blocks": [
+       {
+         "name": "Bottom Link",
+         "type": "bottomLink",
+         "limit": 6,
+         "settings": [
+           {  
+             "type": "text",
+             "id": "linkText",
+             "label": "Link text"
+           },{
+            "id": "linkurl",
+            "type": "url",
+            "label": "URL link"
+          }
+         ]
+       }
+     ]
+  }
+{% endschema %}
