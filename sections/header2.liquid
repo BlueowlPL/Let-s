@@ -126,56 +126,56 @@
       </form>
       <ul>
         {%- for link in linklists.test-menu.links -%}
-          {%- if link.links != blank -%}
-            <li>
-              <ul class="">
-                <div class="">
-                  {%- for child_link in link.links -%}
-                    <li class="">
-                      <div class="header__mobile-second-list-container flex">
-                        <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
-                          {{ child_link.title }}
-                        </a>
-                        <button>
-                          <span class="chevron-down">{% render 'icon-chevron-down' %}</span>
-                        </button>
-                      </div>
-                      {%- if child_link.links != blank -%}
-                        <ul class="header__mobile-third-list-container">
-                          {%- for grandchild_link in child_link.links -%}
-                            <li>
-                              <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
-                                {{ grandchild_link.title }}
-                              </a>
-                            </li>
-                          {%- endfor -%}
-                        </ul>
-                      {%- endif -%}
+  {%- if link.links != blank -%}
+    <li>
+      <ul class="">
+        <div class="">
+          {%- for child_link in link.links -%}
+            <li class="">
+              <div class="header__mobile-second-list-container flex">
+                <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+                  {{ child_link.title }}
+                </a>
+                <button>
+                  <span class="chevron-down">{% render 'icon-chevron-down' %}</span>
+                </button>
+              </div>
+              {%- if child_link.links != blank -%}
+                <ul class="header__mobile-third-list-container">
+                  {%- for grandchild_link in child_link.links -%}
+                    <li>
+                      <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+                        {{ grandchild_link.title }}
+                      </a>
                     </li>
                   {%- endfor -%}
-                </div>
-                <div class="header__mobile-second-list-footer">
-                  <div {% unless count > 0 %} style="display:none;"{% endunless %} class="flex header__mobile-mini-slider" >
-                    <div class="mobile-footer-links-container  flex hedaer__mobile-footer-links-container">
-                      <ul class="flex" id="mobile-footer-links">
-                        </ul>
-                        </div>
-                        <button  {% unless count > 3 %}style="display:none;"{% endunless %}>
-                          <span class="chevrons-right" id="chevrons-right">
-                            {% render 'chevrons-right' %}
-                          </span>
-                    </button>
-                  </div>
-                  <ul class="flex hedaer__mobile-footer-buttons-container">
-                    <button>WIOSNA-LATO</button>
-                    <button disabled aria-disabled="true">JESIEŃ-ZIMA</button>
-                  </ul>
-                </div>
-
-              </ul>
+                </ul>
+              {%- endif -%}
             </li>
-          {%- endif -%}
-        {%- endfor -%}
+          {%- endfor -%}
+        </div>
+        <div class="header__mobile-second-list-footer">
+          <div {% unless count > 0 %} style="display:none;"{% endunless %} class="flex header__mobile-mini-slider" >
+            <div class="mobile-footer-links-container  flex hedaer__mobile-footer-links-container">
+              <ul class="flex" id="mobile-footer-links">
+                </ul>
+                </div>
+                <button  {% unless count > 3 %}style="display:none;"{% endunless %}>
+                  <span class="chevrons-right" id="chevrons-right">
+                    {% render 'chevrons-right' %}
+                  </span>
+            </button>
+          </div>
+          <ul class="flex hedaer__mobile-footer-buttons-container">
+            <button>WIOSNA-LATO</button>
+            <button disabled aria-disabled="true">JESIEŃ-ZIMA</button>
+          </ul>
+        </div>
+
+      </ul>
+    </li>
+  {%- endif -%}
+{%- endfor -%}
       </ul>
     </div>
   </nav>
@@ -215,8 +215,8 @@
 
 <script>
 
-const dropdownLinksTextArr = `{{dropdownLinksTextArr}}`.split(" ");
-const dropdownLinksUrlsArr = `{{dropdownLinksUrlsArr}}`.split(" ");
+const dropdownLinksTextArr = `{{ dropdownLinksTextArr }}`.split(",");
+const dropdownLinksUrlsArr = `{{ dropdownLinksUrlsArr }}`.split(",");
 
 const hamburgerIcon = document.getElementById("icon-hamburger");
 const closeIcon = document.getElementById("icon-close");
@@ -292,8 +292,8 @@ const formFooterLinksDom = () => {
       tripleArr.forEach((text) => {
         const li = document.createElement("li");
         const a = document.createElement("a");
-        a.innerText = text.replace(/(^")|("$)/g, ""); // Usunięcie cudzysłowia z tekstu linku
-        a.href = dropdownLinksUrlsArr[index].replace(/(^")|("$)/g, ""); // Usunięcie cudzysłowia z adresu URL
+        a.innerText = text;
+        a.href = dropdownLinksUrlsArr[index];
         li.appendChild(a);
         div.appendChild(li);
       });
@@ -307,14 +307,14 @@ const formFooterLinksDom = () => {
     div.classList.add("mobile-footer-links-cluster");
     div.style.width = `${
       document.getElementsByClassName("mobile-footer-links-container")[0]
-        .clientWidth
-    }px`;
-    tripleArr.forEach((text) => {
-      const index = dropdownLinksTextArr.findIndex((link) => link === text);
+      .clientWidth
+      }px`;
+      tripleArr.forEach((text) => {
+      const index = dropdownLinksTextArr.findIndex((link)=>link===text);
       const li = document.createElement("li");
       const a = document.createElement("a");
-      a.innerText = text.replace(/(^")|("$)/g, ""); // Usunięcie cudzysłowia z tekstu linku
-      a.href = dropdownLinksUrlsArr[index].replace(/(^")|("$)/g, ""); // Usunięcie cudzysłowia z adresu URL
+      a.innerText = text;
+      a.href = dropdownLinksUrlsArr[index];
       li.appendChild(a);
       div.appendChild(li);
       mobileFooterLinks.appendChild(div);
