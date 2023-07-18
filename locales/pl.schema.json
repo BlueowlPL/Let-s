@@ -924,6 +924,22 @@
         }
       }
     },
+    "header2": {
+      "name": "Nagłówek",
+      "blocks": {
+        "bottomLink": {
+          "name": "Dolny link desktop",
+          "settings": {
+            "linkText": {
+              "label": "Tekst linku"
+            },
+            "linkurl": {
+              "label": "Url linku"
+            }
+          }
+        }
+      }
+    },
     "image-banner": {
       "name": "Baner z obrazem",
       "settings": {
