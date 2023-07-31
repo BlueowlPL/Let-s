@@ -31,3 +31,7 @@
   display: block;
   padding-top: 54%;
 }
+
+.singleTab__content {
+  max-width: 360px;
+}
