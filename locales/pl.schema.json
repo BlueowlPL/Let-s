@@ -2809,6 +2809,19 @@
           },
           "description_bold": {
             "label": "Pogrubić czcionkę?"
+          },
+          "button_bg": {
+            "label": "Kolor tła przycisku"
+          },
+          "button_label": {
+            "label": "Tekst przycisku",
+            "info": "Pozostaw puste aby ukryć przycisk."
+          },
+          "button_label_color": {
+            "label": "Kolor tekstu"
+          },
+          "button_link": {
+            "label": "Link przycisku?"
           }
         }
       }
