@@ -2774,6 +2774,36 @@
           "tab_color": {
             "label": "Kolor tła taba"
           },
+          "tab_position": {
+            "label": "Wyśrodkowanie taba",
+            "options__1": {
+              "label": "Na górze po lewej"
+            },
+            "options__2": {
+              "label": "Na górze na środku"
+            },
+            "options__3": {
+              "label": "Na górze po prawej"
+            },
+            "options__4": {
+              "label": "Na środku po lewej"
+            },
+            "options__5": {
+              "label": "Wyśrodkowany"
+            },
+            "options__6": {
+              "label": "Na środku po prawej"
+            },
+            "options__7": {
+              "label": "Na dole po lewej"
+            },
+            "options__8": {
+              "label": "Na dole na środku"
+            },
+            "options__9": {
+              "label": "Na dole po prawej"
+            }
+          },
           "tab_overheading": {
             "label": "Tekst nad nagłówkiem"
           },

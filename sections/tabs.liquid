@@ -5,7 +5,7 @@
     <div class="sectionTabs__tabs">
       {% for block in section.blocks %}
         <div class="sectionTabs__singleTab">
-          <div class="singleTab__wrapper">
+          <div class="singleTab__wrapper {{ block.settings.tab_position }}">
             <div class="singleTab__image">
               {%- if block.settings.tab_image -%}
               {%- assign height = block.settings.tab_image.width | divided_by: block.settings.tab_image.aspect_ratio | round -%}
@@ -69,6 +69,50 @@
         "label": "t:sections.tabs.blocks.settings.tab_color.label",
         "id": "tab_color",
         "default": "#000000"
+        }, 
+        {
+          "type": "select",
+          "id": "tab_position",
+          "options": [
+            {
+              "value": "up-left",
+              "label": "t:sections.tabs.blocks.settings.tab_position.options__1.label"
+            },
+            {
+              "value": "up-center",
+              "label": "t:sections.tabs.blocks.settings.tab_position.options__2.label"
+            },
+            {
+              "value": "up-right",
+              "label": "t:sections.tabs.blocks.settings.tab_position.options__3.label"
+            },
+            {
+              "value": "middle-left",
+              "label": "t:sections.tabs.blocks.settings.tab_position.options__4.label"
+            },
+            {
+              "value": "middle-center",
+              "label": "t:sections.tabs.blocks.settings.tab_position.options__5.label"
+            },
+            {
+              "value": "middle-right",
+              "label": "t:sections.tabs.blocks.settings.tab_position.options__6.label"
+            },
+            {
+              "value": "down-left",
+              "label": "t:sections.tabs.blocks.settings.tab_position.options__7.label"
+            },
+            {
+              "value": "down-center",
+              "label": "t:sections.tabs.blocks.settings.tab_position.options__8.label"
+            },
+            {
+              "value": "down-right",
+              "label": "t:sections.tabs.blocks.settings.tab_position.options__9.label"
+            }
+          ],
+          "default": "middle-center",
+          "label": "t:sections.tabs.blocks.settings.tab_position.label"
         }, 
         {
           "type": "text",
