@@ -280,6 +280,7 @@ form>button {
 
     .footer__sections-container {
         padding: 3.2rem 10.9rem 6.4rem 0;
+        gap: 64px;
     }
 
 
