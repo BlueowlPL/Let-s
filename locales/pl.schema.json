@@ -2771,6 +2771,9 @@
           "tab_image": {
             "label": "Zdjęcie w tle"
           },
+          "tab_color": {
+            "label": "Kolor tła taba"
+          },
           "tab_overheading": {
             "label": "Tekst nad nagłówkiem"
           },

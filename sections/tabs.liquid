@@ -19,7 +19,7 @@
                 {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
               {%- endif -%}
             </div>
-            <div class="singleTab__content">
+            <div class="singleTab__content" style="{{ block.settings.tab_color }};">
               {%- if block.settings.tab_overheading != blank -%}
                 <h5 style="color:{{ block.settings.overheading_color }}; {% if block.settings.overheading_bold %} font-weight: bold;{% endif %}">{{ block.settings.tab_overheading | escape }}</h5>
               {%- endif -%}
@@ -64,6 +64,12 @@
           "label": "t:sections.tabs.blocks.settings.tab_image.label",
           "id": "tab_image"
         },
+        {
+        "type": "color",
+        "label": "t:sections.tabs.blocks.settings.tab_color.label",
+        "id": "tab_color",
+        "default": "#000000"
+        }, 
         {
           "type": "text",
           "label": "t:sections.tabs.blocks.settings.tab_heading.label",
