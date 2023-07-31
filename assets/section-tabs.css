@@ -1,5 +1,5 @@
 #shopify-section-template--18476780814678__c751bfac-6f0a-47cb-8727-9e74e20a1aa3 {
-  width: 9%;
+  height: 9%;
 }
 
 .sectionTabs {
@@ -17,7 +17,9 @@
 }
 
 .singleTab__image {
-  
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .singleTab__image img {
