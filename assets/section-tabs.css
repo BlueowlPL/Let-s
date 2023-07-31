@@ -1,11 +1,6 @@
 .sectionTabs {
     width: 100%;
-    max-width: 1224px;
-    margin: 0 auto;
-
-  @media (max-width: 1256px) {
-    padding: 0 16px;
-  }
+    background: var(--neutrals-100);
 }
 
 .singleTab__wrapper {
@@ -13,6 +8,12 @@
   height: 815px;
   display: flex;
   padding: 88px;
+  max-width: 1224px;
+  margin: 0 auto;
+
+  @media (max-width: 1256px) {
+    padding: 0 16px;
+  }
 }
 
 .singleTab__wrapper.up-left {
