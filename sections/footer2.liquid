@@ -73,7 +73,7 @@
       </div>
       <div>
         <div class="flex  footer__collapsible-header">
-          {%- if section.settings.newsletter_desc != blank -%}
+          {%- if section.settings.footer_contact_heading != blank -%}
             <h3>{{ section.settings.footer_contact_heading | escape }}</h3>
           {%- endif -%}
           <span class="footer__chevron-down">{% render 'icon-chevron-down' %}</span>
@@ -115,12 +115,19 @@
             <span class="footer__watch-us-span">{{ section.settings.social_subheading | escape }}</span>
         {%- endif -%}
         <div class="footer_social-links-container flex">
-          <a href="#" class="footer__social-link">{% render 'icon-facebook' %}</a>
-          <a href="#" class="footer__social-link">{% render 'icon-twitter' %}</a>
-          <a href="#" class="footer__social-link">{% render 'icon-instagram' %}</a>
-          <a href="#" class="footer__social-link">{% render 'icon-linkedin' %}</a>
-          <a href="#" class="footer__social-link">{% render 'icon-tiktok' %}</a>
-          <a href="#" class="footer__social-link">{% render 'icon-pinterest' %}</a>
+          
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'socialIcons' %}
+                {% if block.settings.icon_svg != blank %}
+                 <a href="{{ block.settings.icon_link }}" class="footer__social-link">
+                   {% if block.settings.icon_svg != blank %}
+                        {{ block.settings.icon_svg }}
+                    {% endif %}
+                 </a>
+                {% endif %}
+            {% endcase %}
+          {% endfor %}
         </div>
         <small>&copy; 2023 Blue Owl.All rights reserved</small>
       </div>
@@ -241,6 +248,22 @@
              "id": "contact_row",
              "label": "t:sections.footer2.blocks.contactBlock.settings.contact_row.label"
            }
+         ]
+       },
+      {
+         "name": "t:sections.footer2.blocks.socialIcons.name",
+         "type": "socialIcons",
+         "settings": [
+           {  
+             "type": "text",
+             "id": "icon_link",
+             "label": "t:sections.footer2.blocks.socialIcons.settings.icon_link.label"
+           },
+           {
+              "type": "text",
+              "id": "icon_svg",
+              "label": "t:sections.footer2.blocks.socialIcons.settings.icon_svg.label"
+            }
          ]
        }
      ]

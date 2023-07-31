@@ -869,6 +869,17 @@
               "label": "Treść"
             }
           }
+        },
+        "socialIcons": {
+          "name": "Blok social media",
+          "settings": {
+            "icon_link": {
+              "label": "Link do social media"
+            },
+            "icon_svg": {
+              "label": "Kod SVG ikony social media"
+            }
+          }
         }
       }
     },
