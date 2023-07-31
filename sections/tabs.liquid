@@ -31,7 +31,7 @@
               {%- endif -%}
               {%- if block.settings.button_label != blank -%}
               <div class="singleTab--button">
-                <a{% if block.settings.button_link %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="button" style="color:{{ block.settings.button_label_color }}, background:{{ block.settings.button_bg }}">{{ block.settings.button_label | escape }}</a>
+                <a{% if block.settings.button_link %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="button" style="color:{{ block.settings.button_label_color }}; background:{{ block.settings.button_bg }}">{{ block.settings.button_label | escape }}</a>
               </div>
               {%- endif -%}
             </div>
