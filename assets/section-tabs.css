@@ -14,6 +14,51 @@
   display: flex;
 }
 
+.singleTab__wrapper.up-left {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.singleTab__wrapper.up-center {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.singleTab__wrapper.up-right {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.singleTab__wrapper.middle-left {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.singleTab__wrapper.middle-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.singleTab__wrapper.middle-right {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.singleTab__wrapper.down-left {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.singleTab__wrapper.down-center {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.singleTab__wrapper.down-right {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 .singleTab__image {
   position: absolute;
   z-index: -1;
