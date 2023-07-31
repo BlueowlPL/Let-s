@@ -92,7 +92,7 @@ small {
 
 }
 
-.footer__collapsible-header {
+.footer__collapsible-header, .footer_social {
     padding: 2rem 0 0;
 }
 
