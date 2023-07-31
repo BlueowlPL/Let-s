@@ -845,13 +845,23 @@
             "row_content": "",
             "page": ""
           }
+        },
+        "a76f83c8-1bcf-4f27-9857-d772eba4576d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "template--17610553000253__ac42c8db-676a-4735-8df5-8503ee52ad13-16781933320932be2c-0",
         "template--17610553000253__ac42c8db-676a-4735-8df5-8503ee52ad13-16781933320932be2c-1",
         "template--17610553000253__ac42c8db-676a-4735-8df5-8503ee52ad13-16781933320932be2c-2",
-        "template--17610553000253__ac42c8db-676a-4735-8df5-8503ee52ad13-16781933320932be2c-3"
+        "template--17610553000253__ac42c8db-676a-4735-8df5-8503ee52ad13-16781933320932be2c-3",
+        "a76f83c8-1bcf-4f27-9857-d772eba4576d"
       ],
       "settings": {
         "caption": "",
