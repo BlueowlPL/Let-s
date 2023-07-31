@@ -266,7 +266,7 @@ form>button {
 @media only screen and (min-width:1440px) {
 
     .footer__first_section {
-        margin: 3.3rem 5.5rem 3.3rem 0;
+        justify-content: center;
     }
 
     .footer__pink-nav-sprite {
