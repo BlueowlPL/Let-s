@@ -695,6 +695,82 @@
         "full_width": {
           "label": "Make products full width"
         },
+        "footer2": {
+          "name": "Footer",
+          "settings": {
+            "select": {
+              "label": "Choose image type"
+            },
+            "svg": {
+              "label": "Logo SVG"
+            },
+            "img": {
+              "label": "Logo image"
+            },
+            "svg_code": {
+              "label": "Paste SVG code"
+            },
+            "image": {
+              "label": "Choose logo image"
+            },
+            "footer_desc": {
+              "label": "Footer text"
+            },
+            "newsletter_heading": {
+              "label": "Newsletter heading"
+            },
+            "newsletter_desc": {
+              "label": "Newsletter description"
+            },
+            "footer_menu_1_heading": {
+              "label": "Menu 1 Heading"
+            },
+            "footer_menu_1": {
+              "label": "Choose menu 1"
+            },
+            "footer_menu_2_heading": {
+              "label": "Menu 2 Heading"
+            },
+            "footer_menu_2": {
+              "label": "Choose menu 2"
+            },
+            "footer_contact_heading": {
+              "label": "Contact block heading",
+              "info": "Add a line in the contact block to display"
+            },
+            "social_heading": {
+              "label": "Social block heading",
+              "info": "Add a row in the social media block to display icons"
+            },
+            "social_subheading": {
+              "label": "Social block subheading"
+            },
+            "copyrights": {
+              "label": "Copyright info"
+            }
+          },
+          "blocks": {
+            "contactBlock": {
+              "name": "Contact row",
+              "settings": {
+                "contact_row": {
+                  "label": "Content"
+                }
+              }
+            },
+            "socialIcons": {
+              "name": "Social media block",
+              "settings": {
+                "icon_link": {
+                  "label": "Social media link"
+                },
+                "icon_svg": {
+                  "label": "Social media icon SVG code"
+                }
+              }
+            }
+          }
+        },
         "header": {
           "content": "Product card"
         },
