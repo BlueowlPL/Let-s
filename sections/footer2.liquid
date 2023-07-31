@@ -57,7 +57,7 @@
     <div class="footer__second_section">
       <div>
         <div class="flex  footer__collapsible-header">
-          {%- if section.settings.newsletter_desc != blank -%}
+          {%- if section.settings.footer_menu_1_heading != blank -%}
             <h3>{{ section.settings.footer_menu_1_heading | escape }}</h3>
           {%- endif -%}
           <span class="footer__chevron-down">{% render 'icon-chevron-down' %}</span>
@@ -91,7 +91,7 @@
 
 
     <div class="footer__third_section">
-      <div class="footer_social">
+      <div>
         <div class="flex footer__collapsible-header">
           {%- if ssection.settings.footer_menu_2_heading != blank -%}
             <h3>{{ section.settings.footer_menu_2_heading | escape }}</h3>
@@ -107,11 +107,11 @@
           {% endif %}
         </div>
       </div>
-      <div>
-        {%- if section.settings.newsletter_desc != blank -%}
+      <div class="footer_social">
+        {%- if section.settings.social_heading != blank -%}
             <h3>{{ section.settings.social_heading | escape }}</h3>
         {%- endif -%}
-        {%- if section.settings.newsletter_desc != blank -%}
+        {%- if section.settings.social_subheading != blank -%}
             <span class="footer__watch-us-span">{{ section.settings.social_subheading | escape }}</span>
         {%- endif -%}
         <div class="footer_social-links-container flex">
