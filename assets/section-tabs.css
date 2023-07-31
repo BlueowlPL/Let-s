@@ -2,6 +2,10 @@
     width: 100%;
     background: var(--neutrals-100);
     padding: 58px 0;
+
+  @media (max-width: 1256px) {
+    padding: 42px 16px;
+  }
 }
 
 .singleTab__wrapper {
@@ -11,10 +15,6 @@
   padding: 88px;
   max-width: 1224px;
   margin: 0 auto;
-
-  @media (max-width: 1256px) {
-    padding: 0 16px;
-  }
 }
 
 .singleTab__wrapper.up-left {
