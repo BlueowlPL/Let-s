@@ -887,12 +887,13 @@
             "tab_image": "shopify:\/\/shop_images\/tab.jpg",
             "tab_heading": "LET’S CLUB",
             "heading_size": "h2",
-            "heading_color": "#000000",
+            "heading_color": "#262329",
             "heading_bold": true,
-            "overheading_color": "#000000",
-            "overheading_bold": false,
+            "tab_overheading": "TAGLINE",
+            "overheading_color": "#454247",
+            "overheading_bold": true,
             "tab_description": "Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.",
-            "description_color": "#000000",
+            "description_color": "#454247",
             "description_bold": false
           }
         }
