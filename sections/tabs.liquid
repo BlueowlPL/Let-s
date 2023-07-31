@@ -29,6 +29,11 @@
               {%- if block.settings.tab_description != blank -%}
                 <p style="color:{{ block.settings.description_color }}; {% if block.settings.description_bold %} font-weight: bold;{% endif %}">{{ block.settings.tab_description | escape }}</p>
               {%- endif -%}
+              {%- if block.settings.button_label != blank -%}
+              <div class="singleTab--button">
+                <a{% if block.settings.button_link %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="button" style="color:{{ block.settings.button_label_color }}, background:{{ block.settings.button_bg }}">{{ block.settings.button_label | escape }}</a>
+              </div>
+              {%- endif -%}
             </div>
           </div>
         </div>
@@ -129,6 +134,30 @@
         "id": "description_bold",
         "label": "t:sections.tabs.blocks.settings.description_bold.label",
         "default": false
+        },
+        {
+        "type": "color",
+        "label": "t:sections.tabs.blocks.settings.button_bg.label",
+        "id": "button_bg",
+        "default": "#000000"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:sections.tabs.blocks.settings.button_label.label",
+          "info": "t:sections.tabs.blocks.settings.button_label.info"
+        },
+        {
+        "type": "color",
+        "label": "t:sections.tabs.blocks.settings.button_label_color.label",
+        "id": "button_label_color",
+        "default": "#000000"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.tabs.blocks.settings.button_link.label"
         }
       ]
     }
