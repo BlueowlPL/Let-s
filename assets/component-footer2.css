@@ -189,6 +189,7 @@ form>button {
 
     .footer__first_section {
         max-width: 41.6rem;
+        justify-content: center;
 
     }
 
