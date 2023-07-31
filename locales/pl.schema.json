@@ -2774,6 +2774,12 @@
           "tab_overheading": {
             "label": "Tekst nad nagłówkiem"
           },
+          "overheading_color": {
+            "label": "Kolor czcionki"
+          },
+          "overheading_bold": {
+            "label": "Pogrubić?"
+          },
           "tab_heading": {
             "label": "Nagłówek"
           },

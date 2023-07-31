@@ -877,6 +877,31 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "c751bfac-6f0a-47cb-8727-9e74e20a1aa3": {
+      "type": "tabs",
+      "blocks": {
+        "d7e5bf5d-a2bc-4793-988f-251731a59037": {
+          "type": "block",
+          "settings": {
+            "tab_image": "shopify:\/\/shop_images\/tab.jpg",
+            "tab_heading": "LET’S CLUB",
+            "heading_size": "h2",
+            "heading_color": "#000000",
+            "heading_bold": true,
+            "overheading_color": "#000000",
+            "overheading_bold": false,
+            "tab_description": "Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.",
+            "description_color": "#000000",
+            "description_bold": false
+          }
+        }
+      },
+      "block_order": [
+        "d7e5bf5d-a2bc-4793-988f-251731a59037"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -898,6 +923,7 @@
     "3c0a3f09-6aa1-432f-a9c5-ca0856fda147",
     "ef312dd5-9e0a-4571-a003-505bccf1b0c8",
     "f476da7b-ca46-44dd-ad99-2970e46e7707",
-    "ac42c8db-676a-4735-8df5-8503ee52ad13"
+    "ac42c8db-676a-4735-8df5-8503ee52ad13",
+    "c751bfac-6f0a-47cb-8727-9e74e20a1aa3"
   ]
 }
