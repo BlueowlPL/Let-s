@@ -1,12 +1,143 @@
+{{ 'section-tabs.css' | asset_url | stylesheet_tag }}
+
+<div class="sectionTabs">
+  <div class="sectionTabs__wrapper">
+    <div class="sectionTabs__tabs">
+      {% for block in section.blocks %}
+        <div class="sectionTabs__singleTab">
+          <div class="singleTab__wrapper">
+            <div class="singleTab__image">
+              {%- if block.settings.tab_image -%}
+              {%- assign height = block.settings.tab_image.width | divided_by: block.settings.tab_image.aspect_ratio | round -%}
+              {{ block.settings.tab_image | image_url: width: 1224 | image_tag:
+                loading: 'lazy',
+                height: height,
+                sizes: "100vw",
+                widths: '300, 400, 600, 800, 1000, 1224'
+              }}
+              {%- else -%}
+                {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            <div class="singleTab__content">
+              {%- if block.settings.tab_overheading != blank -%}
+                <h5 style="color:{{ block.settings.overheading_color }}; {% if block.settings.overheading_bold %} font-weight: bold;{% endif %}">{{ block.settings.tab_overheading | escape }}</h5>
+              {%- endif -%}
+              {%- if block.settings.tab_heading != blank -%}
+                <h2 class="{{ block.settings.heading_size }}" style="color:{{ block.settings.heading_color }}; {% if block.settings.heading_bold %} font-weight: 800;{% endif %}">{{ block.settings.tab_heading | escape }}</h2>
+              {%- endif -%}
+              {%- if block.settings.tab_description != blank -%}
+                <p style="color:{{ block.settings.description_color }}; {% if block.settings.description_bold %} font-weight: bold;{% endif %}">{{ block.settings.tab_description | escape }}</p>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>   
+</div>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "t:sections.tabs.name",
+  "tag": "section",
+  "class": "section",
+  "presets": [
+    {
+      "name": "t:sections.tabs.presets.name",
+      "category": "t:sections.tabs.presets.category"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "t:sections.tabs.blocks.name",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "t:sections.tabs.blocks.settings.tab_image.label",
+          "id": "tab_image"
+        },
+        {
+          "type": "text",
+          "label": "t:sections.tabs.blocks.settings.tab_heading.label",
+          "id": "tab_heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h1",
+              "label": "t:sections.tabs.blocks.settings.heading_size.options__1.label"
+            },
+            {
+              "value": "h2",
+              "label": "t:sections.tabs.blocks.settings.heading_size.options__2.label"
+            },
+            {
+              "value": "h3",
+              "label": "t:sections.tabs.blocks.settings.heading_size.options__3.label"
+            }
+          ],
+          "default": "h2",
+          "label": "t:sections.tabs.blocks.settings.heading_size.label"
+        }, 
+        {
+        "type": "color",
+        "label": "t:sections.tabs.blocks.settings.heading_color.label",
+        "id": "heading_color",
+        "default": "#000000"
+        }, 
+        {
+        "type": "checkbox",
+        "id": "heading_bold",
+        "label": "t:sections.tabs.blocks.settings.heading_bold.label",
+        "default": false
+        }, 
+        {
+          "type": "text",
+          "label": "t:sections.tabs.blocks.settings.bullet_overheading.label",
+          "id": "bullet_overheading"
+        },
+        {
+        "type": "color",
+        "label": "t:sections.tabs.blocks.settings.overheading_color.label",
+        "id": "overheading_color",
+        "default": "#000000"
+        }, 
+        {
+        "type": "checkbox",
+        "id": "overheading_bold",
+        "label": "t:sections.tabs.blocks.settings.overheading_bold.label",
+        "default": false
+        },
+        {
+          "type": "textarea",
+          "label": "t:sections.tabs.blocks.settings.tab_description.label",
+          "id": "tab_description"
+        },
+        {
+        "type": "color",
+        "label": "t:sections.tabs.blocks.settings.description_color.label",
+        "id": "description_color",
+        "default": "#000000"
+        }, 
+        {
+        "type": "checkbox",
+        "id": "description_bold",
+        "label": "t:sections.tabs.blocks.settings.description_bold.label",
+        "default": false
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
 {% endstylesheet %}
 
-{% javascript %}
+{% javascript %} 
 {% endjavascript %}
