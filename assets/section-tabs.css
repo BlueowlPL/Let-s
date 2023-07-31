@@ -37,4 +37,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 16px;
+}
+
+.singleTab__content h5 {
+  margin: 0 !important;
+}
+
+.singleTab__content h2 {
+  margin: 8px 0 16px !important;
+}
+
+.singleTab__content p {
+  margin: 0 !important;
 }
