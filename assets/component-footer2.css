@@ -151,6 +151,10 @@ form>div {
     padding: 1.2rem;
 }
 
+form>input {
+    width: 100%;
+}
+
 form>button {
     color: var(--neutrals-000);
     background-color: var(--brand-1-300);
