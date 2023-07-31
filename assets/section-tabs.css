@@ -51,3 +51,7 @@
 .singleTab__content p {
   margin: 0 !important;
 }
+
+.singleTab--button {
+  margin: 16px 0 0;
+}
