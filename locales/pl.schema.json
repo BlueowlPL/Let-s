@@ -2759,6 +2759,51 @@
         }
       }
     },
+    "tabs": {
+      "name": "Taby",
+      "presets": {
+        "name": "Taby",
+        "category": "ZAAWANSOWANY LAYOUT"
+      },
+      "blocks": {
+        "name": "Pojedynczy tab",
+        "settings": {
+          "tab_image": {
+            "label": "Zdjęcie w tle"
+          },
+          "tab_overheading": {
+            "label": "Tekst nad nagłówkiem"
+          },
+          "tab_heading": {
+            "label": "Nagłówek"
+          },
+          "heading_size": {
+            "label": "Rozmiar czcionki",
+            "options__1": {
+              "label": "Mały"
+            },
+            "options__2": {
+              "label": "Średni"
+            },
+            "options__3": {
+              "label": "Duży"
+            }
+          },
+          "heading_color": {
+            "label": "Kolor czcionki"
+          },
+          "tab_description": {
+            "label": "Opis"
+          },
+          "description_color": {
+            "label": "Kolor czcionki"
+          },
+          "description_bold": {
+            "label": "Pogrubić czcionkę?"
+          }
+        }
+      }
+    },
     "bullets": {
       "name": "Bullety",
       "presets": {
