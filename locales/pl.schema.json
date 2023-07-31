@@ -2792,6 +2792,9 @@
           "heading_color": {
             "label": "Kolor czcionki"
           },
+          "heading_bold": {
+            "label": "Pogrubić?"
+          },
           "tab_description": {
             "label": "Opis"
           },
