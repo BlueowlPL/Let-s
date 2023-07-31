@@ -1,0 +1,9 @@
+.sectionTabs {
+    width: 100%;
+    max-width: 1224px;
+    margin: 0 auto;
+
+  @media (max-width: 1256px) {
+    padding: 0 16px;
+  }
+}
