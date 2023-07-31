@@ -5,6 +5,7 @@
     position: relative;
     background-color: var(--brand-2-300)
   }
+  
   .sprites-second-svg-container {
     height: 100%;
     width: 50%;
@@ -12,6 +13,9 @@
     position: absolute;
   }
 
+  .sprites-second-svg-container svg {
+    width: 100%;
+  }
 
   .pink-sprites-background-logo-letters {
     position: absolute;
@@ -20,6 +24,7 @@
     transform: translateY(-50%);
     left: 4rem;
   }
+  
   .pink-sprites-filler {
     right: 0;
     top: 0;
@@ -27,27 +32,29 @@
     background-color: #E3B1BE;
 
   }
+  
   .pink-sprites-filler-mask {
-
     background-color: white;
     opacity: 0.42;
     height: 100%;
   }
+  
   @media only screen and (min-width:500px) {
     .pink-sprites-filler {
       height: 100%;
       position: absolute;
       display: block !important;
     }
+    
     .pink-sprites-filler-mask {
       display: block !important;
     }
   }
+  
   @media only screen and (min-width:992px) {
     .pink-sprites-filler {
       width: 70%
     }
-
   }
 </style>
 
