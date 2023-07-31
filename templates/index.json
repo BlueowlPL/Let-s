@@ -895,9 +895,9 @@
             "tab_description": "Content is UX. If the primary purpose of websites is to deliver valuable content to an audience, we should be designing content-first for the best possible UX.",
             "description_color": "#454247",
             "description_bold": false,
-            "button_bg": "#1773b0",
-            "button_label": "Buon labeltt",
-            "button_label_color": "#dd1d1d",
+            "button_bg": "#21145f",
+            "button_label": "Załóż konto",
+            "button_label_color": "#ffffff",
             "button_link": "shopify:\/\/collections\/przeznaczenie-ciala-preparaty-do-ciala"
           }
         }
