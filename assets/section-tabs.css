@@ -1,6 +1,7 @@
 .sectionTabs {
     width: 100%;
     background: var(--neutrals-100);
+    padding: 0 58px;
 }
 
 .singleTab__wrapper {
