@@ -2,6 +2,7 @@
   "sections": {
     "16788054201e42611a": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "0ee2f7c6-e50b-43bc-be4d-114bb408c49d": {
           "type": "shopify:\/\/apps\/xo-story-feeds\/blocks\/xo-story\/73c32a5d-481e-4b4e-99f6-012a00af21b7",
