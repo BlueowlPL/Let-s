@@ -225,18 +225,6 @@
         "settings": {
         }
       },
-      "7682102568729335718": {
-        "type": "shopify:\/\/apps\/storiefy-product-stories\/blocks\/app-embeded\/1a3393e7-6890-40af-9e0f-590fb41ea0ae",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "1645462046225424150": {
-        "type": "shopify:\/\/apps\/xo-story-feeds\/blocks\/xo-story-scripts\/73c32a5d-481e-4b4e-99f6-012a00af21b7",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "8257630261509358238": {
         "type": "shopify:\/\/apps\/yotpo-subscriptions\/blocks\/app-embed-block\/ef25e582-ada5-4bb0-b4e7-f94e97ab1bb4",
         "disabled": true,
@@ -255,6 +243,18 @@
         "settings": {
           "inject_modules_loader": true,
           "inject_sdk_loader": true
+        }
+      },
+      "1645462046225424150": {
+        "type": "shopify:\/\/apps\/xo-story-feeds\/blocks\/xo-story-scripts\/73c32a5d-481e-4b4e-99f6-012a00af21b7",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "7682102568729335718": {
+        "type": "shopify:\/\/apps\/storiefy-product-stories\/blocks\/app-embeded\/1a3393e7-6890-40af-9e0f-590fb41ea0ae",
+        "disabled": true,
+        "settings": {
         }
       }
     }
