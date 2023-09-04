@@ -18,7 +18,7 @@
         "template--18476773310806__88716e2f-3b12-46f6-9a67-d12a76f0d33f-email_form-1"
       ],
       "custom_css": [
-        "{border-color: white; }"
+        ".newsletter-form__field-wrapper {border-color: white;}"
       ],
       "settings": {
         "color_scheme": "background-1",
