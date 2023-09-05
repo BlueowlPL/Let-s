@@ -2,78 +2,15 @@
   "sections": {
     "shogun-home": {
       "type": "shogun-home",
-      "settings": {
-      }
-    },
-    "88716e2f-3b12-46f6-9a67-d12a76f0d33f": {
-      "type": "newsletter",
-      "blocks": {
-        "template--18476773310806__88716e2f-3b12-46f6-9a67-d12a76f0d33f-email_form-1": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--18476773310806__88716e2f-3b12-46f6-9a67-d12a76f0d33f-email_form-1"
-      ],
       "custom_css": [
-        ".newsletter-form__field-wrapper {border-color: white;}"
+
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "ef88f8d5-3d04-4407-aad3-ea0f61c67149": {
-      "type": "rich-text",
-      "blocks": {
-        "template--18476773310806__ef88f8d5-3d04-4407-aad3-ea0f61c67149-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "template--18476773310806__ef88f8d5-3d04-4407-aad3-ea0f61c67149-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--18476773310806__ef88f8d5-3d04-4407-aad3-ea0f61c67149-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--18476773310806__ef88f8d5-3d04-4407-aad3-ea0f61c67149-heading-1",
-        "template--18476773310806__ef88f8d5-3d04-4407-aad3-ea0f61c67149-text-1",
-        "template--18476773310806__ef88f8d5-3d04-4407-aad3-ea0f61c67149-button-1"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "shogun-home",
-    "88716e2f-3b12-46f6-9a67-d12a76f0d33f",
-    "ef88f8d5-3d04-4407-aad3-ea0f61c67149"
+    "shogun-home"
   ],
   "layout": "theme.shogun.landing"
 }
