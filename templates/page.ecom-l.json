@@ -1,0 +1,13 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-l": {
+      "type": "ecom-l-page",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "ecom-l"
+  ]
+}
