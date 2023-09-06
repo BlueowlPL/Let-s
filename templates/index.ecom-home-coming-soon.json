@@ -1,0 +1,13 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-home-coming-soon": {
+      "type": "ecom-home-coming-soon-home",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "ecom-home-coming-soon"
+  ]
+}
