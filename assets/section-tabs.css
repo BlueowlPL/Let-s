@@ -89,7 +89,7 @@
   font-weight: 800;*/
 }
 
-@media only screena and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .sectionTabs {
     padding: 42px 0 58px;
   }
