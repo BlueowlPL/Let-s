@@ -97,6 +97,7 @@
 
 .singleTab__content p {
   margin: 0 !important;
+  text-align: center;
 }
 
 .singleTab--button {
