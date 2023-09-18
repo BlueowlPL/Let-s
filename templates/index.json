@@ -224,7 +224,7 @@
           "settings": {
             "tab_image": "shopify:\/\/shop_images\/tab.jpg",
             "tab_color": "#ffffff",
-            "tab_position": "down-right",
+            "tab_position": "middle-right",
             "tab_heading": "LET’S CLUB",
             "heading_size": "h2",
             "heading_color": "#262329",
@@ -244,6 +244,9 @@
       },
       "block_order": [
         "d7e5bf5d-a2bc-4793-988f-251731a59037"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
       }
