@@ -76,9 +76,6 @@
   line-height: 20px;
   letter-spacing: 0.21px;
   text-transform: uppercase;
-  /* padding: 18px 10px;
-  font-size: 10px;
-  font-weight: 800;*/
 }
 
 @media only screen and (min-width: 769px) {
@@ -158,7 +155,7 @@
   }
 
   .singleTab--button a {
-    padding: 18px 10px;
+    padding: 10px 10px;
     font-size: 10px;
     font-weight: 800;
   }
