@@ -1,21 +1,13 @@
 .sectionTabs {
     width: 100%;
     background: #fff;
-    /* background: var(--neutrals-100); */
     padding: 32px 0 42px;
-
-  /* @media (max-width: 1256px) {
-    padding: 42px 16px;
-  } */
 }
 
 .singleTab__wrapper {
   position: relative;
-  /* height: 815px; */
-  /* display: flex; */
-  /* padding: 88px; */
-  max-width: 1224px;
   margin: 0 auto;
+  max-width: 1224px;
 }
 
 
@@ -98,9 +90,17 @@
 }
 
 @media only screena and (min-width: 769px) {
+  .sectionTabs {
+    padding: 42px 0 58px;
+  }
+
+  .singleTab__wrapper {
+    height: 815px;
+  }
+  
   .singleTab__wrapper.up-left {
-  justify-content: flex-start;
-  align-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .singleTab__wrapper.up-center {
