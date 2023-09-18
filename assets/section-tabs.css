@@ -126,8 +126,17 @@
   max-width: 328px;
   width: 100%;
   padding: 12px 20px;
-  text-transform: uppercase; 
 
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.21px;
+  text-transform: uppercase;
   /* padding: 18px 10px;
   font-size: 10px;
   font-weight: 800;*/
