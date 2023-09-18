@@ -92,14 +92,15 @@
     padding: 88px;
   }
 
-   .singleTab__image {
-      position: absolute;
-      z-index: 0;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
+  .singleTab__image {
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
   .singleTab__content {
     max-width: 360px;
