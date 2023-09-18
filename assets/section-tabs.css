@@ -96,6 +96,8 @@
 
   .singleTab__wrapper {
     height: 815px;
+    display: flex;
+    padding: 88px;
   }
   
   .singleTab__wrapper.up-left {
