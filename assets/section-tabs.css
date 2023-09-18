@@ -123,8 +123,12 @@
 }
 
 .singleTab--button a {
-  padding: 18px 10px;
+  max-width: 328px;
+  width: 100%;
+  padding: 12px 20px;
+  text-transform: uppercase; 
+
+  /* padding: 18px 10px;
   font-size: 10px;
-  font-weight: 800;
-  text-transform: uppercase;
+  font-weight: 800;*/
 }
