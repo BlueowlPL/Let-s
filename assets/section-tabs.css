@@ -64,8 +64,7 @@
 }
 
 .singleTab__image {
-  max-height: 482px;
-  height: 100%;
+  height: 482px;
   /* position: absolute;
   z-index: 0;
   top: 0;
