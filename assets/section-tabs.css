@@ -101,10 +101,10 @@
 
 .singleTab--button {
   margin: 16px 0 0;
-  padding: 18px 10px;
 }
 
 .singleTab--button a {
   padding: 18px 10px;
   font-weight: 800;
+  text-transform: uppercase;
 }
