@@ -156,4 +156,10 @@
     justify-content: flex-end;
     align-items: flex-end;
   }
+
+  .singleTab--button a {
+    padding: 18px 10px;
+    font-size: 10px;
+    font-weight: 800;
+  }
 }
