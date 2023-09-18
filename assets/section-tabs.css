@@ -61,7 +61,6 @@
 
 .singleTab--button {
   margin: 28px 0 0;
-  /* margin: 16px 0 0; */
 }
 
 .singleTab--button a {
@@ -152,6 +151,10 @@
   .singleTab__wrapper.down-right {
     justify-content: flex-end;
     align-items: flex-end;
+  }
+
+  .singleTab__content p {
+    text-align: center;
   }
 
   .singleTab--button {
