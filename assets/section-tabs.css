@@ -12,12 +12,6 @@
 
 .singleTab__image {
   height: 482px;
-  /* position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; */
 }
 
 .singleTab__image img {
@@ -92,19 +86,29 @@
     padding: 42px 0 58px;
   }
 
-  .singleTab__image {
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
   .singleTab__wrapper {
     height: 815px;
     display: flex;
     padding: 88px;
+  }
+
+   .singleTab__image {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+  .singleTab__content {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 16px 0;
+    max-height: 325px;
+    z-index: 1;
   }
   
   .singleTab__wrapper.up-left {
