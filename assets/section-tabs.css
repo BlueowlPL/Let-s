@@ -10,8 +10,6 @@
   max-width: 1224px;
 }
 
-
-
 .singleTab__image {
   height: 482px;
   /* position: absolute;
@@ -92,6 +90,15 @@
 @media only screen and (min-width: 769px) {
   .sectionTabs {
     padding: 42px 0 58px;
+  }
+
+  .singleTab__image {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
   .singleTab__wrapper {
