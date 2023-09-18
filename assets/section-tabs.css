@@ -154,6 +154,10 @@
     align-items: flex-end;
   }
 
+  .singleTab--button {
+    margin: 16px 0 0;
+  }
+
   .singleTab--button a {
     padding: 10px 10px;
     font-size: 10px;
